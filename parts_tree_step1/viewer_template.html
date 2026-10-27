@@ -1,0 +1,319 @@
+<title>Дерево запчастин вантажівок</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+/* Layout: каталог-схема — ліворуч дерево вузлів, праворуч картка обраного вузла */
+:root{
+  --bg:#f3f4f2; --panel:#ffffff; --fg:#1d2321; --muted:#5f6a66; --line:#d6dbd8;
+  --accent:#1f5f8b; --accent-soft:#e2edf5; --bound:#b8560f; --bound-soft:#fbeadc;
+  --hit:#fff1a8;
+  --f-display:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#151a19; --panel:#1c2221; --fg:#e4e9e7; --muted:#97a39f; --line:#2f3836;
+  --accent:#7cb6e0; --accent-soft:#1f3242; --bound:#f0a062; --bound-soft:#3a2a1d; --hit:#5a4d10; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#151a19; --panel:#1c2221; --fg:#e4e9e7; --muted:#97a39f; --line:#2f3836;
+  --accent:#7cb6e0; --accent-soft:#1f3242; --bound:#f0a062; --bound-soft:#3a2a1d; --hit:#5a4d10; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:14px;line-height:1.45}
+.wrap{max-width:1280px;margin:0 auto;padding-block:20px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;margin-bottom:16px}
+h1{font-family:var(--f-display);font-weight:600;font-size:26px;margin:0;letter-spacing:.01em;text-wrap:balance}
+.sub{color:var(--muted);margin:4px 0 0}
+.stats{display:flex;gap:18px;font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.stats b{display:block;font-size:20px;color:var(--fg);font-weight:500;font-variant-numeric:tabular-nums}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px}
+.chip{font:500 12px var(--f-body);border:1px solid var(--line);background:var(--panel);color:var(--fg);padding:5px 10px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--panel)}
+.chip:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.chip .k{font-family:var(--f-mono);opacity:.75;margin-right:4px}
+#q,#vq{flex:1 1 220px;min-width:0;font:14px var(--f-body);padding:7px 10px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--fg)}
+.tbtn{font:12px var(--f-body);background:none;border:1px solid var(--line);color:var(--muted);padding:5px 9px;border-radius:6px;cursor:pointer}
+.main{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:16px;align-items:start}
+@media (max-width:860px){.main{grid-template-columns:minmax(0,1fr)}}
+.tree{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 0;min-width:0}
+ul{list-style:none;margin:0;padding:0}
+ul ul{margin-left:18px;border-left:1px dashed var(--line)}
+.row{display:flex;align-items:baseline;gap:8px;padding:3px 10px 3px 6px;cursor:pointer;border-radius:4px;margin:0 6px}
+.row:hover{background:var(--accent-soft)}
+.row.sel{background:var(--accent-soft);box-shadow:inset 2px 0 var(--accent)}
+.tw{width:14px;flex:0 0 14px;color:var(--muted);font-family:var(--f-mono);font-size:11px;text-align:center}
+.nm{min-width:0;overflow-wrap:anywhere}
+.l1>.row .nm{font-family:var(--f-display);font-weight:600;font-size:15px;letter-spacing:.02em}
+.en{color:var(--muted);font-size:12px}
+.code{font-family:var(--f-mono);font-size:11px;color:var(--muted);margin-left:auto;white-space:nowrap}
+.bd{font:500 10px var(--f-mono);color:var(--bound);background:var(--bound-soft);padding:1px 5px;border-radius:3px;white-space:nowrap;text-transform:uppercase;letter-spacing:.04em}
+.rk{font:500 10px var(--f-mono);color:var(--accent);border:1px solid var(--accent);padding:0 4px;border-radius:3px;white-space:nowrap}
+.ln{font:11px var(--f-mono);color:var(--bound);white-space:nowrap}
+.vt{display:inline-flex;gap:2px}
+.vt i{font:normal 9px var(--f-mono);width:8px;height:8px;border-radius:2px;background:var(--line)}
+.vt i.on{background:var(--accent)}
+mark{background:var(--hit);color:inherit;border-radius:2px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px)}
+.card h2{font-family:var(--f-display);font-weight:600;font-size:19px;margin:0 0 2px;text-wrap:balance}
+.card .path{font-size:12px;color:var(--muted);margin-bottom:12px}
+.kv{display:grid;grid-template-columns:110px minmax(0,1fr);gap:6px 10px;font-size:13px}
+.kv dt{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.06em;padding-top:2px}
+.kv dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.kv code{font-family:var(--f-mono);font-size:12px}
+.lnk{display:block;color:var(--accent);background:none;border:0;padding:1px 0;font:inherit;cursor:pointer;text-align:left}
+.lnk:hover{text-decoration:underline}
+.lnk.b{color:var(--bound)}
+.legend{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:grid;gap:4px}
+.empty{color:var(--muted);padding:20px}
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin-bottom:14px}
+.tab{font:600 14px var(--f-display);letter-spacing:.03em;background:none;border:0;border-bottom:2px solid transparent;color:var(--muted);padding:8px 12px;cursor:pointer;margin-bottom:-1px}
+.tab[aria-selected="true"]{color:var(--fg);border-bottom-color:var(--accent)}
+.vwrap{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:8px}
+table.veh{border-collapse:collapse;width:100%;min-width:760px;font-size:13px}
+.veh th,.veh td{padding:5px 10px;text-align:left;vertical-align:middle;border-bottom:1px solid var(--line)}
+.veh thead th{font:500 11px var(--f-body);color:var(--muted);text-transform:uppercase;letter-spacing:.06em;position:sticky;top:0;background:var(--panel)}
+.veh tr.brand td{font:600 16px var(--f-display);letter-spacing:.03em;background:var(--bg);padding-top:10px}
+.veh tr.gen td.nm{padding-left:26px;color:var(--fg)}
+.veh tr.rng.hask td{color:var(--muted)}
+.veh tr.rng.hask td.nm{color:var(--fg);font-weight:500}
+.veh .ty{font:500 10px var(--f-mono);border:1px solid var(--line);border-radius:3px;padding:0 4px;margin-right:3px;white-space:nowrap}
+.veh .eng{font:11px var(--f-mono);color:var(--muted)}
+.veh .yr{font:12px var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tl{position:relative;height:10px;min-width:220px;background:repeating-linear-gradient(90deg,var(--line) 0 1px,transparent 1px calc(100%/3.7))}
+.tl i{position:absolute;top:1px;bottom:1px;background:var(--accent);border-radius:2px}
+.tl i.open{background:linear-gradient(90deg,var(--accent) 80%,transparent)}
+.tlax{position:relative;height:14px;font:10px var(--f-mono);color:var(--muted);min-width:220px}.tlax span{position:absolute;top:0}
+.vnote{color:var(--muted);font-size:12px;margin:10px 2px 0}
+.oemgrid{display:grid;gap:16px}
+.oemgrid h3{font:600 16px var(--f-display);letter-spacing:.03em;margin:4px 0 8px}
+.chk{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px;display:grid;gap:10px}
+.chk input{font:15px var(--f-mono);padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);width:100%;max-width:420px}
+.chk .res{font-size:13px;display:grid;gap:4px}
+.pill{display:inline-block;font:500 11px var(--f-body);padding:1px 7px;border-radius:999px;background:var(--accent-soft);color:var(--accent);margin-right:4px;white-space:nowrap}
+.pill.trl{background:var(--bound-soft);color:var(--bound)}
+.pill.warn{background:var(--hit);color:var(--fg)}
+.veh td a{color:var(--accent)}
+.oemlist{display:grid;gap:3px;font-size:12px}
+.oemlist .o{font-family:var(--f-mono);font-size:12px}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Дерево запчастин вантажного транспорту</h1>
+      <p class="sub">Системи → вузли → деталі, а також марки і моделі техніки, до яких вони прив'язуються.</p>
+    </div>
+    <div class="stats" id="stats" style="flex-wrap:wrap"></div>
+  </header>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" id="tParts" aria-selected="true">Запчастини</button>
+    <button class="tab" role="tab" id="tVeh" aria-selected="false">Техніка</button>
+    <button class="tab" role="tab" id="tOem" aria-selected="false">Виробники й OEM</button>
+  </div>
+  <section id="pParts">
+  <div class="bar" id="vtbar" role="group" aria-label="Тип транспортного засобу"></div>
+  <div class="bar">
+    <input id="q" type="search" placeholder="Пошук: назва UA / EN або код (напр. «ресора», «slack», BRK.WHB)">
+    <button class="tbtn" id="bOnly" aria-pressed="false">Лише граничні</button>
+    <button class="tbtn" id="bRK" aria-pressed="false">Лише ремкомплекти</button>
+    <button class="tbtn" id="bExp">Розгорнути все</button>
+    <button class="tbtn" id="bCol">Згорнути все</button>
+  </div>
+
+  <div class="main">
+    <div class="tree" id="tree"></div>
+    <aside class="card" id="card"></aside>
+  </div>
+  </section>
+  <section id="pVeh" hidden>
+    <div class="bar" id="brbar" role="group" aria-label="Марка"></div>
+    <div class="bar"><input id="vq" type="search" placeholder="Пошук: модель або двигун (напр. «TGX», «OM471», «MX-13»)"></div>
+    <div class="vwrap"><table class="veh" id="vtab"></table></div>
+    <p class="vnote" id="vnote">Роки випуску орієнтовні, їх треба звірити з каталогами. Типи: TRC — тягач, RGD — вантажівка з жорсткою рамою, LCV — легкий вантажний до 3,5 т.</p>
+  </section>
+  <section id="pOem" hidden>
+    <div class="oemgrid">
+      <div class="chk">
+        <label for="oq"><b>Перевірити номер</b> — вставте OEM, і сторінка покаже, чиєму формату він відповідає</label>
+        <input id="oq" type="text" value="09.801.08.69.0" autocomplete="off" spellcheck="false">
+        <div class="res" id="ores"></div>
+      </div>
+      <div><h3>Виробники</h3><div class="vwrap"><table class="veh" id="mtab"></table></div></div>
+      <div><h3>Префікси WABCO</h3><div class="vwrap"><table class="veh" id="wtab"></table></div></div>
+      <div><h3>OEM-приклади з джерелами</h3><div class="vwrap"><table class="veh" id="etab"></table></div>
+      <p class="vnote">Номери BPW — з офіційного каталогу BPW. Решта — з карток магазинів, їх варто звірити з каталогом виробника.</p></div>
+    </div>
+  </section>
+</div>
+
+<script>
+const DATA = /*__DATA__*/null;
+const VEH = /*__VEH__*/null;
+const OEM = /*__OEM__*/null;
+const MF = {}; OEM.manufacturers.forEach(m=>MF[m.code]=m);
+const SRC = {}; OEM.sources.forEach(x=>SRC[x.id]=x);
+const anc = id => { const a=[]; let x=N[id]; while(x){ a.push(x.id); x=N[x.parent]; } return a; };
+function suppliersOf(id){ const set=new Set(anc(id).concat(N[id].extra_parents)); return OEM.manufacturers.filter(m=>m.supplies.some(s=>set.has(s))); }
+function oemsUnder(id){ return OEM.examples.filter(e=>e.node===id || e.node.startsWith(id+".")); }
+const N = {}; DATA.nodes.forEach(n => N[n.id] = n);
+const VT = DATA.vehicle_types, VTK = Object.keys(VT);
+const open = new Set(DATA.roots);
+let sel = null, vtOn = new Set(VTK), q = "", onlyB = false, onlyRK = false;
+
+function store(){ try{ localStorage.setItem("pt_open", JSON.stringify([...open])) }catch(e){} }
+try{ const s = JSON.parse(localStorage.getItem("pt_open")||"null"); if(Array.isArray(s)) s.forEach(x=>N[x]&&open.add(x)) }catch(e){}
+
+const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const hl = s => { if(!q) return esc(s); const i = s.toLowerCase().indexOf(q); return i<0?esc(s):esc(s.slice(0,i))+"<mark>"+esc(s.slice(i,i+q.length))+"</mark>"+esc(s.slice(i+q.length)); };
+const pathOf = id => { const p=[]; let x=N[id]; while(x){ p.unshift(x); x=N[x.parent]; } return p; };
+const vtOk = n => n.applies.some(a => vtOn.has(a));
+const selfHit = n => (!q || (n.name_ua+" "+n.name_en+" "+n.id).toLowerCase().includes(q)) && (!onlyB || n.extra_parents.length) && (!onlyRK || n.kind==="repkit");
+const memo = new Map();
+function visible(n){ // вузол показується, якщо підходить сам або хтось із нащадків
+  if(memo.has(n.id)) return memo.get(n.id);
+  let v = vtOk(n) && (selfHit(n) || n.children.some(c => visible(N[c])));
+  memo.set(n.id, v); return v;
+}
+
+function vtDots(n){ return '<span class="vt" title="'+n.applies.map(a=>VT[a]).join(", ")+'">'+VTK.map(k=>'<i class="'+(n.applies.includes(k)?"on":"")+'"></i>').join("")+'</span>'; }
+
+function renderNode(n){
+  const kids = n.children.map(c=>N[c]).filter(visible);
+  const filtering = q || onlyB || onlyRK;
+  const isOpen = filtering || open.has(n.id);
+  let h = '<li class="l'+n.level+'"><div class="row'+(sel===n.id?" sel":"")+'" data-id="'+n.id+'">'
+    + '<span class="tw">'+(kids.length?(isOpen?"▾":"▸"):"·")+'</span>'
+    + '<span class="nm">'+hl(n.name_ua)+' <span class="en">'+hl(n.name_en)+'</span></span>';
+  if(n.kind==="repkit") h += '<span class="rk" title="Ремкомплект">РК</span>';
+  { const oc = OEM.examples.filter(e=>e.node===n.id).length; if(oc) h += '<span class="ln" style="color:var(--accent)" title="OEM-прикладів">OEM '+oc+'</span>'; }
+  if(n.extra_parents.length) h += '<span class="bd" title="Також входить у: '+n.extra_parents.map(p=>esc(N[p].name_ua)).join("; ")+'">межа ×'+(n.extra_parents.length+1)+'</span>';
+  if(n.linked_children.length) h += '<span class="ln" title="Підключені граничні деталі з інших вузлів">+'+n.linked_children.length+' звʼязаних</span>';
+  h += vtDots(n)+'<span class="code">'+hl(n.id)+'</span></div>';
+  if(kids.length && isOpen) h += '<ul>'+kids.map(renderNode).join("")+'</ul>';
+  return h+'</li>';
+}
+
+function render(){
+  memo.clear();
+  const roots = DATA.roots.map(r=>N[r]).filter(visible);
+  document.getElementById("tree").innerHTML = roots.length ? '<ul>'+roots.map(renderNode).join("")+'</ul>' : '<div class="empty">Нічого не знайдено. Змініть пошук або типи ТЗ.</div>';
+  renderCard();
+}
+
+function renderCard(){
+  const c = document.getElementById("card");
+  if(!sel){ c.innerHTML = '<h2>Оберіть вузол</h2><p class="path">Клік по рядку відкриває картку з усіма звʼязками.</p>'+legend(); return; }
+  const n = N[sel], p = pathOf(sel);
+  const link = (id,cls) => '<button class="lnk '+(cls||"")+'" data-go="'+id+'">'+esc(N[id].name_ua)+' <span class="code">'+id+'</span></button>';
+  c.innerHTML = '<h2>'+esc(n.name_ua)+'</h2><div class="path">'+p.slice(0,-1).map(x=>esc(x.name_ua)).join(" › ")+'</div>'
+   + '<dl class="kv">'
+   + '<dt>EN</dt><dd>'+esc(n.name_en)+'</dd>'
+   + '<dt>ID</dt><dd><code>'+n.id+'</code> · рівень '+n.level+'</dd>'
+   + '<dt>Тип ТЗ</dt><dd>'+n.applies.map(a=>VT[a]).join("<br>")+'</dd>'
+   + (n.parent?'<dt>Входить у</dt><dd>'+link(n.parent)+n.extra_parents.map(x=>link(x,"b")).join("")+'</dd>':'')
+   + (n.children.length?'<dt>Складові</dt><dd>'+n.children.map(x=>link(x)).join("")+'</dd>':'')
+   + (n.linked_children.length?'<dt>Також містить</dt><dd>'+n.linked_children.map(x=>link(x,"b")).join("")+'</dd>':'')
+   + (()=>{ const sp=suppliersOf(sel); return sp.length?'<dt>Виробники</dt><dd>'+sp.map(m=>'<span class="pill'+(m.role==="trailer"?" trl":"")+'">'+esc(m.name)+'</span>').join(" ")+'</dd>':''; })()
+   + (()=>{ const os=oemsUnder(sel); if(!os.length) return ""; const sh=os.slice(0,12);
+       return '<dt>OEM ('+os.length+')</dt><dd class="oemlist">'+sh.map(e=>'<div><span class="o">'+esc(e.oem)+'</span> '+esc(e.manufacturer)+' — '+esc(e.name_ua)+'</div>').join("")+(os.length>12?'<div>… ще '+(os.length-12)+' на вкладці «Виробники й OEM»</div>':'')+'</dd>'; })()
+   + '</dl>'+legend();
+}
+function legend(){ return '<div class="legend"><div><span class="bd">межа ×2</span> деталь входить у кілька вузлів (помаранчеві посилання)</div><div><span class="rk">РК</span> ремкомплект — дочірній вузол своєї деталі</div><div>'+vtDots({applies:VTK})+' &nbsp;квадрати: '+VTK.map(k=>VT[k]).join(" · ")+'</div></div>'; }
+
+function go(id){ sel=id; pathOf(id).forEach(x=>open.add(x.id)); store(); render();
+  const el=document.querySelector('.row[data-id="'+id+'"]'); if(el) el.scrollIntoView({block:"center",behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"}); }
+
+document.getElementById("tree").addEventListener("click", e=>{
+  const r = e.target.closest(".row"); if(!r) return; const id=r.dataset.id;
+  if(e.target.classList.contains("tw") || sel===id){ open.has(id)?open.delete(id):open.add(id); store(); }
+  sel=id; render();
+});
+document.getElementById("card").addEventListener("click", e=>{ const b=e.target.closest("[data-go]"); if(b) go(b.dataset.go); });
+document.getElementById("q").addEventListener("input", e=>{ q=e.target.value.trim().toLowerCase(); render(); });
+document.getElementById("bOnly").addEventListener("click", e=>{ onlyB=!onlyB; e.currentTarget.setAttribute("aria-pressed",onlyB); e.currentTarget.style.color=onlyB?"var(--bound)":""; render(); });
+document.getElementById("bRK").addEventListener("click", e=>{ onlyRK=!onlyRK; e.currentTarget.setAttribute("aria-pressed",onlyRK); e.currentTarget.style.color=onlyRK?"var(--accent)":""; render(); });
+document.getElementById("bExp").addEventListener("click", ()=>{ DATA.nodes.forEach(n=>n.children.length&&open.add(n.id)); store(); render(); });
+document.getElementById("bCol").addEventListener("click", ()=>{ open.clear(); store(); render(); });
+
+const bar = document.getElementById("vtbar");
+bar.innerHTML = VTK.map(k=>'<button class="chip" aria-pressed="true" data-vt="'+k+'"><span class="k">'+k+'</span>'+VT[k]+'</button>').join("");
+bar.addEventListener("click", e=>{ const b=e.target.closest("[data-vt]"); if(!b) return; const k=b.dataset.vt;
+  vtOn.has(k)?vtOn.delete(k):vtOn.add(k); if(!vtOn.size) vtOn.add(k); bar.querySelectorAll("[data-vt]").forEach(x=>x.setAttribute("aria-pressed",vtOn.has(x.dataset.vt))); render(); });
+
+const nb = DATA.nodes.filter(n=>n.extra_parents.length).length;
+const nrk = DATA.nodes.filter(n=>n.kind==="repkit"&&n.code==="RK").length;
+const leaves = DATA.nodes.filter(n=>!n.children.length).length;
+document.getElementById("stats").innerHTML = '<div><b>'+DATA.roots.length+'</b>систем</div><div><b>'+DATA.nodes.length+'</b>вузлів</div><div><b>'+leaves+'</b>кінцевих</div><div><b>'+nb+'</b>граничних</div><div><b>'+DATA.nodes.filter(n=>n.code==="RK").length+'</b>ремкомплектів</div><div><b>'+OEM.examples.length+'</b>OEM</div>';
+sel = "BRK.WHB.DISC.CAL.RK"; render();
+
+/* ---- Техніка ---- */
+const Y0 = 1990, Y1 = 2027, NOW = 2026;
+const brands = VEH.rows.filter(r=>r.kind==="manufacturer");
+let brOn = new Set(brands.map(b=>b.id)), vq = "";
+const vkids = {}; VEH.rows.forEach(r=>{ if(r.parent) (vkids[r.parent]=vkids[r.parent]||[]).push(r); });
+const bb = document.getElementById("brbar");
+bb.innerHTML = brands.map(b=>'<button class="chip" aria-pressed="true" data-br="'+b.id+'">'+esc(b.name)+'</button>').join("");
+bb.addEventListener("click", e=>{ const b=e.target.closest("[data-br]"); if(!b) return; const k=b.dataset.br;
+  if(brOn.size===brands.length){ brOn=new Set([k]); } else { brOn.has(k)?brOn.delete(k):brOn.add(k); if(!brOn.size) brOn=new Set(brands.map(x=>x.id)); }
+  bb.querySelectorAll("[data-br]").forEach(x=>x.setAttribute("aria-pressed",brOn.has(x.dataset.br))); renderVeh(); });
+document.getElementById("vq").addEventListener("input", e=>{ vq=e.target.value.trim().toLowerCase(); renderVeh(); });
+function ybar(r){ if(!r.year_from) return ""; const a=(r.year_from-Y0)/(Y1-Y0)*100, b=((r.year_to||NOW+1)-Y0)/(Y1-Y0)*100;
+  return '<div class="tl"><i class="'+(r.year_to?"":"open")+'" style="left:'+a+'%;width:'+Math.max(b-a,1)+'%"></i></div>'; }
+const vhit = r => !vq || (r.name+" "+r.engines.join(" ")+" "+r.id).toLowerCase().includes(vq);
+function vrow(r, cls){
+  const yrs = r.year_from ? r.year_from+'–'+(r.year_to||'…') : '';
+  return '<tr class="'+cls+'"><td class="nm">'+hl2(r.name)+'</td><td>'+(r.is_model?r.types.map(t=>'<span class="ty" title="'+esc(VEH.types[t])+'">'+t+'</span>').join(""):'')+'</td><td class="yr">'+yrs+'</td><td>'+ybar(r)+'</td><td class="eng">'+(r.is_model?hl2(r.engines.join(", ")):'')+'</td></tr>';
+}
+function hl2(s){ if(!vq) return esc(s); const i=s.toLowerCase().indexOf(vq); return i<0?esc(s):esc(s.slice(0,i))+"<mark>"+esc(s.slice(i,i+vq.length))+"</mark>"+esc(s.slice(i+vq.length)); }
+function renderVeh(){
+  let h = '<thead><tr><th>Модель / покоління</th><th>Тип</th><th>Роки</th><th><div class="tlax">'+[1990,2000,2010,2020].map(y=>'<span style="left:'+((y-Y0)/(Y1-Y0)*100)+'%">'+y+'</span>').join("")+'</div></th><th>Двигуни</th></tr></thead><tbody>';
+  let any = false;
+  brands.filter(b=>brOn.has(b.id)).forEach(b=>{
+    let body = "";
+    (vkids[b.id]||[]).forEach(rg=>{
+      const gens = (vkids[rg.id]||[]);
+      const gv = gens.filter(vhit);
+      if(!vhit(rg) && !gv.length) return;
+      body += vrow(rg, "rng"+(gens.length?" hask":""));
+      (vhit(rg)?gens:gv).forEach(g=> body += vrow(g, "gen"));
+    });
+    if(body){ any = true; h += '<tr class="brand"><td colspan="5">'+esc(b.name)+'</td></tr>'+body; }
+  });
+  if(!any) h += '<tr><td colspan="5" class="empty">Нічого не знайдено.</td></tr>';
+  document.getElementById("vtab").innerHTML = h+'</tbody>';
+}
+renderVeh();
+
+const TABS = {parts:["pParts","tParts"], vehicles:["pVeh","tVeh"], oem:["pOem","tOem"]};
+function showTab(v){ if(!TABS[v]) v="parts";
+  Object.entries(TABS).forEach(([k,[p,t]])=>{ document.getElementById(p).hidden = k!==v; document.getElementById(t).setAttribute("aria-selected", k===v); }); }
+document.getElementById("tOem").addEventListener("click", ()=>{ location.hash="oem"; showTab("oem"); });
+document.getElementById("pOem").addEventListener("click", e=>{ const b=e.target.closest("[data-go]"); if(b){ location.hash="parts"; showTab("parts"); go(b.dataset.go); } });
+const nlink = id => N[id] ? '<button class="lnk" data-go="'+id+'">'+esc(N[id].name_ua)+'</button>' : esc(id);
+const TYN = {TRC:"тягач",RGD:"вантажівка",TRL:"причіп",SMT:"напівпричіп"};
+document.getElementById("mtab").innerHTML = '<thead><tr><th>Виробник</th><th>Роль</th><th>Для</th><th>Постачає вузли</th><th>Формат номера</th></tr></thead><tbody>'
+  + OEM.manufacturers.map(m=>'<tr><td><b>'+esc(m.name)+'</b>'+(m.notes?'<div class="eng">'+esc(m.notes)+'</div>':'')+'</td><td><span class="pill'+(m.role==="trailer"?" trl":"")+'">'+(m.role==="trailer"?"причепи":"вузли")+'</span></td><td class="eng">'+m.applies.map(t=>TYN[t]).join(", ")+'</td><td>'+(m.supplies.map(nlink).join("")||'<span class="eng">—</span>')+'</td><td class="eng">'+esc(m.oem_format)+(m.oem_regex?'<div><code>'+esc(m.oem_regex)+'</code></div>':'')+'</td></tr>').join("")+'</tbody>';
+document.getElementById("wtab").innerHTML = '<thead><tr><th>Префікс</th><th>Група</th><th>Вузол</th><th>Статус</th><th>Приклад</th></tr></thead><tbody>'
+  + OEM.wabco_prefix.map(w=>'<tr><td class="yr">'+w.prefix+'</td><td>'+esc(w.group_ua)+'</td><td>'+nlink(w.node)+'</td><td>'+(w.verified==="так"?'<span class="pill">перевірено</span>':'<span class="pill warn">перевірити</span>')+'</td><td class="yr">'+esc(w.example)+'</td></tr>').join("")+'</tbody>';
+document.getElementById("etab").innerHTML = '<thead><tr><th>OEM</th><th>Виробник</th><th>Назва</th><th>Вузол</th><th>Джерело</th></tr></thead><tbody>'
+  + OEM.examples.map(e=>{ const sr=SRC[e.source]; return '<tr><td class="yr">'+esc(e.oem)+'</td><td>'+esc(e.manufacturer)+'</td><td>'+esc(e.name_ua)+(e.applies_note?' <span class="eng">'+esc(e.applies_note)+'</span>':'')+'</td><td>'+nlink(e.node)+'</td><td class="eng">'+(sr.url?'<a href="'+esc(sr.url)+'" target="_blank" rel="noopener">'+esc(sr.kind)+'</a>':esc(sr.kind))+'</td></tr>'; }).join("")+'</tbody>';
+const normO = s => s.toUpperCase().replace(/[\s.\-\/_]/g,"");
+function check(){
+  const raw = document.getElementById("oq").value.trim(), n = normO(raw), out = [];
+  if(!n){ document.getElementById("ores").innerHTML = '<span class="eng">Введіть номер.</span>'; return; }
+  out.push('<div>Нормалізовано: <code>'+esc(n)+'</code></div>');
+  const known = OEM.examples.filter(e=>e.norm===n);
+  known.forEach(e=>out.push('<div><span class="pill">є в базі</span>'+esc(e.manufacturer)+' — '+esc(e.name_ua)+' → '+nlink(e.node)+'</div>'));
+  const fm = OEM.manufacturers.filter(m=>m.oem_regex && new RegExp(m.oem_regex).test(n));
+  out.push('<div>Формат схожий на: '+(fm.length?fm.map(m=>'<span class="pill">'+esc(m.name)+'</span>').join(""):'<span class="eng">жоден відомий шаблон</span>')+(fm.length>1?' <span class="pill warn">неоднозначно — дивіться марку в рядку</span>':'')+'</div>');
+  if(fm.some(m=>m.code==="BPW") && /^\d{2}\.\d{3}\.\d{2}\.\d{2}\.\d$|^02\.\d{4}\.\d{2}\.\d{2}$/.test(raw)) out.push('<div><span class="pill">BPW</span>розставлення крапок відповідає формату BPW'+(n.startsWith("09801")?' · <b>09.801 — ремкомплект</b>':n.startsWith("02")?' · 02. — нормаль / покупна деталь':'')+'</div>');
+  if(fm.some(m=>m.code==="WABCO")){ const w = OEM.wabco_prefix.find(x=>n.startsWith(x.prefix)); if(w) out.push('<div><span class="pill">WABCO '+w.prefix+'</span>'+esc(w.group_ua)+' → '+nlink(w.node)+(w.verified==="так"?'':' <span class="pill warn">префікс не перевірено</span>')+'</div>'); }
+  document.getElementById("ores").innerHTML = out.join("");
+}
+document.getElementById("oq").addEventListener("input", check); check();
+document.getElementById("tParts").addEventListener("click", ()=>{ location.hash="parts"; showTab("parts"); });
+document.getElementById("tVeh").addEventListener("click", ()=>{ location.hash="vehicles"; showTab("vehicles"); });
+window.addEventListener("hashchange", ()=>showTab(location.hash.slice(1)));
+showTab(location.hash.slice(1));
+</script>

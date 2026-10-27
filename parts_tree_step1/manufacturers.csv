@@ -1,0 +1,32 @@
+code;name;role;applies;supplies;oem_format;oem_regex;notes
+SCHMITZ;Schmitz Cargobull;trailer;SMT,TRL;;власні номери, формат уточнити з баз;;осі ROTOS (власні), також BPW/SAF
+KRONE;Krone;trailer;SMT,TRL;;власні номери, формат уточнити з баз;;осі Krone/Gigant, BPW, SAF
+KOGEL;Kögel;trailer;SMT,TRL;;власні номери, формат уточнити з баз;;осі Kögel/SAF, BPW
+WIELTON;Wielton;trailer;SMT,TRL;;власні номери, формат уточнити з баз;;осі BPW, SAF
+SCHWARZ;Schwarzmüller;trailer;SMT,TRL;;власні номери, формат уточнити з баз;;
+FLIEGL;Fliegl;trailer;SMT,TRL;;власні номери, формат уточнити з баз;;
+KASS;Kässbohrer;trailer;SMT,TRL;;власні номери, формат уточнити з баз;;
+LAMBERET;Lamberet;trailer;SMT,TRL;BOD.REF;власні номери, формат уточнити з баз;;рефрижератори
+CHEREAU;Chereau;trailer;SMT,TRL;BOD.REF;власні номери, формат уточнити з баз;;рефрижератори
+TIRSAN;Tirsan;trailer;SMT,TRL;;власні номери, формат уточнити з баз;;
+FAYMON;Faymonville;trailer;SMT,TRL;;власні номери, формат уточнити з баз;;трали
+GOLDHOF;Goldhofer;trailer;SMT,TRL;;власні номери, формат уточнити з баз;;трали
+BPW;BPW Bergische Achsen;component;SMT,TRL;CHS.AXL.TRAIL,CHS.AXL.SELF,CHS.AXL.LIFT,CHS.HUB,CHS.SUS.AIR,CHS.SUS.LEAF,BRK.WHB,BRK.ACT;nn.nnn.nn.nn.n (запчастини), 02.nnnn.nn.nn (нормалі / покупні), 09.801.* = ремкомплекти;^0[2-9]\d{8}$;офіційні каталоги BPW, осі мають окремий код виду 27.68.743.000
+SAF;SAF-Holland (осі SAF);component;SMT,TRL;CHS.AXL.TRAIL,CHS.AXL.SELF,CHS.AXL.LIFT,CHS.HUB,CHS.SUS.AIR,BRK.WHB;11 цифр з провідним 0 (03057000600) або 10 цифр на 1–4 (3434365000);^(0\d{10}|[1-4]\d{9})$;формат з крапками уточнити з каталогу, 10-значні на 4 перетинаються з WABCO — розрізняти за маркою в рядку
+HOLLAND;SAF-Holland (Holland: сідла, шкворні, опори);component;TRC,SMT;CPL.5W,CPL.KPIN,CPL.LEG;XA-nnnnn / XB-nnnnn, RK-…;^(X[AB]|RK)-?\d{4,6}[A-Z]*$;XB-60144 — вкладиш сідла FW3410 (з ваших даних)
+ROR;ROR / Meritor;component;SMT,TRL;CHS.AXL.TRAIL,CHS.HUB,BRK.WHB;формат уточнити;;
+GIGANT;Gigant;component;SMT,TRL;CHS.AXL.TRAIL,CHS.HUB,BRK.WHB;формат уточнити;;
+VALX;Valx;component;SMT,TRL;CHS.AXL.TRAIL,CHS.SUS.AIR;формат уточнити;;
+HENDR;Hendrickson;component;ALL;CHS.SUS;формат уточнити;;
+KNORR;Knorr-Bremse;component;ALL;BRK,PNE,TRN.CLU.CSERVO;K + 6 цифр (+ суфікс), I / II + 5 цифр;^(K\d{6}([A-Z]\d{2})?|II?\d{5})$;супорти SN6/SN7/SB6/SB7/SK7 (це назви типів, не OEM)
+WABCO;WABCO / ZF CV Systems;component;ALL;BRK,PNE,CHS.SUS.AIR.ECAS,CHS.SUS.AIR.LVL;10 цифр (441 032 808 0), суфікс R = відновлений;^[4-9]\d{8}[0-9R]$;перші 3 цифри = група виробу (див. wabco_prefix.csv)
+HALDEX;Haldex;component;ALL;BRK.WHB,BRK.CTRL,PNE;формат уточнити;;регулювальні важелі, супорти Modul X, клапани
+JOST;JOST (у т.ч. Rockinger);component;ALL;CPL.5W,CPL.KPIN,CPL.LEG,CPL.HITCH,CPL.DRAW.TURN;SK + цифри (ремкомплекти), JSK (моделі сідел);^J?SK[0-9A-Z-]{3,12}$;
+FONTAINE;Fontaine;component;TRC;CPL.5W;формат уточнити;;
+VORL;V.Orlandi;component;RGD,TRL;CPL.HITCH,CPL.DRAW;формат уточнити;;
+RINGF;Ringfeder;component;RGD,TRL;CPL.HITCH,CPL.DRAW;формат уточнити;;
+ASPOCK;Aspöck;component;ALL;ELE.LGT;формат уточнити;;
+HELLA;Hella;component;ALL;ELE.LGT,ELE.SENS;формат уточнити;;
+CONTI;ContiTech;component;ALL;CHS.SUS.AIR.BAG,CAB.SUSP.BAG;формат уточнити;;
+FIRESTONE;Firestone;component;ALL;CHS.SUS.AIR.BAG,CAB.SUSP.BAG;формат уточнити;;
+VIBRA;Vibracoustic;component;ALL;CHS.SUS.AIR.BAG,CAB.SUSP.BAG;формат уточнити;;

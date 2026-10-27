@@ -1,0 +1,410 @@
+# Дерево запчастин вантажного транспорту
+# Формат рядка:  КОД Назва UA | Name EN [ЗАСТОСУВАННЯ] +ДОД_БАТЬКО +ДОД_БАТЬКО
+# Відступ 2 пробіли = рівень вкладеності. Повний ID = коди батьків через крапку.
+# Застосування: TRC тягач сідельний, RGD вантажівка з жорсткою рамою, TRL причіп дишловий, SMT напівпричіп
+#   скорочення: ALL = всі, PWR = TRC,RGD (самохідні), TOW = TRL,SMT (причіпні)
+#   якщо не вказано — успадковується від батька
+# +ID — додатковий батько (деталь на межі двох вузлів / кріпиться до кількох місць)
+
+ENG Двигун | Engine [PWR]
+  BLK Блок циліндрів і КШМ | Cylinder block & crank train
+    BLOCK Блок циліндрів | Cylinder block
+    LINER Гільза циліндра | Cylinder liner
+    PISTON Поршень з кільцями | Piston with rings
+    CONROD Шатун | Connecting rod
+    CRANK Колінчастий вал | Crankshaft
+    BEAR Вкладиші корінні / шатунні | Main / con-rod bearings
+    FLYWH Маховик | Flywheel +TRN.CLU
+    DAMP Гаситель крутильних коливань | Vibration damper
+    OILPAN Піддон картера | Oil pan
+    MOUNT Опора двигуна | Engine mount +FRM
+      RK Ремкомплект опор двигуна | Engine mount kit
+    RK Ремкомплект двигуна (ЦПГ, прокладки) | Engine overhaul kit
+  HEAD Головка блоку і ГРМ | Cylinder head & valvetrain
+    HEAD ГБЦ | Cylinder head
+      RK Ремкомплект ГБЦ (прокладки) | Cylinder head gasket set
+    GASKET Прокладка ГБЦ | Head gasket
+    VALVE Клапани, сідла, напрямні | Valves, seats, guides
+    CAM Розподільний вал | Camshaft
+    ROCK Коромисла, штовхачі | Rocker arms, pushrods
+    TIMING Шестерні / ланцюг ГРМ | Timing gears / chain
+    VCOV Кришка клапанів | Valve cover
+  LUB Система змащення | Lubrication
+    OILPUMP Масляний насос | Oil pump
+      RK Ремкомплект масляного насоса | Oil pump repair kit
+    OILFLT Масляний фільтр | Oil filter
+    OILCOOL Масляний теплообмінник | Oil cooler +ENG.COOL
+    SEP Сепаратор картерних газів | Crankcase breather
+  COOL Система охолодження | Cooling system
+    RAD Радіатор | Radiator
+    WPUMP Помпа | Water pump
+      RK Ремкомплект помпи | Water pump repair kit
+    THERM Термостат | Thermostat
+    FAN Вентилятор / віскомуфта | Fan / viscous coupling
+      RK Ремкомплект віскомуфти | Viscous fan clutch repair kit
+    EXPT Розширювальний бачок | Expansion tank
+    HOSE Патрубки охолодження | Coolant hoses
+    INTCL Інтеркулер | Intercooler +ENG.AIR
+  FUEL Паливна система | Fuel system
+    TANK Паливний бак | Fuel tank +FRM
+    LIFT Підкачувальний насос | Lift pump
+      RK Ремкомплект підкачувального насоса | Lift pump repair kit
+    FFLT Паливні фільтри / сепаратор | Fuel filters / separator
+    HPP ПНВТ (ТНВД) | High-pressure pump
+      RK Ремкомплект ПНВТ | Injection pump repair kit
+    RAIL Рампа Common Rail | Common rail
+    INJ Форсунки | Injectors
+      RK Ремкомплект форсунки | Injector repair kit
+    LINES Паливопроводи | Fuel lines
+  AIR Впуск і наддув | Intake & boost
+    AFLT Повітряний фільтр | Air filter
+    AFH Корпус фільтра, патрубки | Filter housing, ducts
+    TURBO Турбокомпресор | Turbocharger +ENG.EXH
+      RK Ремкомплект турбіни | Turbocharger repair kit
+    IMAN Впускний колектор | Intake manifold
+  EXH Випуск і доочистка | Exhaust & aftertreatment
+    EMAN Випускний колектор | Exhaust manifold
+    EBRAKE Моторне гальмо (заслінка) | Exhaust brake +BRK.AUX
+      RK Ремкомплект моторного гальма (циліндра заслінки) | Exhaust brake repair kit
+    EGR Клапан і охолоджувач EGR | EGR valve & cooler +ENG.COOL
+      RK Ремкомплект клапана EGR | EGR valve repair kit
+    MUFF Глушник / DPF / SCR | Muffler / DPF / SCR
+    ADBLUE Система AdBlue (бак, насос, дозатор) | AdBlue system
+      RK Ремкомплект насоса / дозатора AdBlue | AdBlue pump repair kit
+    NOX Датчики NOx / температури | NOx / temp sensors +ELE.SENS
+    PIPE Труби, гофри, хомути | Pipes, flex, clamps
+  ACC Навісне обладнання | Engine accessories
+    ALT Генератор | Alternator +ELE.PWR
+      RK Ремкомплект генератора | Alternator repair kit
+    START Стартер | Starter +ELE.PWR
+      RK Ремкомплект стартера | Starter repair kit
+    COMPR Пневмокомпресор | Air compressor +PNE
+      RK Ремкомплект пневмокомпресора | Air compressor repair kit
+    PSPUMP Насос ГПК (ГУР) | Power steering pump +STR
+      RK Ремкомплект насоса ГПК | PS pump repair kit
+    ACCOMP Компресор кондиціонера | A/C compressor +CAB.HVAC
+      RK Ремкомплект компресора кондиціонера | A/C compressor repair kit
+    BELT Ремені, натягувачі, ролики | Belts, tensioners, idlers
+      RK Ремкомплект приводу ременя (натягувач, ролики) | Belt drive kit
+  ECU ЕБУ двигуна | Engine ECU +ELE.CTRL
+
+TRN Трансмісія | Drivetrain [PWR]
+  CLU Зчеплення | Clutch
+    DISC Диск зчеплення | Clutch disc
+    PP Кошик (натискний диск) | Pressure plate
+    REL Вижимний підшипник | Release bearing
+    CSERVO ПГП (пневмопідсилювач) | Clutch servo +PNE
+      RK Ремкомплект ПГП | Clutch servo repair kit
+    CMC Головний циліндр, педаль | Master cylinder, pedal
+      RK Ремкомплект головного циліндра зчеплення | Clutch master cylinder repair kit
+  GBX Коробка передач | Gearbox
+    HOUS Картер КПП | Gearbox housing
+    GEAR Шестерні, вали, синхронізатори | Gears, shafts, synchros
+      RK Ремкомплект КПП (синхронізатори, підшипники) | Gearbox overhaul kit
+    SHIFT Механізм перемикання / куліса | Shift mechanism
+      RK Ремкомплект куліси | Gear shift repair kit
+    RANGE Дільник / демультиплікатор, пневмоклапани | Splitter / range valves +PNE
+      RK Ремкомплект циліндра дільника / демультиплікатора | Range / splitter cylinder repair kit
+    ACTUAT Актуатор АКПП (AMT) | AMT actuator +ELE.CTRL
+      RK Ремкомплект актуатора КПП | AMT actuator repair kit
+    RET Ретардер / інтардер | Retarder +BRK.AUX
+      RK Ремкомплект ретардера | Retarder repair kit
+    PTO Коробка відбору потужності | PTO +BOD.HYD
+      RK Ремкомплект КВП | PTO repair kit
+  PROP Карданна передача | Propshaft
+    SHAFT Карданний вал | Propeller shaft
+      RK Ремкомплект карданного вала (шліци) | Propshaft repair kit
+    UJ Хрестовина | Universal joint
+      RK Ремкомплект хрестовини | Universal joint repair kit
+    CBR Підвісний підшипник | Centre bearing +FRM
+      RK Ремкомплект підвісного підшипника | Centre bearing repair kit
+    FLNG Фланці | Flanges
+  AXL Ведучий міст | Drive axle +CHS.AXL
+    HSG Балка / картер моста | Axle housing
+    DIFF Редуктор / диференціал | Final drive / differential
+      RK Ремкомплект диференціала | Differential repair kit
+    MDIFF Міжосьовий диференціал | Inter-axle differential
+      RK Ремкомплект міжосьового диференціала | Inter-axle differential repair kit
+    SHAFT Піввісь | Half shaft
+    HUBRED Колісний редуктор | Hub reduction
+      RK Ремкомплект колісного редуктора | Hub reduction repair kit
+    SEAL Сальники, прокладки | Seals, gaskets
+
+CHS Ходова частина | Running gear [ALL]
+  AXL Осі | Axles
+    FRONT Передня керована вісь | Front steer axle [PWR] +STR
+    TRAIL Вісь причепа / напівпричепа | Trailer axle [TOW]
+    LIFT Механізм підйому осі | Axle lift +PNE
+      RK Ремкомплект механізму підйому осі | Axle lift repair kit
+    SELF Самоустановлювана вісь | Self-steering axle [TOW]
+      RK Ремкомплект самоустановлюваної осі | Self-steering axle repair kit
+    KING Шкворень поворотного кулака | Steering king pin [PWR] +STR
+      RK Ремкомплект шкворня (втулки, шайби, підшипник) | King pin repair kit
+  HUB Маточина (ступиця) | Wheel hub +BRK.WHB
+    HUBB Маточина | Hub
+      RK Ремкомплект маточини (підшипники, сальник) | Wheel hub repair kit
+    BRG Підшипники маточини | Hub bearings
+    SEAL Сальник маточини | Hub seal
+    CAP Ковпак маточини | Hub cap
+    NUT Гайка осі | Axle nut
+    STUD Шпильки й гайки коліс | Wheel studs & nuts
+  WHL Колеса і шини | Wheels & tyres
+    RIM Диск колеса | Wheel rim
+    TYRE Шина | Tyre
+    VALVE Вентиль, подовжувач | Valve, extension
+    SPARE Тримач запасного колеса | Spare wheel carrier +FRM
+  SUS Підвіска | Suspension
+    LEAF Ресорна | Leaf spring suspension
+      SPRING Ресора / лист ресори | Leaf spring
+        RK Ремкомплект ресори (палець, втулки) | Spring pin & bush kit
+      PIN Палець, втулка ресори | Spring pin, bush
+      SHACK Сережка ресори | Spring shackle
+        RK Ремкомплект сережки ресори | Spring shackle repair kit
+      BRKT Кронштейн ресори | Spring bracket +FRM
+      UBOLT Стрем'янка | U-bolt
+      BAL Балансир | Bogie / equaliser
+        RK Ремкомплект балансира | Bogie repair kit
+    AIR Пневматична | Air suspension +PNE
+      BAG Пневмоподушка | Air spring
+      ARM Несуча балка (трейлінг-арм) | Trailing arm
+        RK Ремкомплект кріплення балки (втулка, болт) | Trailing arm bush kit
+      HANGER Опорний кронштейн підвіски | Suspension hanger +FRM
+      LVL Кран рівня підлоги | Levelling valve
+        RK Ремкомплект крана рівня підлоги | Levelling valve repair kit
+      ECAS Блок ECAS | ECAS unit +ELE.CTRL
+    ROD Реактивні тяги | Torque rods
+      VROD V-подібна тяга | V-rod
+        RK Ремкомплект V-подібної тяги | V-rod repair kit
+      TROD Пряма реактивна тяга | Straight torque rod
+        RK Ремкомплект реактивної тяги | Torque rod repair kit
+      BUSH Сайлентблоки, шарніри | Bushes, ball joints
+        RK Ремкомплект сайлентблоків тяг | Torque rod bush kit
+    STAB Стабілізатор поперечної стійкості | Anti-roll bar
+      BAR Штанга стабілізатора | Stabiliser bar
+        RK Ремкомплект стабілізатора | Stabiliser repair kit
+      LINK Тяга стабілізатора | Stabiliser link
+        RK Ремкомплект тяги стабілізатора | Stabiliser link repair kit
+      BUSH Втулки стабілізатора | Stabiliser bushes
+        RK Ремкомплект втулок стабілізатора | Stabiliser bush kit
+    SHOCK Амортизатор | Shock absorber
+      RK Ремкомплект кріплення амортизатора (втулки) | Shock absorber bush kit
+    BUMP Відбійник | Bump stop
+
+STR Рульове керування | Steering [PWR]
+  GEAR Рульовий механізм (ГПК) | Steering gear
+    RK Ремкомплект рульового механізму | Steering gear repair kit
+  RES Бачок ГПК, шланги | PS reservoir, hoses
+  COL Рульова колонка, кардан | Steering column, joint
+    RK Ремкомплект кардана рульової колонки | Steering column joint repair kit
+  WHEEL Кермо | Steering wheel
+  DLINK Поздовжня тяга | Drag link
+    RK Ремкомплект поздовжньої тяги | Drag link repair kit
+  TLINK Поперечна тяга | Tie rod
+    RK Ремкомплект поперечної тяги | Tie rod repair kit
+  BALL Наконечник тяги | Tie rod end
+    RK Ремкомплект наконечника тяги | Tie rod end repair kit
+  ARM Сошка, важелі кулака | Pitman / steering arms
+  KNUCK Поворотний кулак | Steering knuckle
+
+PNE Пневмосистема (живлення) | Air supply [ALL]
+  DRY Осушувач / APU | Air dryer / APU [PWR]
+    RK Ремкомплект осушувача | Air dryer repair kit
+  CART Картридж осушувача | Dryer cartridge [PWR]
+  PROT 4-контурний захисний клапан | Four-circuit protection valve [PWR]
+    RK Ремкомплект 4-контурного клапана | Protection valve repair kit
+  TANK Ресивер | Air tank
+  DRAIN Кран зливу конденсату | Drain valve
+  PIPE Пневмотрубки, шланги | Air lines, hoses
+  FIT Фітинги, перехідники | Fittings, connectors
+  COIL Спіральні пневмошланги | Air coils +CPL.CON
+  HEAD Пневмоголовки (Palm) | Coupling heads +CPL.CON
+    RK Ремкомплект пневмоголовки (ущільнювачі) | Coupling head seal kit
+
+BRK Гальмівна система | Brakes [ALL]
+  CTRL Апарати керування | Control valves
+    FOOT Головний гальмівний кран | Foot brake valve [PWR]
+      RK Ремкомплект головного гальмівного крана | Foot brake valve repair kit
+    HAND Кран стоянкового гальма | Hand brake valve [PWR]
+      RK Ремкомплект крана стоянкового гальма | Hand brake valve repair kit
+    RELAY Прискорювальний клапан | Relay valve
+      RK Ремкомплект прискорювального клапана | Relay valve repair kit
+    TCV Клапан керування причепом | Trailer control valve [PWR]
+      RK Ремкомплект клапана керування причепом | Trailer control valve repair kit
+    TBV Клапан гальмування причепа | Trailer emergency / relay-emergency valve [TOW]
+      RK Ремкомплект клапана гальмування причепа | Trailer emergency valve repair kit
+    LSV Регулятор гальмівних сил | Load-sensing valve
+      RK Ремкомплект регулятора гальмівних сил | Load-sensing valve repair kit
+    QRV Клапан швидкого розгальмування | Quick release valve
+      RK Ремкомплект клапана швидкого розгальмування | Quick release valve repair kit
+    PARK Клапан розгальмування / паркувальний | Park / shunt valve [TOW]
+      RK Ремкомплект паркувального клапана | Park valve repair kit
+  ABS ABS / EBS
+    MOD Модулятор ABS / EBS | ABS / EBS modulator
+      RK Ремкомплект модулятора | Modulator repair kit
+    ECU ЕБУ ABS / EBS | ABS / EBS ECU +ELE.CTRL
+    SENS Датчик ABS | ABS wheel speed sensor +ELE.SENS +CHS.HUB
+      RK Ремкомплект датчика ABS (втулка, мастило) | ABS sensor bush kit
+    RING Зубчастий ротор ABS | ABS tone ring +CHS.HUB
+    TEBS Модуль TEBS | Trailer EBS module [TOW]
+  ACT Виконавчі пристрої | Actuators
+    CHAM Гальмівна камера | Service brake chamber
+      RK Ремкомплект гальмівної камери (мембрана) | Brake chamber repair kit
+    SPCH Енергоакумулятор | Spring brake chamber
+      RK Ремкомплект енергоакумулятора | Spring brake repair kit
+  WHB Колісні гальма | Wheel brakes
+    DRUM Барабанні | Drum brakes
+      DRUM Гальмівний барабан | Brake drum
+      SHOE Колодка / накладки | Brake shoe / linings
+        RK Ремкомплект колодок (пружини, ролики, осі) | Brake shoe repair kit
+      CAM Розтискний S-кулак | S-cam
+        RK Ремкомплект розтискного кулака | S-cam repair kit
+      SLACK Регулювальний важіль | Slack adjuster
+        RK Ремкомплект регулювального важеля | Slack adjuster repair kit
+      BUSH Втулки кулака | Cam bushes
+    DISC Дискові | Disc brakes
+      DISC Гальмівний диск | Brake disc
+      PAD Гальмівні колодки | Brake pads
+        RK Ремкомплект колодок (пружини, планка-фіксатор) | Pad retainer kit
+      CAL Супорт | Caliper
+        RK Ремкомплекти супорта | Caliper repair kits
+          GUIDE Ремкомплект направляючих | Guide pin kit
+          PISTON Ремкомплект поршнів (пильовики) | Piston & boot kit
+          ADJ Ремкомплект механізму регулювання | Adjuster mechanism kit
+          SHAFT Ремкомплект вала / важеля супорта | Caliper shaft / lever kit
+          CAP Ремкомплект заглушок і кришок супорта | Sealing cap kit
+      WEAR Датчик зносу колодок | Pad wear sensor +ELE.SENS
+  AUX Допоміжні гальма | Auxiliary brakes [PWR]
+
+CPL Зчіпні пристрої | Coupling devices [ALL]
+  5W Сідельно-зчіпний пристрій | Fifth wheel [TRC]
+    PLATE Плита сідла | Fifth wheel plate
+    LOCK Замковий механізм | Locking mechanism
+      RK Ремкомплект сідла (замковий механізм) | Fifth wheel repair kit
+    LINER Вкладиш (накладка) сідла | Fifth wheel liner
+    MOUNT Монтажна плита | Mounting plate +FRM
+  KPIN Шкворень напівпричепа | King pin [SMT]
+    PIN Шкворень 2" / 3.5" | King pin 2" / 3.5"
+    PLATE Опорний лист шкворня | King pin plate +FRM
+  HITCH Тягово-зчіпний пристрій | Towing hitch [RGD]
+    JAW Зів, палець ТСУ | Jaw, coupling pin
+      RK Ремкомплект ТСУ | Towing hitch repair kit
+    SPRING Демпфери ТСУ | Hitch dampers
+    MOUNT Поперечина / кріплення ТСУ | Hitch crossmember +FRM
+  DRAW Дишло і поворотний круг | Drawbar & turntable [TRL]
+    BAR Дишло | Drawbar
+      RK Ремкомплект кріплення дишла (втулки, пальці) | Drawbar bush kit
+    EYE Зчіпна петля | Drawbar eye
+      RK Ремкомплект зчіпної петлі (втулка) | Drawbar eye bush kit
+    TURN Поворотний круг | Turntable
+      RK Ремкомплект поворотного круга | Turntable repair kit
+    SUPP Підтримка дишла | Drawbar support spring
+  CON З'єднання тягач–причіп | Tractor–trailer connections
+    ELC Електророз'єми 7 / 15-pin, ISO 7638 | Electrical connectors +ELE.HARN
+    SPIR Електричні спіралі | Electrical coils +ELE.HARN
+  LEG Опорні пристрої | Landing gear [SMT]
+    LEG Опорна стійка | Landing leg
+    GBX Редуктор опори | Landing gear gearbox
+      RK Ремкомплект редуктора опори | Landing gear repair kit
+    CRANK Рукоятка | Crank handle
+    FOOT Опорна лапа / башмак | Foot / sand shoe
+
+FRM Рама | Frame [ALL]
+  RAIL Лонжерони | Side members
+  CROSS Поперечини | Cross members
+  BRKT Кронштейни | Brackets
+  BUMP Задній бампер / брус | Rear bumper / bar
+  SIDE Бічний захист | Side guard
+  UND Протипідкатний захист | Underrun protection
+  MUD Бризковики, кронштейни крил | Mudflaps, wing brackets
+  FEND Крила / підкрилки | Mudguards / fenders
+  TBOX Інструментальний ящик | Tool box
+  PALL Ящик для піддонів | Pallet box [TOW]
+
+CAB Кабіна | Cab [PWR]
+  SHELL Кузов кабіни | Cab body
+    DOOR Двері, замки, склопідйомники | Doors, locks, window lifters
+      RK Ремкомплект замка дверей | Door lock repair kit
+    PANEL Облицювання, решітка | Panels, grille
+    BUMP Передній бампер | Front bumper +FRM
+    STEP Підніжки | Steps
+    MIRR Дзеркала | Mirrors
+      RK Ремкомплект дзеркала | Mirror repair kit
+    GLASS Скло, ущільнювачі | Glass, seals
+    WIPER Склоочисник, омивач | Wipers, washer +ELE
+      RK Ремкомплект трапеції склоочисника | Wiper linkage repair kit
+    DEFL Обтікач / спойлер | Deflector / spoiler
+    SUN Сонцезахисний козирок | Sun visor
+  SUSP Підвіска кабіни | Cab suspension
+    SHOCK Амортизатор кабіни | Cab shock absorber
+    BAG Пневмоподушка кабіни | Cab air spring +PNE
+    TILT Механізм перекидання | Cab tilt pump / cylinder
+      RK Ремкомплект насоса / циліндра перекидання | Cab tilt repair kit
+    LOCK Замок кабіни | Cab lock
+      RK Ремкомплект замка кабіни | Cab lock repair kit
+    BUSH Сайлентблоки кабіни | Cab mount bushes
+      RK Ремкомплект сайлентблоків кабіни | Cab mount bush kit
+  INT Інтер'єр | Interior
+    SEAT Сидіння | Seat +PNE
+      RK Ремкомплект сидіння | Seat repair kit
+    DASH Панель приладів | Dashboard +ELE
+    PEDAL Педальний вузол | Pedal box
+      RK Ремкомплект педального вузла | Pedal box repair kit
+    BUNK Спальник | Bunk
+  HVAC Опалення і кондиціювання | Heating & A/C
+    HEAT Пічка, радіатор пічки | Heater core +ENG.COOL
+    PARK Автономний обігрівач | Parking heater
+      RK Ремкомплект автономного обігрівача | Parking heater repair kit
+    COND Конденсер, осушувач A/C | Condenser, receiver-drier
+    BLOW Вентилятор салону | Blower motor
+
+ELE Електрообладнання | Electrical system [ALL]
+  PWR Живлення | Power supply [PWR]
+    BAT АКБ | Battery
+    MSW Вимикач маси | Battery master switch
+  LGT Освітлення і сигналізація | Lighting & signalling
+    HEAD Фари | Headlamps [PWR]
+    FOG Протитуманні фари | Fog lamps
+    REAR Задні ліхтарі | Rear lamps
+    SIDE Габаритні / бокові ліхтарі | Side marker lamps
+    PLATE Підсвічування номера | Licence plate lamp
+    BEACON Маячки | Beacons
+    BULB Лампи | Bulbs
+  HARN Проводка, роз'єми | Wiring harness, connectors
+  SENS Датчики | Sensors
+  CTRL Блоки керування, реле | Control units, relays
+    RELAY Реле, запобіжники | Relays, fuses
+    CU Блоки керування кузовом / CAN | Body / CAN control units
+  INFO Тахограф, спідометр | Tachograph, speedometer [PWR]
+  HORN Звуковий сигнал | Horn [PWR]
+
+BOD Надбудова / кузов | Body / superstructure [ALL]
+  CURT Тентований / шторний | Curtainsider [RGD,TRL,SMT]
+    TARP Тент | Tarpaulin
+    FRAME Каркас, дуги, стійки | Frame, bows, stakes
+    BUCK Натяжники, ремені | Tensioners, straps
+    ROOF Зсувний дах | Sliding roof
+      RK Ремкомплект зсувного даху | Sliding roof repair kit
+  BOX Борти і підлога | Sides & floor [RGD,TRL,SMT]
+    SIDE Борти, завіси, замки | Side boards, hinges, locks
+    FLOOR Підлога | Floor
+    DOOR Задні ворота | Rear doors
+      RK Ремкомплект завіс / замків воріт | Rear door hinge & lock kit
+    LASH Кріплення вантажу | Load securing
+  REF Рефрижератор / ізотерм | Reefer / insulated [RGD,TRL,SMT]
+    UNIT Холодильна установка | Refrigeration unit
+    PANEL Сендвіч-панелі | Sandwich panels
+  TIP Самоскид | Tipper [RGD,TRL,SMT]
+    CYL Гідроциліндр перекидання | Tipping cylinder
+      RK Ремкомплект гідроциліндра | Tipping cylinder seal kit
+    TAILG Задній борт самоскида | Tipper tailgate
+  HYD Гідравліка надбудови (у т.ч. гідрофікація тягача) | Body hydraulics / wet kit
+    PUMP Гідронасос | Hydraulic pump
+      RK Ремкомплект гідронасоса | Hydraulic pump seal kit
+    TANK Гідробак | Hydraulic tank
+    VALVE Гідророзподільник | Control valve
+      RK Ремкомплект гідророзподільника | Control valve seal kit
+    HOSE РВД | Hydraulic hoses
+  TANKR Цистерна | Tanker [RGD,TRL,SMT]
+    VALVE Донні / дихальні клапани | Bottom / vent valves
+      RK Ремкомплект клапанів цистерни | Tanker valve repair kit
+    HATCH Горловини люків | Manlids

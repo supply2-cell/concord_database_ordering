@@ -1,0 +1,1340 @@
+{
+ "manufacturers": [
+  {
+   "code": "SCHMITZ",
+   "name": "Schmitz Cargobull",
+   "role": "trailer",
+   "applies": [
+    "SMT",
+    "TRL"
+   ],
+   "supplies": [],
+   "oem_format": "власні номери, формат уточнити з баз",
+   "oem_regex": "",
+   "notes": "осі ROTOS (власні), також BPW/SAF"
+  },
+  {
+   "code": "KRONE",
+   "name": "Krone",
+   "role": "trailer",
+   "applies": [
+    "SMT",
+    "TRL"
+   ],
+   "supplies": [],
+   "oem_format": "власні номери, формат уточнити з баз",
+   "oem_regex": "",
+   "notes": "осі Krone/Gigant, BPW, SAF"
+  },
+  {
+   "code": "KOGEL",
+   "name": "Kögel",
+   "role": "trailer",
+   "applies": [
+    "SMT",
+    "TRL"
+   ],
+   "supplies": [],
+   "oem_format": "власні номери, формат уточнити з баз",
+   "oem_regex": "",
+   "notes": "осі Kögel/SAF, BPW"
+  },
+  {
+   "code": "WIELTON",
+   "name": "Wielton",
+   "role": "trailer",
+   "applies": [
+    "SMT",
+    "TRL"
+   ],
+   "supplies": [],
+   "oem_format": "власні номери, формат уточнити з баз",
+   "oem_regex": "",
+   "notes": "осі BPW, SAF"
+  },
+  {
+   "code": "SCHWARZ",
+   "name": "Schwarzmüller",
+   "role": "trailer",
+   "applies": [
+    "SMT",
+    "TRL"
+   ],
+   "supplies": [],
+   "oem_format": "власні номери, формат уточнити з баз",
+   "oem_regex": "",
+   "notes": ""
+  },
+  {
+   "code": "FLIEGL",
+   "name": "Fliegl",
+   "role": "trailer",
+   "applies": [
+    "SMT",
+    "TRL"
+   ],
+   "supplies": [],
+   "oem_format": "власні номери, формат уточнити з баз",
+   "oem_regex": "",
+   "notes": ""
+  },
+  {
+   "code": "KASS",
+   "name": "Kässbohrer",
+   "role": "trailer",
+   "applies": [
+    "SMT",
+    "TRL"
+   ],
+   "supplies": [],
+   "oem_format": "власні номери, формат уточнити з баз",
+   "oem_regex": "",
+   "notes": ""
+  },
+  {
+   "code": "LAMBERET",
+   "name": "Lamberet",
+   "role": "trailer",
+   "applies": [
+    "SMT",
+    "TRL"
+   ],
+   "supplies": [
+    "BOD.REF"
+   ],
+   "oem_format": "власні номери, формат уточнити з баз",
+   "oem_regex": "",
+   "notes": "рефрижератори"
+  },
+  {
+   "code": "CHEREAU",
+   "name": "Chereau",
+   "role": "trailer",
+   "applies": [
+    "SMT",
+    "TRL"
+   ],
+   "supplies": [
+    "BOD.REF"
+   ],
+   "oem_format": "власні номери, формат уточнити з баз",
+   "oem_regex": "",
+   "notes": "рефрижератори"
+  },
+  {
+   "code": "TIRSAN",
+   "name": "Tirsan",
+   "role": "trailer",
+   "applies": [
+    "SMT",
+    "TRL"
+   ],
+   "supplies": [],
+   "oem_format": "власні номери, формат уточнити з баз",
+   "oem_regex": "",
+   "notes": ""
+  },
+  {
+   "code": "FAYMON",
+   "name": "Faymonville",
+   "role": "trailer",
+   "applies": [
+    "SMT",
+    "TRL"
+   ],
+   "supplies": [],
+   "oem_format": "власні номери, формат уточнити з баз",
+   "oem_regex": "",
+   "notes": "трали"
+  },
+  {
+   "code": "GOLDHOF",
+   "name": "Goldhofer",
+   "role": "trailer",
+   "applies": [
+    "SMT",
+    "TRL"
+   ],
+   "supplies": [],
+   "oem_format": "власні номери, формат уточнити з баз",
+   "oem_regex": "",
+   "notes": "трали"
+  },
+  {
+   "code": "BPW",
+   "name": "BPW Bergische Achsen",
+   "role": "component",
+   "applies": [
+    "SMT",
+    "TRL"
+   ],
+   "supplies": [
+    "CHS.AXL.TRAIL",
+    "CHS.AXL.SELF",
+    "CHS.AXL.LIFT",
+    "CHS.HUB",
+    "CHS.SUS.AIR",
+    "CHS.SUS.LEAF",
+    "BRK.WHB",
+    "BRK.ACT"
+   ],
+   "oem_format": "nn.nnn.nn.nn.n (запчастини), 02.nnnn.nn.nn (нормалі / покупні), 09.801.* = ремкомплекти",
+   "oem_regex": "^0[2-9]\\d{8}$",
+   "notes": "офіційні каталоги BPW, осі мають окремий код виду 27.68.743.000"
+  },
+  {
+   "code": "SAF",
+   "name": "SAF-Holland (осі SAF)",
+   "role": "component",
+   "applies": [
+    "SMT",
+    "TRL"
+   ],
+   "supplies": [
+    "CHS.AXL.TRAIL",
+    "CHS.AXL.SELF",
+    "CHS.AXL.LIFT",
+    "CHS.HUB",
+    "CHS.SUS.AIR",
+    "BRK.WHB"
+   ],
+   "oem_format": "11 цифр з провідним 0 (03057000600) або 10 цифр на 1–4 (3434365000)",
+   "oem_regex": "^(0\\d{10}|[1-4]\\d{9})$",
+   "notes": "формат з крапками уточнити з каталогу, 10-значні на 4 перетинаються з WABCO — розрізняти за маркою в рядку"
+  },
+  {
+   "code": "HOLLAND",
+   "name": "SAF-Holland (Holland: сідла, шкворні, опори)",
+   "role": "component",
+   "applies": [
+    "TRC",
+    "SMT"
+   ],
+   "supplies": [
+    "CPL.5W",
+    "CPL.KPIN",
+    "CPL.LEG"
+   ],
+   "oem_format": "XA-nnnnn / XB-nnnnn, RK-…",
+   "oem_regex": "^(X[AB]|RK)-?\\d{4,6}[A-Z]*$",
+   "notes": "XB-60144 — вкладиш сідла FW3410 (з ваших даних)"
+  },
+  {
+   "code": "ROR",
+   "name": "ROR / Meritor",
+   "role": "component",
+   "applies": [
+    "SMT",
+    "TRL"
+   ],
+   "supplies": [
+    "CHS.AXL.TRAIL",
+    "CHS.HUB",
+    "BRK.WHB"
+   ],
+   "oem_format": "формат уточнити",
+   "oem_regex": "",
+   "notes": ""
+  },
+  {
+   "code": "GIGANT",
+   "name": "Gigant",
+   "role": "component",
+   "applies": [
+    "SMT",
+    "TRL"
+   ],
+   "supplies": [
+    "CHS.AXL.TRAIL",
+    "CHS.HUB",
+    "BRK.WHB"
+   ],
+   "oem_format": "формат уточнити",
+   "oem_regex": "",
+   "notes": ""
+  },
+  {
+   "code": "VALX",
+   "name": "Valx",
+   "role": "component",
+   "applies": [
+    "SMT",
+    "TRL"
+   ],
+   "supplies": [
+    "CHS.AXL.TRAIL",
+    "CHS.SUS.AIR"
+   ],
+   "oem_format": "формат уточнити",
+   "oem_regex": "",
+   "notes": ""
+  },
+  {
+   "code": "HENDR",
+   "name": "Hendrickson",
+   "role": "component",
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "supplies": [
+    "CHS.SUS"
+   ],
+   "oem_format": "формат уточнити",
+   "oem_regex": "",
+   "notes": ""
+  },
+  {
+   "code": "KNORR",
+   "name": "Knorr-Bremse",
+   "role": "component",
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "supplies": [
+    "BRK",
+    "PNE",
+    "TRN.CLU.CSERVO"
+   ],
+   "oem_format": "K + 6 цифр (+ суфікс), I / II + 5 цифр",
+   "oem_regex": "^(K\\d{6}([A-Z]\\d{2})?|II?\\d{5})$",
+   "notes": "супорти SN6/SN7/SB6/SB7/SK7 (це назви типів, не OEM)"
+  },
+  {
+   "code": "WABCO",
+   "name": "WABCO / ZF CV Systems",
+   "role": "component",
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "supplies": [
+    "BRK",
+    "PNE",
+    "CHS.SUS.AIR.ECAS",
+    "CHS.SUS.AIR.LVL"
+   ],
+   "oem_format": "10 цифр (441 032 808 0), суфікс R = відновлений",
+   "oem_regex": "^[4-9]\\d{8}[0-9R]$",
+   "notes": "перші 3 цифри = група виробу (див. wabco_prefix.csv)"
+  },
+  {
+   "code": "HALDEX",
+   "name": "Haldex",
+   "role": "component",
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "supplies": [
+    "BRK.WHB",
+    "BRK.CTRL",
+    "PNE"
+   ],
+   "oem_format": "формат уточнити",
+   "oem_regex": "",
+   "notes": "регулювальні важелі, супорти Modul X, клапани"
+  },
+  {
+   "code": "JOST",
+   "name": "JOST (у т.ч. Rockinger)",
+   "role": "component",
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "supplies": [
+    "CPL.5W",
+    "CPL.KPIN",
+    "CPL.LEG",
+    "CPL.HITCH",
+    "CPL.DRAW.TURN"
+   ],
+   "oem_format": "SK + цифри (ремкомплекти), JSK (моделі сідел)",
+   "oem_regex": "^J?SK[0-9A-Z-]{3,12}$",
+   "notes": ""
+  },
+  {
+   "code": "FONTAINE",
+   "name": "Fontaine",
+   "role": "component",
+   "applies": [
+    "TRC"
+   ],
+   "supplies": [
+    "CPL.5W"
+   ],
+   "oem_format": "формат уточнити",
+   "oem_regex": "",
+   "notes": ""
+  },
+  {
+   "code": "VORL",
+   "name": "V.Orlandi",
+   "role": "component",
+   "applies": [
+    "RGD",
+    "TRL"
+   ],
+   "supplies": [
+    "CPL.HITCH",
+    "CPL.DRAW"
+   ],
+   "oem_format": "формат уточнити",
+   "oem_regex": "",
+   "notes": ""
+  },
+  {
+   "code": "RINGF",
+   "name": "Ringfeder",
+   "role": "component",
+   "applies": [
+    "RGD",
+    "TRL"
+   ],
+   "supplies": [
+    "CPL.HITCH",
+    "CPL.DRAW"
+   ],
+   "oem_format": "формат уточнити",
+   "oem_regex": "",
+   "notes": ""
+  },
+  {
+   "code": "ASPOCK",
+   "name": "Aspöck",
+   "role": "component",
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "supplies": [
+    "ELE.LGT"
+   ],
+   "oem_format": "формат уточнити",
+   "oem_regex": "",
+   "notes": ""
+  },
+  {
+   "code": "HELLA",
+   "name": "Hella",
+   "role": "component",
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "supplies": [
+    "ELE.LGT",
+    "ELE.SENS"
+   ],
+   "oem_format": "формат уточнити",
+   "oem_regex": "",
+   "notes": ""
+  },
+  {
+   "code": "CONTI",
+   "name": "ContiTech",
+   "role": "component",
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "supplies": [
+    "CHS.SUS.AIR.BAG",
+    "CAB.SUSP.BAG"
+   ],
+   "oem_format": "формат уточнити",
+   "oem_regex": "",
+   "notes": ""
+  },
+  {
+   "code": "FIRESTONE",
+   "name": "Firestone",
+   "role": "component",
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "supplies": [
+    "CHS.SUS.AIR.BAG",
+    "CAB.SUSP.BAG"
+   ],
+   "oem_format": "формат уточнити",
+   "oem_regex": "",
+   "notes": ""
+  },
+  {
+   "code": "VIBRA",
+   "name": "Vibracoustic",
+   "role": "component",
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "supplies": [
+    "CHS.SUS.AIR.BAG",
+    "CAB.SUSP.BAG"
+   ],
+   "oem_format": "формат уточнити",
+   "oem_regex": "",
+   "notes": ""
+  }
+ ],
+ "examples": [
+  {
+   "manufacturer": "BPW",
+   "oem": "09.362.72.21.0",
+   "name_ua": "Супорт ECO Disc TS2 3709 без колодок (10/2019–04/2021)",
+   "node": "BRK.WHB.DISC.CAL",
+   "applies_note": "TS2 3709",
+   "source": "bpw_ecodisc",
+   "norm": "0936272210",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.362.72.31.0",
+   "name_ua": "Супорт ECO Disc TS2 3709 без колодок (з 05/2021)",
+   "node": "BRK.WHB.DISC.CAL",
+   "applies_note": "TS2 3709",
+   "source": "bpw_ecodisc",
+   "norm": "0936272310",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.362.72.21.3",
+   "name_ua": "Супорт ECO Disc TS2 3709 з колодками",
+   "node": "BRK.WHB.DISC.CAL",
+   "applies_note": "TS2 3709",
+   "source": "bpw_ecodisc",
+   "norm": "0936272213",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.362.72.23.0",
+   "name_ua": "Супорт ECO Disc TS2 4309 без колодок",
+   "node": "BRK.WHB.DISC.CAL",
+   "applies_note": "TS2 4309",
+   "source": "bpw_ecodisc",
+   "norm": "0936272230",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.362.72.33.0",
+   "name_ua": "Супорт ECO Disc TS2 4309 без колодок (з 05/2021)",
+   "node": "BRK.WHB.DISC.CAL",
+   "applies_note": "TS2 4309",
+   "source": "bpw_ecodisc",
+   "norm": "0936272330",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.362.72.13.0",
+   "name_ua": "Супорт ECO Disc TSB 3709 без колодок",
+   "node": "BRK.WHB.DISC.CAL",
+   "applies_note": "TSB 3709",
+   "source": "bpw_ecodisc",
+   "norm": "0936272130",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.362.72.11.0",
+   "name_ua": "Супорт ECO Disc TSB 4309 без колодок",
+   "node": "BRK.WHB.DISC.CAL",
+   "applies_note": "TSB 4309",
+   "source": "bpw_ecodisc",
+   "norm": "0936272110",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.362.72.15.0",
+   "name_ua": "Супорт ECO Disc TSB 4312 без колодок",
+   "node": "BRK.WHB.DISC.CAL",
+   "applies_note": "TSB 4312",
+   "source": "bpw_ecodisc",
+   "norm": "0936272150",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "03.088.34.23.7",
+   "name_ua": "Гальмівний диск TS2/TSB 3709 (9–10 т, ECO Plus 3)",
+   "node": "BRK.WHB.DISC.DISC",
+   "applies_note": "TS2/TSB 3709",
+   "source": "bpw_ecodisc",
+   "norm": "0308834237",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "03.088.34.24.7",
+   "name_ua": "Гальмівний диск TS2/TSB 3709 (9–10 т, ECO Plus 3)",
+   "node": "BRK.WHB.DISC.DISC",
+   "applies_note": "TS2/TSB 3709",
+   "source": "bpw_ecodisc",
+   "norm": "0308834247",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "03.088.34.21.7",
+   "name_ua": "Гальмівний диск TS2/TSB 3709 (10 т)",
+   "node": "BRK.WHB.DISC.DISC",
+   "applies_note": "TS2/TSB 3709",
+   "source": "bpw_ecodisc",
+   "norm": "0308834217",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "03.088.35.12.7",
+   "name_ua": "Гальмівний диск TS2/TSB 4309, TSB 4312 (заміна 03.088.35.05.7)",
+   "node": "BRK.WHB.DISC.DISC",
+   "applies_note": "TS2/TSB 4309",
+   "source": "bpw_ecodisc",
+   "norm": "0308835127",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "05.092.90.29.0",
+   "name_ua": "Колодки TS2 (BPW 8201)",
+   "node": "BRK.WHB.DISC.PAD",
+   "applies_note": "TS2",
+   "source": "bpw_ecodisc",
+   "norm": "0509290290",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "05.092.90.13.1",
+   "name_ua": "Колодки TSB (BPW 8200)",
+   "node": "BRK.WHB.DISC.PAD",
+   "applies_note": "TSB",
+   "source": "bpw_ecodisc",
+   "norm": "0509290131",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "05.092.90.20.1",
+   "name_ua": "Колодки TSB (BPW 8301)",
+   "node": "BRK.WHB.DISC.PAD",
+   "applies_note": "TSB",
+   "source": "bpw_ecodisc",
+   "norm": "0509290201",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.801.08.72.0",
+   "name_ua": "Комплект колодок TS2",
+   "node": "BRK.WHB.DISC.PAD",
+   "applies_note": "TS2",
+   "source": "bpw_ecodisc",
+   "norm": "0980108720",
+   "is_repkit_by_number": true,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.801.07.96.0",
+   "name_ua": "Комплект колодок TSB (BPW 8200)",
+   "node": "BRK.WHB.DISC.PAD",
+   "applies_note": "TSB",
+   "source": "bpw_ecodisc",
+   "norm": "0980107960",
+   "is_repkit_by_number": true,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.801.08.70.0",
+   "name_ua": "Ремкомплект фіксатора колодок TS2",
+   "node": "BRK.WHB.DISC.PAD.RK",
+   "applies_note": "TS2",
+   "source": "bpw_ecodisc",
+   "norm": "0980108700",
+   "is_repkit_by_number": true,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.801.07.68.1",
+   "name_ua": "Ремкомплект фіксатора колодок TSB",
+   "node": "BRK.WHB.DISC.PAD.RK",
+   "applies_note": "TSB",
+   "source": "bpw_ecodisc",
+   "norm": "0980107681",
+   "is_repkit_by_number": true,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.801.08.69.0",
+   "name_ua": "Ремкомплект направляючих супорта TS2",
+   "node": "BRK.WHB.DISC.CAL.RK.GUIDE",
+   "applies_note": "TS2",
+   "source": "bpw_ecodisc",
+   "norm": "0980108690",
+   "is_repkit_by_number": true,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.801.07.61.1",
+   "name_ua": "Ремкомплект направляючих супорта TSB",
+   "node": "BRK.WHB.DISC.CAL.RK.GUIDE",
+   "applies_note": "TSB",
+   "source": "bpw_ecodisc",
+   "norm": "0980107611",
+   "is_repkit_by_number": true,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.801.07.62.0",
+   "name_ua": "Ремкомплект ущільнень направляючих TSB",
+   "node": "BRK.WHB.DISC.CAL.RK.GUIDE",
+   "applies_note": "TSB",
+   "source": "bpw_ecodisc",
+   "norm": "0980107620",
+   "is_repkit_by_number": true,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.801.08.81.0",
+   "name_ua": "Ремкомплект пильовиків супорта TS2",
+   "node": "BRK.WHB.DISC.CAL.RK.PISTON",
+   "applies_note": "TS2",
+   "source": "bpw_ecodisc",
+   "norm": "0980108810",
+   "is_repkit_by_number": true,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.801.07.63.1",
+   "name_ua": "Ремкомплект штовхачів супорта TSB",
+   "node": "BRK.WHB.DISC.CAL.RK.PISTON",
+   "applies_note": "TSB",
+   "source": "bpw_ecodisc",
+   "norm": "0980107631",
+   "is_repkit_by_number": true,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.801.08.71.2",
+   "name_ua": "Ремкомплект гвинтів і заглушок кришки TS2",
+   "node": "BRK.WHB.DISC.CAL.RK.CAP",
+   "applies_note": "TS2",
+   "source": "bpw_ecodisc",
+   "norm": "0980108712",
+   "is_repkit_by_number": true,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.801.08.47.1",
+   "name_ua": "Ремкомплект гвинтів і заглушок кришки TSB",
+   "node": "BRK.WHB.DISC.CAL.RK.CAP",
+   "applies_note": "TSB",
+   "source": "bpw_ecodisc",
+   "norm": "0980108471",
+   "is_repkit_by_number": true,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.801.07.87.0",
+   "name_ua": "Ремкомплект заглушок TSB",
+   "node": "BRK.WHB.DISC.CAL.RK.CAP",
+   "applies_note": "TSB",
+   "source": "bpw_ecodisc",
+   "norm": "0980107870",
+   "is_repkit_by_number": true,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "05.001.00.70.0",
+   "name_ua": "Направляючий палець довгий (фіксована опора) TS2/TSB",
+   "node": "BRK.WHB.DISC.CAL",
+   "applies_note": "TS2/TSB",
+   "source": "bpw_ecodisc",
+   "norm": "0500100700",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "03.112.33.13.0",
+   "name_ua": "Втулка направляючої (фіксована опора) TS2",
+   "node": "BRK.WHB.DISC.CAL",
+   "applies_note": "TS2",
+   "source": "bpw_ecodisc",
+   "norm": "0311233130",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "05.130.08.30.0",
+   "name_ua": "Пильовик TS2",
+   "node": "BRK.WHB.DISC.CAL",
+   "applies_note": "TS2",
+   "source": "bpw_ecodisc",
+   "norm": "0513008300",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "05.801.48.92.0",
+   "name_ua": "Датчик зносу колодок, комплект на вісь TS2",
+   "node": "BRK.WHB.DISC.WEAR",
+   "applies_note": "TS2",
+   "source": "bpw_ecodisc",
+   "norm": "0580148920",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "05.801.49.50.0",
+   "name_ua": "Датчик зносу колодок, комплект на вісь TSB",
+   "node": "BRK.WHB.DISC.WEAR",
+   "applies_note": "TSB",
+   "source": "bpw_ecodisc",
+   "norm": "0580149500",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.801.08.40.0",
+   "name_ua": "Ремкомплект маточини ECO Plus 3 (8–9 т) з гайкою і ковпаком",
+   "node": "CHS.HUB.HUBB.RK",
+   "applies_note": "ECO Plus 3",
+   "source": "bpw_ecodisc",
+   "norm": "0980108400",
+   "is_repkit_by_number": true,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.801.08.41.0",
+   "name_ua": "Ремкомплект маточини ECO Plus 3 (8–9 т) без гайки і ковпака",
+   "node": "CHS.HUB.HUBB.RK",
+   "applies_note": "ECO Plus 3",
+   "source": "bpw_ecodisc",
+   "norm": "0980108410",
+   "is_repkit_by_number": true,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.801.09.65.0",
+   "name_ua": "Ремкомплект маточини ECO Plus 3 (10–12 т) з гайкою і ковпаком",
+   "node": "CHS.HUB.HUBB.RK",
+   "applies_note": "ECO Plus 3",
+   "source": "bpw_ecodisc",
+   "norm": "0980109650",
+   "is_repkit_by_number": true,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.801.07.33.0",
+   "name_ua": "Ремкомплект маточини ECO Plus 2 з болтом і ковпаком",
+   "node": "CHS.HUB.HUBB.RK",
+   "applies_note": "ECO Plus 2",
+   "source": "bpw_ecodisc",
+   "norm": "0980107330",
+   "is_repkit_by_number": true,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.801.07.04.1",
+   "name_ua": "Ремкомплект маточини ECOPlus",
+   "node": "CHS.HUB.HUBB.RK",
+   "applies_note": "ECOPlus",
+   "source": "bpw_ecodisc",
+   "norm": "0980107041",
+   "is_repkit_by_number": true,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "02.5664.77.00",
+   "name_ua": "Сальник маточини ECO Plus 3",
+   "node": "CHS.HUB.SEAL",
+   "applies_note": "ECO Plus 3",
+   "source": "bpw_ecodisc",
+   "norm": "0256647700",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "02.5664.74.00",
+   "name_ua": "Сальник маточини ECO Plus 2",
+   "node": "CHS.HUB.SEAL",
+   "applies_note": "ECO Plus 2",
+   "source": "bpw_ecodisc",
+   "norm": "0256647400",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "02.6410.23.00",
+   "name_ua": "Підшипник маточини 33118",
+   "node": "CHS.HUB.BRG",
+   "applies_note": "",
+   "source": "bpw_ecodisc",
+   "norm": "0264102300",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "02.6410.22.00",
+   "name_ua": "Підшипник маточини 33213",
+   "node": "CHS.HUB.BRG",
+   "applies_note": "",
+   "source": "bpw_ecodisc",
+   "norm": "0264102200",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.266.47.11.0",
+   "name_ua": "Гайка осі в зборі ECO Plus 3",
+   "node": "CHS.HUB.NUT",
+   "applies_note": "ECO Plus 3",
+   "source": "bpw_ecodisc",
+   "norm": "0926647110",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "05.212.25.98.0",
+   "name_ua": "Ковпак маточини ECO Plus 3 (8–9 т)",
+   "node": "CHS.HUB.CAP",
+   "applies_note": "ECO Plus 3",
+   "source": "bpw_ecodisc",
+   "norm": "0521225980",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "05.212.29.20.0",
+   "name_ua": "Ковпак маточини ECO Plus 3 (10–12 т)",
+   "node": "CHS.HUB.CAP",
+   "applies_note": "ECO Plus 3",
+   "source": "bpw_ecodisc",
+   "norm": "0521229200",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "05.212.25.78.0",
+   "name_ua": "Ковпак маточини ECO Plus 2",
+   "node": "CHS.HUB.CAP",
+   "applies_note": "ECO Plus 2",
+   "source": "bpw_ecodisc",
+   "norm": "0521225780",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "05.444.44.01.0",
+   "name_ua": "Енергоакумулятор мембрана-мембрана 20/24\", тип B",
+   "node": "BRK.ACT.SPCH",
+   "applies_note": "",
+   "source": "bpw_ecodisc",
+   "norm": "0544444010",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "05.444.44.02.0",
+   "name_ua": "Енергоакумулятор мембрана-мембрана 20/24\", тип A",
+   "node": "BRK.ACT.SPCH",
+   "applies_note": "",
+   "source": "bpw_ecodisc",
+   "norm": "0544444020",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "05.444.43.01.0",
+   "name_ua": "Енергоакумулятор мембрана-поршень 20/24\", тип B",
+   "node": "BRK.ACT.SPCH",
+   "applies_note": "",
+   "source": "bpw_ecodisc",
+   "norm": "0544443010",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.801.02.35.0",
+   "name_ua": "Ремкомплект шкворня самоустановлюваної осі (кут < 24°)",
+   "node": "CHS.AXL.SELF.RK",
+   "applies_note": "",
+   "source": "bpw_ecodisc",
+   "norm": "0980102350",
+   "is_repkit_by_number": true,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "09.801.09.39.0",
+   "name_ua": "Ремкомплект шкворня самоустановлюваної осі (кут > 25°)",
+   "node": "CHS.AXL.SELF.RK",
+   "applies_note": "",
+   "source": "bpw_ecodisc",
+   "norm": "0980109390",
+   "is_repkit_by_number": true,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "03.240.08.04.0",
+   "name_ua": "Шкворень самоустановлюваної осі",
+   "node": "CHS.AXL.SELF",
+   "applies_note": "",
+   "source": "bpw_ecodisc",
+   "norm": "0324008040",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "BPW",
+   "oem": "05.246.46.55.0",
+   "name_ua": "Поперечна тяга самоустановлюваної осі 1180 мм",
+   "node": "CHS.AXL.SELF",
+   "applies_note": "",
+   "source": "bpw_ecodisc",
+   "norm": "0524646550",
+   "is_repkit_by_number": false,
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "WABCO",
+   "oem": "4410309172",
+   "name_ua": "Датчик ABS",
+   "node": "BRK.ABS.SENS",
+   "applies_note": "",
+   "source": "wofford",
+   "norm": "4410309172",
+   "ambiguous_with": [
+    "SAF"
+   ]
+  },
+  {
+   "manufacturer": "WABCO",
+   "oem": "4801020330",
+   "name_ua": "Модулятор TEBS-E",
+   "node": "BRK.ABS.TEBS",
+   "applies_note": "",
+   "source": "ebay_tebs",
+   "norm": "4801020330",
+   "ambiguous_with": [
+    "SAF"
+   ]
+  },
+  {
+   "manufacturer": "WABCO",
+   "oem": "9730110040",
+   "name_ua": "Прискорювальний клапан",
+   "node": "BRK.CTRL.RELAY",
+   "applies_note": "",
+   "source": "finditparts_relay",
+   "norm": "9730110040",
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "WABCO",
+   "oem": "925 397 005 0",
+   "name_ua": "Енергоакумулятор 24/30",
+   "node": "BRK.ACT.SPCH",
+   "applies_note": "",
+   "source": "duallane",
+   "norm": "9253970050",
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "KNORR",
+   "oem": "K105599K55",
+   "name_ua": "Ремкомплект направляючих супорта SB6/SB7/SN6/SN7/SK7",
+   "node": "BRK.WHB.DISC.CAL.RK.GUIDE",
+   "applies_note": "SB6, SB7, SN6, SN7, SK7",
+   "source": "vaden",
+   "norm": "K105599K55",
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "KNORR",
+   "oem": "K003809",
+   "name_ua": "Супорт SN7 (Scania 4-series, передній)",
+   "node": "BRK.WHB.DISC.CAL",
+   "applies_note": "SN7",
+   "source": "ebay_knorr",
+   "norm": "K003809",
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "SAF",
+   "oem": "03057000600",
+   "name_ua": "Комплект гальмівних колодок",
+   "node": "BRK.WHB.DISC.PAD",
+   "applies_note": "",
+   "source": "finditparts_saf",
+   "norm": "03057000600",
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "JOST",
+   "oem": "SK75013-00",
+   "name_ua": "Ремкомплект сідла (капітальний)",
+   "node": "CPL.5W.LOCK.RK",
+   "applies_note": "JSK37",
+   "source": "finditparts_jost",
+   "norm": "SK7501300",
+   "ambiguous_with": []
+  },
+  {
+   "manufacturer": "HOLLAND",
+   "oem": "XB-60144",
+   "name_ua": "Вкладиш сідла Holland FW3410",
+   "node": "CPL.5W.LINER",
+   "applies_note": "FW3410",
+   "source": "user_data",
+   "norm": "XB60144",
+   "ambiguous_with": []
+  }
+ ],
+ "wabco_prefix": [
+  {
+   "prefix": "441",
+   "group_ua": "Датчики (ABS, зносу)",
+   "node": "BRK.ABS.SENS",
+   "verified": "так",
+   "example": "4410309172"
+  },
+  {
+   "prefix": "480",
+   "group_ua": "Модулятори EBS / TEBS",
+   "node": "BRK.ABS.TEBS",
+   "verified": "так",
+   "example": "4801020330"
+  },
+  {
+   "prefix": "432",
+   "group_ua": "Осушувачі повітря",
+   "node": "PNE.DRY",
+   "verified": "так",
+   "example": "4324100350"
+  },
+  {
+   "prefix": "973",
+   "group_ua": "Прискорювальні клапани",
+   "node": "BRK.CTRL.RELAY",
+   "verified": "так",
+   "example": "9730110040"
+  },
+  {
+   "prefix": "925",
+   "group_ua": "Енергоакумулятори (Tristop)",
+   "node": "BRK.ACT.SPCH",
+   "verified": "так",
+   "example": "9253970050"
+  },
+  {
+   "prefix": "472",
+   "group_ua": "Модулятори / клапани ABS",
+   "node": "BRK.ABS.MOD",
+   "verified": "ні",
+   "example": ""
+  },
+  {
+   "prefix": "446",
+   "group_ua": "ЕБУ ABS / EBS",
+   "node": "BRK.ABS.ECU",
+   "verified": "ні",
+   "example": ""
+  },
+  {
+   "prefix": "461",
+   "group_ua": "Головний гальмівний кран",
+   "node": "BRK.CTRL.FOOT",
+   "verified": "ні",
+   "example": ""
+  },
+  {
+   "prefix": "961",
+   "group_ua": "Кран стоянкового гальма",
+   "node": "BRK.CTRL.HAND",
+   "verified": "ні",
+   "example": ""
+  },
+  {
+   "prefix": "971",
+   "group_ua": "Клапани гальмування причепа",
+   "node": "BRK.CTRL.TBV",
+   "verified": "ні",
+   "example": ""
+  },
+  {
+   "prefix": "934",
+   "group_ua": "Захисні клапани (4-контурні)",
+   "node": "PNE.PROT",
+   "verified": "ні",
+   "example": ""
+  },
+  {
+   "prefix": "952",
+   "group_ua": "Пневмоголовки",
+   "node": "PNE.HEAD",
+   "verified": "ні",
+   "example": ""
+  },
+  {
+   "prefix": "475",
+   "group_ua": "Регулятори гальмівних сил",
+   "node": "BRK.CTRL.LSV",
+   "verified": "ні",
+   "example": ""
+  },
+  {
+   "prefix": "423",
+   "group_ua": "Гальмівні камери",
+   "node": "BRK.ACT.CHAM",
+   "verified": "ні",
+   "example": ""
+  }
+ ],
+ "sources": [
+  {
+   "id": "bpw_ecodisc",
+   "title": "BPW ECO Disc TS2/TSB — Original spare parts (2024)",
+   "url": "https://bpw.de/fileadmin/user_upload/Service/Downloads/ECO_Disc_Disc_brake_TS2_TSB_Original_spare_parts_BPW_2024_en__31232401e.pdf",
+   "kind": "офіційний каталог"
+  },
+  {
+   "id": "bpw_codes",
+   "title": "BPW Code number designations (2020)",
+   "url": "https://www.bpw.de/uploads/tx_szdownloadcenter/Code_number_designations_BRO_BPW_en_2020_39342001.pdf",
+   "kind": "офіційний документ"
+  },
+  {
+   "id": "wofford",
+   "title": "Wofford Truck Parts — WABCO 4410309172 ABS sensor",
+   "url": "https://www.woffordtruckparts.com/products/brakes-wheel-end/abs-components-and-hardware/wabco-4410309172-abs-wheel-speed-sensor/4410309172",
+   "kind": "магазин"
+  },
+  {
+   "id": "ebay_tebs",
+   "title": "eBay — WABCO TEBS-E Modulator 4801020330",
+   "url": "https://www.ebay.de/p/1220993232",
+   "kind": "магазин"
+  },
+  {
+   "id": "finditparts_relay",
+   "title": "FinditParts — WABCO 9730110040 Relay valve",
+   "url": "https://www-build.finditparts.com/products/2595313/wabco-9730110040",
+   "kind": "магазин"
+  },
+  {
+   "id": "duallane",
+   "title": "Dual Lane — WABCO spring brake chamber 925 397 005 0",
+   "url": "https://www.duallane.com/wabco-spring-brake-chamber-d2430-300-wc225-135-045-925-397-005-0",
+   "kind": "магазин"
+  },
+  {
+   "id": "vaden",
+   "title": "Vaden — K105599K55 Knorr caliper pin repair kit",
+   "url": "https://vaden.com.tr/en/products/k105599k55-knorr-bremse-sb6sb7sn6sn7sk7-repair-kit-caliper-pin",
+   "kind": "магазин"
+  },
+  {
+   "id": "ebay_knorr",
+   "title": "eBay — Knorr SN7 caliper K003809",
+   "url": "https://www.ebay.de/itm/192740774485",
+   "kind": "магазин"
+  },
+  {
+   "id": "finditparts_saf",
+   "title": "FinditParts — SAF-Holland 03057000600 Brake pad set",
+   "url": "https://www-build.finditparts.com/products/10902315/saf-holland-03057000600",
+   "kind": "магазин"
+  },
+  {
+   "id": "finditparts_jost",
+   "title": "FinditParts — JOST SK75013-00 Major rebuild",
+   "url": "https://v2.finditparts.com/products/4816437/jost-sk75013-00",
+   "kind": "магазин"
+  },
+  {
+   "id": "user_data",
+   "title": "Ваші дані (product_output)",
+   "url": "",
+   "kind": "ваші дані"
+  }
+ ]
+}

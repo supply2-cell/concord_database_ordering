@@ -1,0 +1,393 @@
+﻿id;code;kind;name_ua;name_en;level;parent;extra_parents;applies;is_boundary
+ENG;ENG;part;Двигун;Engine;1;;;TRC,RGD;0
+ENG.BLK;BLK;part;Блок циліндрів і КШМ;Cylinder block & crank train;2;ENG;;TRC,RGD;0
+ENG.BLK.BLOCK;BLOCK;part;Блок циліндрів;Cylinder block;3;ENG.BLK;;TRC,RGD;0
+ENG.BLK.LINER;LINER;part;Гільза циліндра;Cylinder liner;3;ENG.BLK;;TRC,RGD;0
+ENG.BLK.PISTON;PISTON;part;Поршень з кільцями;Piston with rings;3;ENG.BLK;;TRC,RGD;0
+ENG.BLK.CONROD;CONROD;part;Шатун;Connecting rod;3;ENG.BLK;;TRC,RGD;0
+ENG.BLK.CRANK;CRANK;part;Колінчастий вал;Crankshaft;3;ENG.BLK;;TRC,RGD;0
+ENG.BLK.BEAR;BEAR;part;Вкладиші корінні / шатунні;Main / con-rod bearings;3;ENG.BLK;;TRC,RGD;0
+ENG.BLK.FLYWH;FLYWH;part;Маховик;Flywheel;3;ENG.BLK;TRN.CLU;TRC,RGD;1
+ENG.BLK.DAMP;DAMP;part;Гаситель крутильних коливань;Vibration damper;3;ENG.BLK;;TRC,RGD;0
+ENG.BLK.OILPAN;OILPAN;part;Піддон картера;Oil pan;3;ENG.BLK;;TRC,RGD;0
+ENG.BLK.MOUNT;MOUNT;part;Опора двигуна;Engine mount;3;ENG.BLK;FRM;TRC,RGD;1
+ENG.BLK.MOUNT.RK;RK;repkit;Ремкомплект опор двигуна;Engine mount kit;4;ENG.BLK.MOUNT;;TRC,RGD;0
+ENG.BLK.RK;RK;repkit;Ремкомплект двигуна (ЦПГ, прокладки);Engine overhaul kit;3;ENG.BLK;;TRC,RGD;0
+ENG.HEAD;HEAD;part;Головка блоку і ГРМ;Cylinder head & valvetrain;2;ENG;;TRC,RGD;0
+ENG.HEAD.HEAD;HEAD;part;ГБЦ;Cylinder head;3;ENG.HEAD;;TRC,RGD;0
+ENG.HEAD.HEAD.RK;RK;repkit;Ремкомплект ГБЦ (прокладки);Cylinder head gasket set;4;ENG.HEAD.HEAD;;TRC,RGD;0
+ENG.HEAD.GASKET;GASKET;part;Прокладка ГБЦ;Head gasket;3;ENG.HEAD;;TRC,RGD;0
+ENG.HEAD.VALVE;VALVE;part;Клапани, сідла, напрямні;Valves, seats, guides;3;ENG.HEAD;;TRC,RGD;0
+ENG.HEAD.CAM;CAM;part;Розподільний вал;Camshaft;3;ENG.HEAD;;TRC,RGD;0
+ENG.HEAD.ROCK;ROCK;part;Коромисла, штовхачі;Rocker arms, pushrods;3;ENG.HEAD;;TRC,RGD;0
+ENG.HEAD.TIMING;TIMING;part;Шестерні / ланцюг ГРМ;Timing gears / chain;3;ENG.HEAD;;TRC,RGD;0
+ENG.HEAD.VCOV;VCOV;part;Кришка клапанів;Valve cover;3;ENG.HEAD;;TRC,RGD;0
+ENG.LUB;LUB;part;Система змащення;Lubrication;2;ENG;;TRC,RGD;0
+ENG.LUB.OILPUMP;OILPUMP;part;Масляний насос;Oil pump;3;ENG.LUB;;TRC,RGD;0
+ENG.LUB.OILPUMP.RK;RK;repkit;Ремкомплект масляного насоса;Oil pump repair kit;4;ENG.LUB.OILPUMP;;TRC,RGD;0
+ENG.LUB.OILFLT;OILFLT;part;Масляний фільтр;Oil filter;3;ENG.LUB;;TRC,RGD;0
+ENG.LUB.OILCOOL;OILCOOL;part;Масляний теплообмінник;Oil cooler;3;ENG.LUB;ENG.COOL;TRC,RGD;1
+ENG.LUB.SEP;SEP;part;Сепаратор картерних газів;Crankcase breather;3;ENG.LUB;;TRC,RGD;0
+ENG.COOL;COOL;part;Система охолодження;Cooling system;2;ENG;;TRC,RGD;0
+ENG.COOL.RAD;RAD;part;Радіатор;Radiator;3;ENG.COOL;;TRC,RGD;0
+ENG.COOL.WPUMP;WPUMP;part;Помпа;Water pump;3;ENG.COOL;;TRC,RGD;0
+ENG.COOL.WPUMP.RK;RK;repkit;Ремкомплект помпи;Water pump repair kit;4;ENG.COOL.WPUMP;;TRC,RGD;0
+ENG.COOL.THERM;THERM;part;Термостат;Thermostat;3;ENG.COOL;;TRC,RGD;0
+ENG.COOL.FAN;FAN;part;Вентилятор / віскомуфта;Fan / viscous coupling;3;ENG.COOL;;TRC,RGD;0
+ENG.COOL.FAN.RK;RK;repkit;Ремкомплект віскомуфти;Viscous fan clutch repair kit;4;ENG.COOL.FAN;;TRC,RGD;0
+ENG.COOL.EXPT;EXPT;part;Розширювальний бачок;Expansion tank;3;ENG.COOL;;TRC,RGD;0
+ENG.COOL.HOSE;HOSE;part;Патрубки охолодження;Coolant hoses;3;ENG.COOL;;TRC,RGD;0
+ENG.COOL.INTCL;INTCL;part;Інтеркулер;Intercooler;3;ENG.COOL;ENG.AIR;TRC,RGD;1
+ENG.FUEL;FUEL;part;Паливна система;Fuel system;2;ENG;;TRC,RGD;0
+ENG.FUEL.TANK;TANK;part;Паливний бак;Fuel tank;3;ENG.FUEL;FRM;TRC,RGD;1
+ENG.FUEL.LIFT;LIFT;part;Підкачувальний насос;Lift pump;3;ENG.FUEL;;TRC,RGD;0
+ENG.FUEL.LIFT.RK;RK;repkit;Ремкомплект підкачувального насоса;Lift pump repair kit;4;ENG.FUEL.LIFT;;TRC,RGD;0
+ENG.FUEL.FFLT;FFLT;part;Паливні фільтри / сепаратор;Fuel filters / separator;3;ENG.FUEL;;TRC,RGD;0
+ENG.FUEL.HPP;HPP;part;ПНВТ (ТНВД);High-pressure pump;3;ENG.FUEL;;TRC,RGD;0
+ENG.FUEL.HPP.RK;RK;repkit;Ремкомплект ПНВТ;Injection pump repair kit;4;ENG.FUEL.HPP;;TRC,RGD;0
+ENG.FUEL.RAIL;RAIL;part;Рампа Common Rail;Common rail;3;ENG.FUEL;;TRC,RGD;0
+ENG.FUEL.INJ;INJ;part;Форсунки;Injectors;3;ENG.FUEL;;TRC,RGD;0
+ENG.FUEL.INJ.RK;RK;repkit;Ремкомплект форсунки;Injector repair kit;4;ENG.FUEL.INJ;;TRC,RGD;0
+ENG.FUEL.LINES;LINES;part;Паливопроводи;Fuel lines;3;ENG.FUEL;;TRC,RGD;0
+ENG.AIR;AIR;part;Впуск і наддув;Intake & boost;2;ENG;;TRC,RGD;0
+ENG.AIR.AFLT;AFLT;part;Повітряний фільтр;Air filter;3;ENG.AIR;;TRC,RGD;0
+ENG.AIR.AFH;AFH;part;Корпус фільтра, патрубки;Filter housing, ducts;3;ENG.AIR;;TRC,RGD;0
+ENG.AIR.TURBO;TURBO;part;Турбокомпресор;Turbocharger;3;ENG.AIR;ENG.EXH;TRC,RGD;1
+ENG.AIR.TURBO.RK;RK;repkit;Ремкомплект турбіни;Turbocharger repair kit;4;ENG.AIR.TURBO;;TRC,RGD;0
+ENG.AIR.IMAN;IMAN;part;Впускний колектор;Intake manifold;3;ENG.AIR;;TRC,RGD;0
+ENG.EXH;EXH;part;Випуск і доочистка;Exhaust & aftertreatment;2;ENG;;TRC,RGD;0
+ENG.EXH.EMAN;EMAN;part;Випускний колектор;Exhaust manifold;3;ENG.EXH;;TRC,RGD;0
+ENG.EXH.EBRAKE;EBRAKE;part;Моторне гальмо (заслінка);Exhaust brake;3;ENG.EXH;BRK.AUX;TRC,RGD;1
+ENG.EXH.EBRAKE.RK;RK;repkit;Ремкомплект моторного гальма (циліндра заслінки);Exhaust brake repair kit;4;ENG.EXH.EBRAKE;;TRC,RGD;0
+ENG.EXH.EGR;EGR;part;Клапан і охолоджувач EGR;EGR valve & cooler;3;ENG.EXH;ENG.COOL;TRC,RGD;1
+ENG.EXH.EGR.RK;RK;repkit;Ремкомплект клапана EGR;EGR valve repair kit;4;ENG.EXH.EGR;;TRC,RGD;0
+ENG.EXH.MUFF;MUFF;part;Глушник / DPF / SCR;Muffler / DPF / SCR;3;ENG.EXH;;TRC,RGD;0
+ENG.EXH.ADBLUE;ADBLUE;part;Система AdBlue (бак, насос, дозатор);AdBlue system;3;ENG.EXH;;TRC,RGD;0
+ENG.EXH.ADBLUE.RK;RK;repkit;Ремкомплект насоса / дозатора AdBlue;AdBlue pump repair kit;4;ENG.EXH.ADBLUE;;TRC,RGD;0
+ENG.EXH.NOX;NOX;part;Датчики NOx / температури;NOx / temp sensors;3;ENG.EXH;ELE.SENS;TRC,RGD;1
+ENG.EXH.PIPE;PIPE;part;Труби, гофри, хомути;Pipes, flex, clamps;3;ENG.EXH;;TRC,RGD;0
+ENG.ACC;ACC;part;Навісне обладнання;Engine accessories;2;ENG;;TRC,RGD;0
+ENG.ACC.ALT;ALT;part;Генератор;Alternator;3;ENG.ACC;ELE.PWR;TRC,RGD;1
+ENG.ACC.ALT.RK;RK;repkit;Ремкомплект генератора;Alternator repair kit;4;ENG.ACC.ALT;;TRC,RGD;0
+ENG.ACC.START;START;part;Стартер;Starter;3;ENG.ACC;ELE.PWR;TRC,RGD;1
+ENG.ACC.START.RK;RK;repkit;Ремкомплект стартера;Starter repair kit;4;ENG.ACC.START;;TRC,RGD;0
+ENG.ACC.COMPR;COMPR;part;Пневмокомпресор;Air compressor;3;ENG.ACC;PNE;TRC,RGD;1
+ENG.ACC.COMPR.RK;RK;repkit;Ремкомплект пневмокомпресора;Air compressor repair kit;4;ENG.ACC.COMPR;;TRC,RGD;0
+ENG.ACC.PSPUMP;PSPUMP;part;Насос ГПК (ГУР);Power steering pump;3;ENG.ACC;STR;TRC,RGD;1
+ENG.ACC.PSPUMP.RK;RK;repkit;Ремкомплект насоса ГПК;PS pump repair kit;4;ENG.ACC.PSPUMP;;TRC,RGD;0
+ENG.ACC.ACCOMP;ACCOMP;part;Компресор кондиціонера;A/C compressor;3;ENG.ACC;CAB.HVAC;TRC,RGD;1
+ENG.ACC.ACCOMP.RK;RK;repkit;Ремкомплект компресора кондиціонера;A/C compressor repair kit;4;ENG.ACC.ACCOMP;;TRC,RGD;0
+ENG.ACC.BELT;BELT;part;Ремені, натягувачі, ролики;Belts, tensioners, idlers;3;ENG.ACC;;TRC,RGD;0
+ENG.ACC.BELT.RK;RK;repkit;Ремкомплект приводу ременя (натягувач, ролики);Belt drive kit;4;ENG.ACC.BELT;;TRC,RGD;0
+ENG.ECU;ECU;part;ЕБУ двигуна;Engine ECU;2;ENG;ELE.CTRL;TRC,RGD;1
+TRN;TRN;part;Трансмісія;Drivetrain;1;;;TRC,RGD;0
+TRN.CLU;CLU;part;Зчеплення;Clutch;2;TRN;;TRC,RGD;0
+TRN.CLU.DISC;DISC;part;Диск зчеплення;Clutch disc;3;TRN.CLU;;TRC,RGD;0
+TRN.CLU.PP;PP;part;Кошик (натискний диск);Pressure plate;3;TRN.CLU;;TRC,RGD;0
+TRN.CLU.REL;REL;part;Вижимний підшипник;Release bearing;3;TRN.CLU;;TRC,RGD;0
+TRN.CLU.CSERVO;CSERVO;part;ПГП (пневмопідсилювач);Clutch servo;3;TRN.CLU;PNE;TRC,RGD;1
+TRN.CLU.CSERVO.RK;RK;repkit;Ремкомплект ПГП;Clutch servo repair kit;4;TRN.CLU.CSERVO;;TRC,RGD;0
+TRN.CLU.CMC;CMC;part;Головний циліндр, педаль;Master cylinder, pedal;3;TRN.CLU;;TRC,RGD;0
+TRN.CLU.CMC.RK;RK;repkit;Ремкомплект головного циліндра зчеплення;Clutch master cylinder repair kit;4;TRN.CLU.CMC;;TRC,RGD;0
+TRN.GBX;GBX;part;Коробка передач;Gearbox;2;TRN;;TRC,RGD;0
+TRN.GBX.HOUS;HOUS;part;Картер КПП;Gearbox housing;3;TRN.GBX;;TRC,RGD;0
+TRN.GBX.GEAR;GEAR;part;Шестерні, вали, синхронізатори;Gears, shafts, synchros;3;TRN.GBX;;TRC,RGD;0
+TRN.GBX.GEAR.RK;RK;repkit;Ремкомплект КПП (синхронізатори, підшипники);Gearbox overhaul kit;4;TRN.GBX.GEAR;;TRC,RGD;0
+TRN.GBX.SHIFT;SHIFT;part;Механізм перемикання / куліса;Shift mechanism;3;TRN.GBX;;TRC,RGD;0
+TRN.GBX.SHIFT.RK;RK;repkit;Ремкомплект куліси;Gear shift repair kit;4;TRN.GBX.SHIFT;;TRC,RGD;0
+TRN.GBX.RANGE;RANGE;part;Дільник / демультиплікатор, пневмоклапани;Splitter / range valves;3;TRN.GBX;PNE;TRC,RGD;1
+TRN.GBX.RANGE.RK;RK;repkit;Ремкомплект циліндра дільника / демультиплікатора;Range / splitter cylinder repair kit;4;TRN.GBX.RANGE;;TRC,RGD;0
+TRN.GBX.ACTUAT;ACTUAT;part;Актуатор АКПП (AMT);AMT actuator;3;TRN.GBX;ELE.CTRL;TRC,RGD;1
+TRN.GBX.ACTUAT.RK;RK;repkit;Ремкомплект актуатора КПП;AMT actuator repair kit;4;TRN.GBX.ACTUAT;;TRC,RGD;0
+TRN.GBX.RET;RET;part;Ретардер / інтардер;Retarder;3;TRN.GBX;BRK.AUX;TRC,RGD;1
+TRN.GBX.RET.RK;RK;repkit;Ремкомплект ретардера;Retarder repair kit;4;TRN.GBX.RET;;TRC,RGD;0
+TRN.GBX.PTO;PTO;part;Коробка відбору потужності;PTO;3;TRN.GBX;BOD.HYD;TRC,RGD;1
+TRN.GBX.PTO.RK;RK;repkit;Ремкомплект КВП;PTO repair kit;4;TRN.GBX.PTO;;TRC,RGD;0
+TRN.PROP;PROP;part;Карданна передача;Propshaft;2;TRN;;TRC,RGD;0
+TRN.PROP.SHAFT;SHAFT;part;Карданний вал;Propeller shaft;3;TRN.PROP;;TRC,RGD;0
+TRN.PROP.SHAFT.RK;RK;repkit;Ремкомплект карданного вала (шліци);Propshaft repair kit;4;TRN.PROP.SHAFT;;TRC,RGD;0
+TRN.PROP.UJ;UJ;part;Хрестовина;Universal joint;3;TRN.PROP;;TRC,RGD;0
+TRN.PROP.UJ.RK;RK;repkit;Ремкомплект хрестовини;Universal joint repair kit;4;TRN.PROP.UJ;;TRC,RGD;0
+TRN.PROP.CBR;CBR;part;Підвісний підшипник;Centre bearing;3;TRN.PROP;FRM;TRC,RGD;1
+TRN.PROP.CBR.RK;RK;repkit;Ремкомплект підвісного підшипника;Centre bearing repair kit;4;TRN.PROP.CBR;;TRC,RGD;0
+TRN.PROP.FLNG;FLNG;part;Фланці;Flanges;3;TRN.PROP;;TRC,RGD;0
+TRN.AXL;AXL;part;Ведучий міст;Drive axle;2;TRN;CHS.AXL;TRC,RGD;1
+TRN.AXL.HSG;HSG;part;Балка / картер моста;Axle housing;3;TRN.AXL;;TRC,RGD;0
+TRN.AXL.DIFF;DIFF;part;Редуктор / диференціал;Final drive / differential;3;TRN.AXL;;TRC,RGD;0
+TRN.AXL.DIFF.RK;RK;repkit;Ремкомплект диференціала;Differential repair kit;4;TRN.AXL.DIFF;;TRC,RGD;0
+TRN.AXL.MDIFF;MDIFF;part;Міжосьовий диференціал;Inter-axle differential;3;TRN.AXL;;TRC,RGD;0
+TRN.AXL.MDIFF.RK;RK;repkit;Ремкомплект міжосьового диференціала;Inter-axle differential repair kit;4;TRN.AXL.MDIFF;;TRC,RGD;0
+TRN.AXL.SHAFT;SHAFT;part;Піввісь;Half shaft;3;TRN.AXL;;TRC,RGD;0
+TRN.AXL.HUBRED;HUBRED;part;Колісний редуктор;Hub reduction;3;TRN.AXL;;TRC,RGD;0
+TRN.AXL.HUBRED.RK;RK;repkit;Ремкомплект колісного редуктора;Hub reduction repair kit;4;TRN.AXL.HUBRED;;TRC,RGD;0
+TRN.AXL.SEAL;SEAL;part;Сальники, прокладки;Seals, gaskets;3;TRN.AXL;;TRC,RGD;0
+CHS;CHS;part;Ходова частина;Running gear;1;;;TRC,RGD,TRL,SMT;0
+CHS.AXL;AXL;part;Осі;Axles;2;CHS;;TRC,RGD,TRL,SMT;0
+CHS.AXL.FRONT;FRONT;part;Передня керована вісь;Front steer axle;3;CHS.AXL;STR;TRC,RGD;1
+CHS.AXL.TRAIL;TRAIL;part;Вісь причепа / напівпричепа;Trailer axle;3;CHS.AXL;;TRL,SMT;0
+CHS.AXL.LIFT;LIFT;part;Механізм підйому осі;Axle lift;3;CHS.AXL;PNE;TRC,RGD,TRL,SMT;1
+CHS.AXL.LIFT.RK;RK;repkit;Ремкомплект механізму підйому осі;Axle lift repair kit;4;CHS.AXL.LIFT;;TRC,RGD,TRL,SMT;0
+CHS.AXL.SELF;SELF;part;Самоустановлювана вісь;Self-steering axle;3;CHS.AXL;;TRL,SMT;0
+CHS.AXL.SELF.RK;RK;repkit;Ремкомплект самоустановлюваної осі;Self-steering axle repair kit;4;CHS.AXL.SELF;;TRL,SMT;0
+CHS.AXL.KING;KING;part;Шкворень поворотного кулака;Steering king pin;3;CHS.AXL;STR;TRC,RGD;1
+CHS.AXL.KING.RK;RK;repkit;Ремкомплект шкворня (втулки, шайби, підшипник);King pin repair kit;4;CHS.AXL.KING;;TRC,RGD;0
+CHS.HUB;HUB;part;Маточина (ступиця);Wheel hub;2;CHS;BRK.WHB;TRC,RGD,TRL,SMT;1
+CHS.HUB.HUBB;HUBB;part;Маточина;Hub;3;CHS.HUB;;TRC,RGD,TRL,SMT;0
+CHS.HUB.HUBB.RK;RK;repkit;Ремкомплект маточини (підшипники, сальник);Wheel hub repair kit;4;CHS.HUB.HUBB;;TRC,RGD,TRL,SMT;0
+CHS.HUB.BRG;BRG;part;Підшипники маточини;Hub bearings;3;CHS.HUB;;TRC,RGD,TRL,SMT;0
+CHS.HUB.SEAL;SEAL;part;Сальник маточини;Hub seal;3;CHS.HUB;;TRC,RGD,TRL,SMT;0
+CHS.HUB.CAP;CAP;part;Ковпак маточини;Hub cap;3;CHS.HUB;;TRC,RGD,TRL,SMT;0
+CHS.HUB.NUT;NUT;part;Гайка осі;Axle nut;3;CHS.HUB;;TRC,RGD,TRL,SMT;0
+CHS.HUB.STUD;STUD;part;Шпильки й гайки коліс;Wheel studs & nuts;3;CHS.HUB;;TRC,RGD,TRL,SMT;0
+CHS.WHL;WHL;part;Колеса і шини;Wheels & tyres;2;CHS;;TRC,RGD,TRL,SMT;0
+CHS.WHL.RIM;RIM;part;Диск колеса;Wheel rim;3;CHS.WHL;;TRC,RGD,TRL,SMT;0
+CHS.WHL.TYRE;TYRE;part;Шина;Tyre;3;CHS.WHL;;TRC,RGD,TRL,SMT;0
+CHS.WHL.VALVE;VALVE;part;Вентиль, подовжувач;Valve, extension;3;CHS.WHL;;TRC,RGD,TRL,SMT;0
+CHS.WHL.SPARE;SPARE;part;Тримач запасного колеса;Spare wheel carrier;3;CHS.WHL;FRM;TRC,RGD,TRL,SMT;1
+CHS.SUS;SUS;part;Підвіска;Suspension;2;CHS;;TRC,RGD,TRL,SMT;0
+CHS.SUS.LEAF;LEAF;part;Ресорна;Leaf spring suspension;3;CHS.SUS;;TRC,RGD,TRL,SMT;0
+CHS.SUS.LEAF.SPRING;SPRING;part;Ресора / лист ресори;Leaf spring;4;CHS.SUS.LEAF;;TRC,RGD,TRL,SMT;0
+CHS.SUS.LEAF.SPRING.RK;RK;repkit;Ремкомплект ресори (палець, втулки);Spring pin & bush kit;5;CHS.SUS.LEAF.SPRING;;TRC,RGD,TRL,SMT;0
+CHS.SUS.LEAF.PIN;PIN;part;Палець, втулка ресори;Spring pin, bush;4;CHS.SUS.LEAF;;TRC,RGD,TRL,SMT;0
+CHS.SUS.LEAF.SHACK;SHACK;part;Сережка ресори;Spring shackle;4;CHS.SUS.LEAF;;TRC,RGD,TRL,SMT;0
+CHS.SUS.LEAF.SHACK.RK;RK;repkit;Ремкомплект сережки ресори;Spring shackle repair kit;5;CHS.SUS.LEAF.SHACK;;TRC,RGD,TRL,SMT;0
+CHS.SUS.LEAF.BRKT;BRKT;part;Кронштейн ресори;Spring bracket;4;CHS.SUS.LEAF;FRM;TRC,RGD,TRL,SMT;1
+CHS.SUS.LEAF.UBOLT;UBOLT;part;Стрем'янка;U-bolt;4;CHS.SUS.LEAF;;TRC,RGD,TRL,SMT;0
+CHS.SUS.LEAF.BAL;BAL;part;Балансир;Bogie / equaliser;4;CHS.SUS.LEAF;;TRC,RGD,TRL,SMT;0
+CHS.SUS.LEAF.BAL.RK;RK;repkit;Ремкомплект балансира;Bogie repair kit;5;CHS.SUS.LEAF.BAL;;TRC,RGD,TRL,SMT;0
+CHS.SUS.AIR;AIR;part;Пневматична;Air suspension;3;CHS.SUS;PNE;TRC,RGD,TRL,SMT;1
+CHS.SUS.AIR.BAG;BAG;part;Пневмоподушка;Air spring;4;CHS.SUS.AIR;;TRC,RGD,TRL,SMT;0
+CHS.SUS.AIR.ARM;ARM;part;Несуча балка (трейлінг-арм);Trailing arm;4;CHS.SUS.AIR;;TRC,RGD,TRL,SMT;0
+CHS.SUS.AIR.ARM.RK;RK;repkit;Ремкомплект кріплення балки (втулка, болт);Trailing arm bush kit;5;CHS.SUS.AIR.ARM;;TRC,RGD,TRL,SMT;0
+CHS.SUS.AIR.HANGER;HANGER;part;Опорний кронштейн підвіски;Suspension hanger;4;CHS.SUS.AIR;FRM;TRC,RGD,TRL,SMT;1
+CHS.SUS.AIR.LVL;LVL;part;Кран рівня підлоги;Levelling valve;4;CHS.SUS.AIR;;TRC,RGD,TRL,SMT;0
+CHS.SUS.AIR.LVL.RK;RK;repkit;Ремкомплект крана рівня підлоги;Levelling valve repair kit;5;CHS.SUS.AIR.LVL;;TRC,RGD,TRL,SMT;0
+CHS.SUS.AIR.ECAS;ECAS;part;Блок ECAS;ECAS unit;4;CHS.SUS.AIR;ELE.CTRL;TRC,RGD,TRL,SMT;1
+CHS.SUS.ROD;ROD;part;Реактивні тяги;Torque rods;3;CHS.SUS;;TRC,RGD,TRL,SMT;0
+CHS.SUS.ROD.VROD;VROD;part;V-подібна тяга;V-rod;4;CHS.SUS.ROD;;TRC,RGD,TRL,SMT;0
+CHS.SUS.ROD.VROD.RK;RK;repkit;Ремкомплект V-подібної тяги;V-rod repair kit;5;CHS.SUS.ROD.VROD;;TRC,RGD,TRL,SMT;0
+CHS.SUS.ROD.TROD;TROD;part;Пряма реактивна тяга;Straight torque rod;4;CHS.SUS.ROD;;TRC,RGD,TRL,SMT;0
+CHS.SUS.ROD.TROD.RK;RK;repkit;Ремкомплект реактивної тяги;Torque rod repair kit;5;CHS.SUS.ROD.TROD;;TRC,RGD,TRL,SMT;0
+CHS.SUS.ROD.BUSH;BUSH;part;Сайлентблоки, шарніри;Bushes, ball joints;4;CHS.SUS.ROD;;TRC,RGD,TRL,SMT;0
+CHS.SUS.ROD.BUSH.RK;RK;repkit;Ремкомплект сайлентблоків тяг;Torque rod bush kit;5;CHS.SUS.ROD.BUSH;;TRC,RGD,TRL,SMT;0
+CHS.SUS.STAB;STAB;part;Стабілізатор поперечної стійкості;Anti-roll bar;3;CHS.SUS;;TRC,RGD,TRL,SMT;0
+CHS.SUS.STAB.BAR;BAR;part;Штанга стабілізатора;Stabiliser bar;4;CHS.SUS.STAB;;TRC,RGD,TRL,SMT;0
+CHS.SUS.STAB.BAR.RK;RK;repkit;Ремкомплект стабілізатора;Stabiliser repair kit;5;CHS.SUS.STAB.BAR;;TRC,RGD,TRL,SMT;0
+CHS.SUS.STAB.LINK;LINK;part;Тяга стабілізатора;Stabiliser link;4;CHS.SUS.STAB;;TRC,RGD,TRL,SMT;0
+CHS.SUS.STAB.LINK.RK;RK;repkit;Ремкомплект тяги стабілізатора;Stabiliser link repair kit;5;CHS.SUS.STAB.LINK;;TRC,RGD,TRL,SMT;0
+CHS.SUS.STAB.BUSH;BUSH;part;Втулки стабілізатора;Stabiliser bushes;4;CHS.SUS.STAB;;TRC,RGD,TRL,SMT;0
+CHS.SUS.STAB.BUSH.RK;RK;repkit;Ремкомплект втулок стабілізатора;Stabiliser bush kit;5;CHS.SUS.STAB.BUSH;;TRC,RGD,TRL,SMT;0
+CHS.SUS.SHOCK;SHOCK;part;Амортизатор;Shock absorber;3;CHS.SUS;;TRC,RGD,TRL,SMT;0
+CHS.SUS.SHOCK.RK;RK;repkit;Ремкомплект кріплення амортизатора (втулки);Shock absorber bush kit;4;CHS.SUS.SHOCK;;TRC,RGD,TRL,SMT;0
+CHS.SUS.BUMP;BUMP;part;Відбійник;Bump stop;3;CHS.SUS;;TRC,RGD,TRL,SMT;0
+STR;STR;part;Рульове керування;Steering;1;;;TRC,RGD;0
+STR.GEAR;GEAR;part;Рульовий механізм (ГПК);Steering gear;2;STR;;TRC,RGD;0
+STR.GEAR.RK;RK;repkit;Ремкомплект рульового механізму;Steering gear repair kit;3;STR.GEAR;;TRC,RGD;0
+STR.RES;RES;part;Бачок ГПК, шланги;PS reservoir, hoses;2;STR;;TRC,RGD;0
+STR.COL;COL;part;Рульова колонка, кардан;Steering column, joint;2;STR;;TRC,RGD;0
+STR.COL.RK;RK;repkit;Ремкомплект кардана рульової колонки;Steering column joint repair kit;3;STR.COL;;TRC,RGD;0
+STR.WHEEL;WHEEL;part;Кермо;Steering wheel;2;STR;;TRC,RGD;0
+STR.DLINK;DLINK;part;Поздовжня тяга;Drag link;2;STR;;TRC,RGD;0
+STR.DLINK.RK;RK;repkit;Ремкомплект поздовжньої тяги;Drag link repair kit;3;STR.DLINK;;TRC,RGD;0
+STR.TLINK;TLINK;part;Поперечна тяга;Tie rod;2;STR;;TRC,RGD;0
+STR.TLINK.RK;RK;repkit;Ремкомплект поперечної тяги;Tie rod repair kit;3;STR.TLINK;;TRC,RGD;0
+STR.BALL;BALL;part;Наконечник тяги;Tie rod end;2;STR;;TRC,RGD;0
+STR.BALL.RK;RK;repkit;Ремкомплект наконечника тяги;Tie rod end repair kit;3;STR.BALL;;TRC,RGD;0
+STR.ARM;ARM;part;Сошка, важелі кулака;Pitman / steering arms;2;STR;;TRC,RGD;0
+STR.KNUCK;KNUCK;part;Поворотний кулак;Steering knuckle;2;STR;;TRC,RGD;0
+PNE;PNE;part;Пневмосистема (живлення);Air supply;1;;;TRC,RGD,TRL,SMT;0
+PNE.DRY;DRY;part;Осушувач / APU;Air dryer / APU;2;PNE;;TRC,RGD;0
+PNE.DRY.RK;RK;repkit;Ремкомплект осушувача;Air dryer repair kit;3;PNE.DRY;;TRC,RGD;0
+PNE.CART;CART;part;Картридж осушувача;Dryer cartridge;2;PNE;;TRC,RGD;0
+PNE.PROT;PROT;part;4-контурний захисний клапан;Four-circuit protection valve;2;PNE;;TRC,RGD;0
+PNE.PROT.RK;RK;repkit;Ремкомплект 4-контурного клапана;Protection valve repair kit;3;PNE.PROT;;TRC,RGD;0
+PNE.TANK;TANK;part;Ресивер;Air tank;2;PNE;;TRC,RGD,TRL,SMT;0
+PNE.DRAIN;DRAIN;part;Кран зливу конденсату;Drain valve;2;PNE;;TRC,RGD,TRL,SMT;0
+PNE.PIPE;PIPE;part;Пневмотрубки, шланги;Air lines, hoses;2;PNE;;TRC,RGD,TRL,SMT;0
+PNE.FIT;FIT;part;Фітинги, перехідники;Fittings, connectors;2;PNE;;TRC,RGD,TRL,SMT;0
+PNE.COIL;COIL;part;Спіральні пневмошланги;Air coils;2;PNE;CPL.CON;TRC,RGD,TRL,SMT;1
+PNE.HEAD;HEAD;part;Пневмоголовки (Palm);Coupling heads;2;PNE;CPL.CON;TRC,RGD,TRL,SMT;1
+PNE.HEAD.RK;RK;repkit;Ремкомплект пневмоголовки (ущільнювачі);Coupling head seal kit;3;PNE.HEAD;;TRC,RGD,TRL,SMT;0
+BRK;BRK;part;Гальмівна система;Brakes;1;;;TRC,RGD,TRL,SMT;0
+BRK.CTRL;CTRL;part;Апарати керування;Control valves;2;BRK;;TRC,RGD,TRL,SMT;0
+BRK.CTRL.FOOT;FOOT;part;Головний гальмівний кран;Foot brake valve;3;BRK.CTRL;;TRC,RGD;0
+BRK.CTRL.FOOT.RK;RK;repkit;Ремкомплект головного гальмівного крана;Foot brake valve repair kit;4;BRK.CTRL.FOOT;;TRC,RGD;0
+BRK.CTRL.HAND;HAND;part;Кран стоянкового гальма;Hand brake valve;3;BRK.CTRL;;TRC,RGD;0
+BRK.CTRL.HAND.RK;RK;repkit;Ремкомплект крана стоянкового гальма;Hand brake valve repair kit;4;BRK.CTRL.HAND;;TRC,RGD;0
+BRK.CTRL.RELAY;RELAY;part;Прискорювальний клапан;Relay valve;3;BRK.CTRL;;TRC,RGD,TRL,SMT;0
+BRK.CTRL.RELAY.RK;RK;repkit;Ремкомплект прискорювального клапана;Relay valve repair kit;4;BRK.CTRL.RELAY;;TRC,RGD,TRL,SMT;0
+BRK.CTRL.TCV;TCV;part;Клапан керування причепом;Trailer control valve;3;BRK.CTRL;;TRC,RGD;0
+BRK.CTRL.TCV.RK;RK;repkit;Ремкомплект клапана керування причепом;Trailer control valve repair kit;4;BRK.CTRL.TCV;;TRC,RGD;0
+BRK.CTRL.TBV;TBV;part;Клапан гальмування причепа;Trailer emergency / relay-emergency valve;3;BRK.CTRL;;TRL,SMT;0
+BRK.CTRL.TBV.RK;RK;repkit;Ремкомплект клапана гальмування причепа;Trailer emergency valve repair kit;4;BRK.CTRL.TBV;;TRL,SMT;0
+BRK.CTRL.LSV;LSV;part;Регулятор гальмівних сил;Load-sensing valve;3;BRK.CTRL;;TRC,RGD,TRL,SMT;0
+BRK.CTRL.LSV.RK;RK;repkit;Ремкомплект регулятора гальмівних сил;Load-sensing valve repair kit;4;BRK.CTRL.LSV;;TRC,RGD,TRL,SMT;0
+BRK.CTRL.QRV;QRV;part;Клапан швидкого розгальмування;Quick release valve;3;BRK.CTRL;;TRC,RGD,TRL,SMT;0
+BRK.CTRL.QRV.RK;RK;repkit;Ремкомплект клапана швидкого розгальмування;Quick release valve repair kit;4;BRK.CTRL.QRV;;TRC,RGD,TRL,SMT;0
+BRK.CTRL.PARK;PARK;part;Клапан розгальмування / паркувальний;Park / shunt valve;3;BRK.CTRL;;TRL,SMT;0
+BRK.CTRL.PARK.RK;RK;repkit;Ремкомплект паркувального клапана;Park valve repair kit;4;BRK.CTRL.PARK;;TRL,SMT;0
+BRK.ABS;ABS;part;ABS / EBS;ABS / EBS;2;BRK;;TRC,RGD,TRL,SMT;0
+BRK.ABS.MOD;MOD;part;Модулятор ABS / EBS;ABS / EBS modulator;3;BRK.ABS;;TRC,RGD,TRL,SMT;0
+BRK.ABS.MOD.RK;RK;repkit;Ремкомплект модулятора;Modulator repair kit;4;BRK.ABS.MOD;;TRC,RGD,TRL,SMT;0
+BRK.ABS.ECU;ECU;part;ЕБУ ABS / EBS;ABS / EBS ECU;3;BRK.ABS;ELE.CTRL;TRC,RGD,TRL,SMT;1
+BRK.ABS.SENS;SENS;part;Датчик ABS;ABS wheel speed sensor;3;BRK.ABS;ELE.SENS,CHS.HUB;TRC,RGD,TRL,SMT;1
+BRK.ABS.SENS.RK;RK;repkit;Ремкомплект датчика ABS (втулка, мастило);ABS sensor bush kit;4;BRK.ABS.SENS;;TRC,RGD,TRL,SMT;0
+BRK.ABS.RING;RING;part;Зубчастий ротор ABS;ABS tone ring;3;BRK.ABS;CHS.HUB;TRC,RGD,TRL,SMT;1
+BRK.ABS.TEBS;TEBS;part;Модуль TEBS;Trailer EBS module;3;BRK.ABS;;TRL,SMT;0
+BRK.ACT;ACT;part;Виконавчі пристрої;Actuators;2;BRK;;TRC,RGD,TRL,SMT;0
+BRK.ACT.CHAM;CHAM;part;Гальмівна камера;Service brake chamber;3;BRK.ACT;;TRC,RGD,TRL,SMT;0
+BRK.ACT.CHAM.RK;RK;repkit;Ремкомплект гальмівної камери (мембрана);Brake chamber repair kit;4;BRK.ACT.CHAM;;TRC,RGD,TRL,SMT;0
+BRK.ACT.SPCH;SPCH;part;Енергоакумулятор;Spring brake chamber;3;BRK.ACT;;TRC,RGD,TRL,SMT;0
+BRK.ACT.SPCH.RK;RK;repkit;Ремкомплект енергоакумулятора;Spring brake repair kit;4;BRK.ACT.SPCH;;TRC,RGD,TRL,SMT;0
+BRK.WHB;WHB;part;Колісні гальма;Wheel brakes;2;BRK;;TRC,RGD,TRL,SMT;0
+BRK.WHB.DRUM;DRUM;part;Барабанні;Drum brakes;3;BRK.WHB;;TRC,RGD,TRL,SMT;0
+BRK.WHB.DRUM.DRUM;DRUM;part;Гальмівний барабан;Brake drum;4;BRK.WHB.DRUM;;TRC,RGD,TRL,SMT;0
+BRK.WHB.DRUM.SHOE;SHOE;part;Колодка / накладки;Brake shoe / linings;4;BRK.WHB.DRUM;;TRC,RGD,TRL,SMT;0
+BRK.WHB.DRUM.SHOE.RK;RK;repkit;Ремкомплект колодок (пружини, ролики, осі);Brake shoe repair kit;5;BRK.WHB.DRUM.SHOE;;TRC,RGD,TRL,SMT;0
+BRK.WHB.DRUM.CAM;CAM;part;Розтискний S-кулак;S-cam;4;BRK.WHB.DRUM;;TRC,RGD,TRL,SMT;0
+BRK.WHB.DRUM.CAM.RK;RK;repkit;Ремкомплект розтискного кулака;S-cam repair kit;5;BRK.WHB.DRUM.CAM;;TRC,RGD,TRL,SMT;0
+BRK.WHB.DRUM.SLACK;SLACK;part;Регулювальний важіль;Slack adjuster;4;BRK.WHB.DRUM;;TRC,RGD,TRL,SMT;0
+BRK.WHB.DRUM.SLACK.RK;RK;repkit;Ремкомплект регулювального важеля;Slack adjuster repair kit;5;BRK.WHB.DRUM.SLACK;;TRC,RGD,TRL,SMT;0
+BRK.WHB.DRUM.BUSH;BUSH;part;Втулки кулака;Cam bushes;4;BRK.WHB.DRUM;;TRC,RGD,TRL,SMT;0
+BRK.WHB.DISC;DISC;part;Дискові;Disc brakes;3;BRK.WHB;;TRC,RGD,TRL,SMT;0
+BRK.WHB.DISC.DISC;DISC;part;Гальмівний диск;Brake disc;4;BRK.WHB.DISC;;TRC,RGD,TRL,SMT;0
+BRK.WHB.DISC.PAD;PAD;part;Гальмівні колодки;Brake pads;4;BRK.WHB.DISC;;TRC,RGD,TRL,SMT;0
+BRK.WHB.DISC.PAD.RK;RK;repkit;Ремкомплект колодок (пружини, планка-фіксатор);Pad retainer kit;5;BRK.WHB.DISC.PAD;;TRC,RGD,TRL,SMT;0
+BRK.WHB.DISC.CAL;CAL;part;Супорт;Caliper;4;BRK.WHB.DISC;;TRC,RGD,TRL,SMT;0
+BRK.WHB.DISC.CAL.RK;RK;repkit;Ремкомплекти супорта;Caliper repair kits;5;BRK.WHB.DISC.CAL;;TRC,RGD,TRL,SMT;0
+BRK.WHB.DISC.CAL.RK.GUIDE;GUIDE;repkit;Ремкомплект направляючих;Guide pin kit;6;BRK.WHB.DISC.CAL.RK;;TRC,RGD,TRL,SMT;0
+BRK.WHB.DISC.CAL.RK.PISTON;PISTON;repkit;Ремкомплект поршнів (пильовики);Piston & boot kit;6;BRK.WHB.DISC.CAL.RK;;TRC,RGD,TRL,SMT;0
+BRK.WHB.DISC.CAL.RK.ADJ;ADJ;repkit;Ремкомплект механізму регулювання;Adjuster mechanism kit;6;BRK.WHB.DISC.CAL.RK;;TRC,RGD,TRL,SMT;0
+BRK.WHB.DISC.CAL.RK.SHAFT;SHAFT;repkit;Ремкомплект вала / важеля супорта;Caliper shaft / lever kit;6;BRK.WHB.DISC.CAL.RK;;TRC,RGD,TRL,SMT;0
+BRK.WHB.DISC.CAL.RK.CAP;CAP;repkit;Ремкомплект заглушок і кришок супорта;Sealing cap kit;6;BRK.WHB.DISC.CAL.RK;;TRC,RGD,TRL,SMT;0
+BRK.WHB.DISC.WEAR;WEAR;part;Датчик зносу колодок;Pad wear sensor;4;BRK.WHB.DISC;ELE.SENS;TRC,RGD,TRL,SMT;1
+BRK.AUX;AUX;part;Допоміжні гальма;Auxiliary brakes;2;BRK;;TRC,RGD;0
+CPL;CPL;part;Зчіпні пристрої;Coupling devices;1;;;TRC,RGD,TRL,SMT;0
+CPL.5W;5W;part;Сідельно-зчіпний пристрій;Fifth wheel;2;CPL;;TRC;0
+CPL.5W.PLATE;PLATE;part;Плита сідла;Fifth wheel plate;3;CPL.5W;;TRC;0
+CPL.5W.LOCK;LOCK;part;Замковий механізм;Locking mechanism;3;CPL.5W;;TRC;0
+CPL.5W.LOCK.RK;RK;repkit;Ремкомплект сідла (замковий механізм);Fifth wheel repair kit;4;CPL.5W.LOCK;;TRC;0
+CPL.5W.LINER;LINER;part;Вкладиш (накладка) сідла;Fifth wheel liner;3;CPL.5W;;TRC;0
+CPL.5W.MOUNT;MOUNT;part;Монтажна плита;Mounting plate;3;CPL.5W;FRM;TRC;1
+CPL.KPIN;KPIN;part;Шкворень напівпричепа;King pin;2;CPL;;SMT;0
+CPL.KPIN.PIN;PIN;part;"Шкворень 2"" / 3.5""";"King pin 2"" / 3.5""";3;CPL.KPIN;;SMT;0
+CPL.KPIN.PLATE;PLATE;part;Опорний лист шкворня;King pin plate;3;CPL.KPIN;FRM;SMT;1
+CPL.HITCH;HITCH;part;Тягово-зчіпний пристрій;Towing hitch;2;CPL;;RGD;0
+CPL.HITCH.JAW;JAW;part;Зів, палець ТСУ;Jaw, coupling pin;3;CPL.HITCH;;RGD;0
+CPL.HITCH.JAW.RK;RK;repkit;Ремкомплект ТСУ;Towing hitch repair kit;4;CPL.HITCH.JAW;;RGD;0
+CPL.HITCH.SPRING;SPRING;part;Демпфери ТСУ;Hitch dampers;3;CPL.HITCH;;RGD;0
+CPL.HITCH.MOUNT;MOUNT;part;Поперечина / кріплення ТСУ;Hitch crossmember;3;CPL.HITCH;FRM;RGD;1
+CPL.DRAW;DRAW;part;Дишло і поворотний круг;Drawbar & turntable;2;CPL;;TRL;0
+CPL.DRAW.BAR;BAR;part;Дишло;Drawbar;3;CPL.DRAW;;TRL;0
+CPL.DRAW.BAR.RK;RK;repkit;Ремкомплект кріплення дишла (втулки, пальці);Drawbar bush kit;4;CPL.DRAW.BAR;;TRL;0
+CPL.DRAW.EYE;EYE;part;Зчіпна петля;Drawbar eye;3;CPL.DRAW;;TRL;0
+CPL.DRAW.EYE.RK;RK;repkit;Ремкомплект зчіпної петлі (втулка);Drawbar eye bush kit;4;CPL.DRAW.EYE;;TRL;0
+CPL.DRAW.TURN;TURN;part;Поворотний круг;Turntable;3;CPL.DRAW;;TRL;0
+CPL.DRAW.TURN.RK;RK;repkit;Ремкомплект поворотного круга;Turntable repair kit;4;CPL.DRAW.TURN;;TRL;0
+CPL.DRAW.SUPP;SUPP;part;Підтримка дишла;Drawbar support spring;3;CPL.DRAW;;TRL;0
+CPL.CON;CON;part;З'єднання тягач–причіп;Tractor–trailer connections;2;CPL;;TRC,RGD,TRL,SMT;0
+CPL.CON.ELC;ELC;part;Електророз'єми 7 / 15-pin, ISO 7638;Electrical connectors;3;CPL.CON;ELE.HARN;TRC,RGD,TRL,SMT;1
+CPL.CON.SPIR;SPIR;part;Електричні спіралі;Electrical coils;3;CPL.CON;ELE.HARN;TRC,RGD,TRL,SMT;1
+CPL.LEG;LEG;part;Опорні пристрої;Landing gear;2;CPL;;SMT;0
+CPL.LEG.LEG;LEG;part;Опорна стійка;Landing leg;3;CPL.LEG;;SMT;0
+CPL.LEG.GBX;GBX;part;Редуктор опори;Landing gear gearbox;3;CPL.LEG;;SMT;0
+CPL.LEG.GBX.RK;RK;repkit;Ремкомплект редуктора опори;Landing gear repair kit;4;CPL.LEG.GBX;;SMT;0
+CPL.LEG.CRANK;CRANK;part;Рукоятка;Crank handle;3;CPL.LEG;;SMT;0
+CPL.LEG.FOOT;FOOT;part;Опорна лапа / башмак;Foot / sand shoe;3;CPL.LEG;;SMT;0
+FRM;FRM;part;Рама;Frame;1;;;TRC,RGD,TRL,SMT;0
+FRM.RAIL;RAIL;part;Лонжерони;Side members;2;FRM;;TRC,RGD,TRL,SMT;0
+FRM.CROSS;CROSS;part;Поперечини;Cross members;2;FRM;;TRC,RGD,TRL,SMT;0
+FRM.BRKT;BRKT;part;Кронштейни;Brackets;2;FRM;;TRC,RGD,TRL,SMT;0
+FRM.BUMP;BUMP;part;Задній бампер / брус;Rear bumper / bar;2;FRM;;TRC,RGD,TRL,SMT;0
+FRM.SIDE;SIDE;part;Бічний захист;Side guard;2;FRM;;TRC,RGD,TRL,SMT;0
+FRM.UND;UND;part;Протипідкатний захист;Underrun protection;2;FRM;;TRC,RGD,TRL,SMT;0
+FRM.MUD;MUD;part;Бризковики, кронштейни крил;Mudflaps, wing brackets;2;FRM;;TRC,RGD,TRL,SMT;0
+FRM.FEND;FEND;part;Крила / підкрилки;Mudguards / fenders;2;FRM;;TRC,RGD,TRL,SMT;0
+FRM.TBOX;TBOX;part;Інструментальний ящик;Tool box;2;FRM;;TRC,RGD,TRL,SMT;0
+FRM.PALL;PALL;part;Ящик для піддонів;Pallet box;2;FRM;;TRL,SMT;0
+CAB;CAB;part;Кабіна;Cab;1;;;TRC,RGD;0
+CAB.SHELL;SHELL;part;Кузов кабіни;Cab body;2;CAB;;TRC,RGD;0
+CAB.SHELL.DOOR;DOOR;part;Двері, замки, склопідйомники;Doors, locks, window lifters;3;CAB.SHELL;;TRC,RGD;0
+CAB.SHELL.DOOR.RK;RK;repkit;Ремкомплект замка дверей;Door lock repair kit;4;CAB.SHELL.DOOR;;TRC,RGD;0
+CAB.SHELL.PANEL;PANEL;part;Облицювання, решітка;Panels, grille;3;CAB.SHELL;;TRC,RGD;0
+CAB.SHELL.BUMP;BUMP;part;Передній бампер;Front bumper;3;CAB.SHELL;FRM;TRC,RGD;1
+CAB.SHELL.STEP;STEP;part;Підніжки;Steps;3;CAB.SHELL;;TRC,RGD;0
+CAB.SHELL.MIRR;MIRR;part;Дзеркала;Mirrors;3;CAB.SHELL;;TRC,RGD;0
+CAB.SHELL.MIRR.RK;RK;repkit;Ремкомплект дзеркала;Mirror repair kit;4;CAB.SHELL.MIRR;;TRC,RGD;0
+CAB.SHELL.GLASS;GLASS;part;Скло, ущільнювачі;Glass, seals;3;CAB.SHELL;;TRC,RGD;0
+CAB.SHELL.WIPER;WIPER;part;Склоочисник, омивач;Wipers, washer;3;CAB.SHELL;ELE;TRC,RGD;1
+CAB.SHELL.WIPER.RK;RK;repkit;Ремкомплект трапеції склоочисника;Wiper linkage repair kit;4;CAB.SHELL.WIPER;;TRC,RGD;0
+CAB.SHELL.DEFL;DEFL;part;Обтікач / спойлер;Deflector / spoiler;3;CAB.SHELL;;TRC,RGD;0
+CAB.SHELL.SUN;SUN;part;Сонцезахисний козирок;Sun visor;3;CAB.SHELL;;TRC,RGD;0
+CAB.SUSP;SUSP;part;Підвіска кабіни;Cab suspension;2;CAB;;TRC,RGD;0
+CAB.SUSP.SHOCK;SHOCK;part;Амортизатор кабіни;Cab shock absorber;3;CAB.SUSP;;TRC,RGD;0
+CAB.SUSP.BAG;BAG;part;Пневмоподушка кабіни;Cab air spring;3;CAB.SUSP;PNE;TRC,RGD;1
+CAB.SUSP.TILT;TILT;part;Механізм перекидання;Cab tilt pump / cylinder;3;CAB.SUSP;;TRC,RGD;0
+CAB.SUSP.TILT.RK;RK;repkit;Ремкомплект насоса / циліндра перекидання;Cab tilt repair kit;4;CAB.SUSP.TILT;;TRC,RGD;0
+CAB.SUSP.LOCK;LOCK;part;Замок кабіни;Cab lock;3;CAB.SUSP;;TRC,RGD;0
+CAB.SUSP.LOCK.RK;RK;repkit;Ремкомплект замка кабіни;Cab lock repair kit;4;CAB.SUSP.LOCK;;TRC,RGD;0
+CAB.SUSP.BUSH;BUSH;part;Сайлентблоки кабіни;Cab mount bushes;3;CAB.SUSP;;TRC,RGD;0
+CAB.SUSP.BUSH.RK;RK;repkit;Ремкомплект сайлентблоків кабіни;Cab mount bush kit;4;CAB.SUSP.BUSH;;TRC,RGD;0
+CAB.INT;INT;part;Інтер'єр;Interior;2;CAB;;TRC,RGD;0
+CAB.INT.SEAT;SEAT;part;Сидіння;Seat;3;CAB.INT;PNE;TRC,RGD;1
+CAB.INT.SEAT.RK;RK;repkit;Ремкомплект сидіння;Seat repair kit;4;CAB.INT.SEAT;;TRC,RGD;0
+CAB.INT.DASH;DASH;part;Панель приладів;Dashboard;3;CAB.INT;ELE;TRC,RGD;1
+CAB.INT.PEDAL;PEDAL;part;Педальний вузол;Pedal box;3;CAB.INT;;TRC,RGD;0
+CAB.INT.PEDAL.RK;RK;repkit;Ремкомплект педального вузла;Pedal box repair kit;4;CAB.INT.PEDAL;;TRC,RGD;0
+CAB.INT.BUNK;BUNK;part;Спальник;Bunk;3;CAB.INT;;TRC,RGD;0
+CAB.HVAC;HVAC;part;Опалення і кондиціювання;Heating & A/C;2;CAB;;TRC,RGD;0
+CAB.HVAC.HEAT;HEAT;part;Пічка, радіатор пічки;Heater core;3;CAB.HVAC;ENG.COOL;TRC,RGD;1
+CAB.HVAC.PARK;PARK;part;Автономний обігрівач;Parking heater;3;CAB.HVAC;;TRC,RGD;0
+CAB.HVAC.PARK.RK;RK;repkit;Ремкомплект автономного обігрівача;Parking heater repair kit;4;CAB.HVAC.PARK;;TRC,RGD;0
+CAB.HVAC.COND;COND;part;Конденсер, осушувач A/C;Condenser, receiver-drier;3;CAB.HVAC;;TRC,RGD;0
+CAB.HVAC.BLOW;BLOW;part;Вентилятор салону;Blower motor;3;CAB.HVAC;;TRC,RGD;0
+ELE;ELE;part;Електрообладнання;Electrical system;1;;;TRC,RGD,TRL,SMT;0
+ELE.PWR;PWR;part;Живлення;Power supply;2;ELE;;TRC,RGD;0
+ELE.PWR.BAT;BAT;part;АКБ;Battery;3;ELE.PWR;;TRC,RGD;0
+ELE.PWR.MSW;MSW;part;Вимикач маси;Battery master switch;3;ELE.PWR;;TRC,RGD;0
+ELE.LGT;LGT;part;Освітлення і сигналізація;Lighting & signalling;2;ELE;;TRC,RGD,TRL,SMT;0
+ELE.LGT.HEAD;HEAD;part;Фари;Headlamps;3;ELE.LGT;;TRC,RGD;0
+ELE.LGT.FOG;FOG;part;Протитуманні фари;Fog lamps;3;ELE.LGT;;TRC,RGD,TRL,SMT;0
+ELE.LGT.REAR;REAR;part;Задні ліхтарі;Rear lamps;3;ELE.LGT;;TRC,RGD,TRL,SMT;0
+ELE.LGT.SIDE;SIDE;part;Габаритні / бокові ліхтарі;Side marker lamps;3;ELE.LGT;;TRC,RGD,TRL,SMT;0
+ELE.LGT.PLATE;PLATE;part;Підсвічування номера;Licence plate lamp;3;ELE.LGT;;TRC,RGD,TRL,SMT;0
+ELE.LGT.BEACON;BEACON;part;Маячки;Beacons;3;ELE.LGT;;TRC,RGD,TRL,SMT;0
+ELE.LGT.BULB;BULB;part;Лампи;Bulbs;3;ELE.LGT;;TRC,RGD,TRL,SMT;0
+ELE.HARN;HARN;part;Проводка, роз'єми;Wiring harness, connectors;2;ELE;;TRC,RGD,TRL,SMT;0
+ELE.SENS;SENS;part;Датчики;Sensors;2;ELE;;TRC,RGD,TRL,SMT;0
+ELE.CTRL;CTRL;part;Блоки керування, реле;Control units, relays;2;ELE;;TRC,RGD,TRL,SMT;0
+ELE.CTRL.RELAY;RELAY;part;Реле, запобіжники;Relays, fuses;3;ELE.CTRL;;TRC,RGD,TRL,SMT;0
+ELE.CTRL.CU;CU;part;Блоки керування кузовом / CAN;Body / CAN control units;3;ELE.CTRL;;TRC,RGD,TRL,SMT;0
+ELE.INFO;INFO;part;Тахограф, спідометр;Tachograph, speedometer;2;ELE;;TRC,RGD;0
+ELE.HORN;HORN;part;Звуковий сигнал;Horn;2;ELE;;TRC,RGD;0
+BOD;BOD;part;Надбудова / кузов;Body / superstructure;1;;;TRC,RGD,TRL,SMT;0
+BOD.CURT;CURT;part;Тентований / шторний;Curtainsider;2;BOD;;RGD,TRL,SMT;0
+BOD.CURT.TARP;TARP;part;Тент;Tarpaulin;3;BOD.CURT;;RGD,TRL,SMT;0
+BOD.CURT.FRAME;FRAME;part;Каркас, дуги, стійки;Frame, bows, stakes;3;BOD.CURT;;RGD,TRL,SMT;0
+BOD.CURT.BUCK;BUCK;part;Натяжники, ремені;Tensioners, straps;3;BOD.CURT;;RGD,TRL,SMT;0
+BOD.CURT.ROOF;ROOF;part;Зсувний дах;Sliding roof;3;BOD.CURT;;RGD,TRL,SMT;0
+BOD.CURT.ROOF.RK;RK;repkit;Ремкомплект зсувного даху;Sliding roof repair kit;4;BOD.CURT.ROOF;;RGD,TRL,SMT;0
+BOD.BOX;BOX;part;Борти і підлога;Sides & floor;2;BOD;;RGD,TRL,SMT;0
+BOD.BOX.SIDE;SIDE;part;Борти, завіси, замки;Side boards, hinges, locks;3;BOD.BOX;;RGD,TRL,SMT;0
+BOD.BOX.FLOOR;FLOOR;part;Підлога;Floor;3;BOD.BOX;;RGD,TRL,SMT;0
+BOD.BOX.DOOR;DOOR;part;Задні ворота;Rear doors;3;BOD.BOX;;RGD,TRL,SMT;0
+BOD.BOX.DOOR.RK;RK;repkit;Ремкомплект завіс / замків воріт;Rear door hinge & lock kit;4;BOD.BOX.DOOR;;RGD,TRL,SMT;0
+BOD.BOX.LASH;LASH;part;Кріплення вантажу;Load securing;3;BOD.BOX;;RGD,TRL,SMT;0
+BOD.REF;REF;part;Рефрижератор / ізотерм;Reefer / insulated;2;BOD;;RGD,TRL,SMT;0
+BOD.REF.UNIT;UNIT;part;Холодильна установка;Refrigeration unit;3;BOD.REF;;RGD,TRL,SMT;0
+BOD.REF.PANEL;PANEL;part;Сендвіч-панелі;Sandwich panels;3;BOD.REF;;RGD,TRL,SMT;0
+BOD.TIP;TIP;part;Самоскид;Tipper;2;BOD;;RGD,TRL,SMT;0
+BOD.TIP.CYL;CYL;part;Гідроциліндр перекидання;Tipping cylinder;3;BOD.TIP;;RGD,TRL,SMT;0
+BOD.TIP.CYL.RK;RK;repkit;Ремкомплект гідроциліндра;Tipping cylinder seal kit;4;BOD.TIP.CYL;;RGD,TRL,SMT;0
+BOD.TIP.TAILG;TAILG;part;Задній борт самоскида;Tipper tailgate;3;BOD.TIP;;RGD,TRL,SMT;0
+BOD.HYD;HYD;part;Гідравліка надбудови (у т.ч. гідрофікація тягача);Body hydraulics / wet kit;2;BOD;;TRC,RGD,TRL,SMT;0
+BOD.HYD.PUMP;PUMP;part;Гідронасос;Hydraulic pump;3;BOD.HYD;;TRC,RGD,TRL,SMT;0
+BOD.HYD.PUMP.RK;RK;repkit;Ремкомплект гідронасоса;Hydraulic pump seal kit;4;BOD.HYD.PUMP;;TRC,RGD,TRL,SMT;0
+BOD.HYD.TANK;TANK;part;Гідробак;Hydraulic tank;3;BOD.HYD;;TRC,RGD,TRL,SMT;0
+BOD.HYD.VALVE;VALVE;part;Гідророзподільник;Control valve;3;BOD.HYD;;TRC,RGD,TRL,SMT;0
+BOD.HYD.VALVE.RK;RK;repkit;Ремкомплект гідророзподільника;Control valve seal kit;4;BOD.HYD.VALVE;;TRC,RGD,TRL,SMT;0
+BOD.HYD.HOSE;HOSE;part;РВД;Hydraulic hoses;3;BOD.HYD;;TRC,RGD,TRL,SMT;0
+BOD.TANKR;TANKR;part;Цистерна;Tanker;2;BOD;;RGD,TRL,SMT;0
+BOD.TANKR.VALVE;VALVE;part;Донні / дихальні клапани;Bottom / vent valves;3;BOD.TANKR;;RGD,TRL,SMT;0
+BOD.TANKR.VALVE.RK;RK;repkit;Ремкомплект клапанів цистерни;Tanker valve repair kit;4;BOD.TANKR.VALVE;;RGD,TRL,SMT;0
+BOD.TANKR.HATCH;HATCH;part;Горловини люків;Manlids;3;BOD.TANKR;;RGD,TRL,SMT;0

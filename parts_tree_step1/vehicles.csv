@@ -1,0 +1,92 @@
+﻿id;kind;brand;range;name;types;year_from;year_to;engines;is_model
+MAN;manufacturer;MAN;;MAN;;;;;0
+MAN.F2000;range;MAN;F2000;F2000;TRC,RGD;1994;2001;D2865,D2866,D2876,D2840;1
+MAN.L2000;range;MAN;L2000 / M2000;L2000 / M2000;RGD;1993;2005;D0824,D0826;1
+MAN.TGA;range;MAN;TGA;TGA;TRC,RGD;2000;2008;D2066,D2676,D2866,D2876;1
+MAN.TGX;range;MAN;TGX;TGX;TRC,RGD;;;;0
+MAN.TGX.G1;generation;MAN;TGX;TGX 1-ше покоління;TRC,RGD;2007;2020;D2066,D2676,D3876;1
+MAN.TGX.G2;generation;MAN;TGX;TGX нове покоління;TRC,RGD;2020;;D1556,D2676,D3876;1
+MAN.TGS;range;MAN;TGS;TGS;TRC,RGD;;;;0
+MAN.TGS.G1;generation;MAN;TGS;TGS 1-ше покоління;TRC,RGD;2007;2020;D2066,D2676;1
+MAN.TGS.G2;generation;MAN;TGS;TGS нове покоління;TRC,RGD;2020;;D1556,D2676;1
+MAN.TGM;range;MAN;TGM;TGM;RGD;2005;;D0836;1
+MAN.TGL;range;MAN;TGL;TGL;RGD;2005;;D0834;1
+MAN.TGE;range;MAN;TGE;TGE;LCV;2017;;EA288;1
+DAF;manufacturer;DAF;;DAF;;;;;0
+DAF.XF;range;DAF;XF;XF;TRC,RGD;;;;0
+DAF.XF.XF95;generation;DAF;XF;95XF / XF95;TRC,RGD;1997;2006;XF280M,XF315M,XE;1
+DAF.XF.XF105;generation;DAF;XF;XF105;TRC,RGD;2005;2013;MX-300,MX-340,MX-375;1
+DAF.XF.XF106;generation;DAF;XF;XF Euro 6 (XF106);TRC,RGD;2013;2021;MX-11,MX-13;1
+DAF.XF.XFN;generation;DAF;XF;XF нове покоління;TRC,RGD;2021;;MX-11,MX-13;1
+DAF.XG;range;DAF;XG / XG+;XG / XG+;TRC;2021;;MX-13;1
+DAF.CF;range;DAF;CF;CF;TRC,RGD;;;;0
+DAF.CF.CF1;generation;DAF;CF;CF65 / CF75 / CF85;TRC,RGD;2001;2013;PE,PR,MX;1
+DAF.CF.CF2;generation;DAF;CF;CF Euro 6;TRC,RGD;2013;2021;PX-7,MX-11,MX-13;1
+DAF.CF.CFN;generation;DAF;CF;CF нове покоління;TRC,RGD;2022;;PX-7,MX-11,MX-13;1
+DAF.XD;range;DAF;XD;XD;RGD;2022;;PX-7,MX-11;1
+DAF.LF;range;DAF;LF;LF;RGD;;;;0
+DAF.LF.LF1;generation;DAF;LF;LF45 / LF55;RGD;2001;2013;FR,GR;1
+DAF.LF.LF2;generation;DAF;LF;LF Euro 6;RGD;2013;;PX-5,PX-7;1
+VOLVO;manufacturer;Volvo;;Volvo;;;;;0
+VOLVO.FH;range;Volvo;FH / FH16;FH / FH16;TRC,RGD;;;;0
+VOLVO.FH.FH1;generation;Volvo;FH / FH16;FH12 / FH16 1-ше покоління;TRC,RGD;1993;2002;D12A,D12C,D16A;1
+VOLVO.FH.FH2;generation;Volvo;FH / FH16;FH (версія 2);TRC,RGD;2002;2012;D12D,D13A,D13C,D16C;1
+VOLVO.FH.FH4;generation;Volvo;FH / FH16;FH4;TRC,RGD;2012;2020;D13K,D16K;1
+VOLVO.FH.FH5;generation;Volvo;FH / FH16;FH5;TRC,RGD;2020;;D13K,D16K;1
+VOLVO.FH.AERO;generation;Volvo;FH / FH16;FH Aero;TRC,RGD;2024;;D13K;1
+VOLVO.FM;range;Volvo;FM;FM;TRC,RGD;;;;0
+VOLVO.FM.FM1;generation;Volvo;FM;FM 1-ше покоління;TRC,RGD;1998;2013;D9,D12,D13A;1
+VOLVO.FM.FM4;generation;Volvo;FM;FM4;TRC,RGD;2013;2020;D11K,D13K;1
+VOLVO.FM.FM5;generation;Volvo;FM;FM нове покоління;TRC,RGD;2020;;D11K,D13K;1
+VOLVO.FMX;range;Volvo;FMX;FMX;TRC,RGD;2010;;D11K,D13K;1
+VOLVO.FL;range;Volvo;FL;FL;RGD;2006;;D7,D8K;1
+VOLVO.FE;range;Volvo;FE;FE;RGD;2006;;D7,D8K;1
+IVECO;manufacturer;IVECO;;IVECO;;;;;0
+IVECO.EURO;range;IVECO;EuroStar / EuroTech;EuroStar / EuroTech;TRC,RGD;1992;2002;8460,Cursor 10;1
+IVECO.STRALIS;range;IVECO;Stralis;Stralis;TRC,RGD;;;;0
+IVECO.STRALIS.AS;generation;IVECO;Stralis;Stralis AS / AT / AD;TRC,RGD;2002;2012;Cursor 8,Cursor 10,Cursor 13;1
+IVECO.STRALIS.HIWAY;generation;IVECO;Stralis;Stralis Hi-Way;TRC,RGD;2012;2019;Cursor 11,Cursor 13;1
+IVECO.SWAY;range;IVECO;S-Way;S-Way;TRC,RGD;2019;;Cursor 9,Cursor 11,Cursor 13;1
+IVECO.TRAKKER;range;IVECO;Trakker;Trakker;TRC,RGD;2004;2021;Cursor 8,Cursor 10,Cursor 13;1
+IVECO.TWAY;range;IVECO;T-Way;T-Way;TRC,RGD;2021;;Cursor 9,Cursor 13;1
+IVECO.EUROCARGO;range;IVECO;Eurocargo;Eurocargo;RGD;1991;;Tector;1
+IVECO.DAILY;range;IVECO;Daily;Daily;LCV;1978;;F1A,F1C;1
+SCANIA;manufacturer;Scania;;Scania;;;;;0
+SCANIA.S4;range;Scania;4-series (P / R / T);4-series (P / R / T);TRC,RGD;1995;2004;DC9,DC11,DC12,DC16;1
+SCANIA.PGRT;range;Scania;PGR-series (P / G / R / T);PGR-series (P / G / R / T);TRC,RGD;2004;2016;DC9,DC12,DC13,DC16;1
+SCANIA.NTG;range;Scania;Нове покоління NTG (P / G / R / S / L / XT);Нове покоління NTG (P / G / R / S / L / XT);TRC,RGD;2016;;DC09,DC13,DC16;1
+RENAULT;manufacturer;Renault Trucks;;Renault Trucks;;;;;0
+RENAULT.MAGNUM;range;Renault Trucks;Magnum;Magnum;TRC;1990;2013;MIDR 06.35,Mack E-Tech,DXi12,DXi13;1
+RENAULT.PREMIUM;range;Renault Trucks;Premium / Premium Lander;Premium / Premium Lander;TRC,RGD;1996;2013;MIDR 06.20,DCi11,DXi11;1
+RENAULT.KERAX;range;Renault Trucks;Kerax;Kerax;TRC,RGD;1997;2013;DCi11,DXi11,DXi13;1
+RENAULT.MIDLUM;range;Renault Trucks;Midlum;Midlum;RGD;2000;2013;DCi6,DXi5,DXi7;1
+RENAULT.T;range;Renault Trucks;T / T High;T / T High;TRC,RGD;;;;0
+RENAULT.T.T1;generation;Renault Trucks;T / T High;T;TRC,RGD;2013;2021;DTI 11,DTI 13;1
+RENAULT.T.EVO;generation;Renault Trucks;T / T High;T Evo;TRC,RGD;2021;;DTI 13;1
+RENAULT.C;range;Renault Trucks;C;C;TRC,RGD;2013;;DTI 11,DTI 13;1
+RENAULT.K;range;Renault Trucks;K;K;TRC,RGD;2013;;DTI 11,DTI 13;1
+RENAULT.D;range;Renault Trucks;D / D Wide;D / D Wide;RGD;2013;;DTI 5,DTI 8;1
+RENAULT.MASTER;range;Renault Trucks;Master;Master;LCV;1980;;M9T,M9R;1
+MB;manufacturer;Mercedes-Benz;;Mercedes-Benz;;;;;0
+MB.ACTROS;range;Mercedes-Benz;Actros;Actros;TRC,RGD;;;;0
+MB.ACTROS.MP1;generation;Mercedes-Benz;Actros;Actros MP1;TRC,RGD;1996;2002;OM501LA,OM502LA;1
+MB.ACTROS.MP2;generation;Mercedes-Benz;Actros;Actros MP2;TRC,RGD;2002;2008;OM501LA,OM502LA;1
+MB.ACTROS.MP3;generation;Mercedes-Benz;Actros;Actros MP3;TRC,RGD;2008;2011;OM501LA,OM502LA;1
+MB.ACTROS.MP4;generation;Mercedes-Benz;Actros;Actros MP4;TRC,RGD;2011;2018;OM470,OM471,OM473;1
+MB.ACTROS.MP5;generation;Mercedes-Benz;Actros;Actros MP5;TRC,RGD;2018;;OM470,OM471;1
+MB.ACTROS.L;generation;Mercedes-Benz;Actros;Actros L;TRC,RGD;2021;;OM471;1
+MB.AXOR;range;Mercedes-Benz;Axor;Axor;TRC,RGD;2001;2013;OM457LA,OM906LA,OM926LA;1
+MB.ANTOS;range;Mercedes-Benz;Antos;Antos;TRC,RGD;2012;;OM470,OM471,OM936;1
+MB.AROCS;range;Mercedes-Benz;Arocs;Arocs;TRC,RGD;2013;;OM470,OM471,OM473,OM936;1
+MB.ATEGO;range;Mercedes-Benz;Atego;Atego;RGD;;;;0
+MB.ATEGO.A1;generation;Mercedes-Benz;Atego;Atego 1-ше покоління;RGD;1998;2013;OM904LA,OM906LA;1
+MB.ATEGO.A2;generation;Mercedes-Benz;Atego;Atego Euro 6;RGD;2013;;OM934,OM936;1
+MB.ECONIC;range;Mercedes-Benz;Econic;Econic;RGD;1998;;OM936,OM470;1
+MB.SPRINTER;range;Mercedes-Benz;Sprinter;Sprinter;LCV;1995;;OM646,OM651,OM654;1
+FORD;manufacturer;Ford / Ford Trucks;;Ford / Ford Trucks;;;;;0
+FORD.FMAX;range;Ford / Ford Trucks;F-MAX;F-MAX;TRC;;;;0
+FORD.FMAX.F1;generation;Ford / Ford Trucks;F-MAX;F-MAX;TRC;2018;2025;Ecotorq 12.7;1
+FORD.FMAX.F2;generation;Ford / Ford Trucks;F-MAX;F-MAX оновлений;TRC;2026;;Ecotorq 12.7;1
+FORD.CARGO;range;Ford / Ford Trucks;Cargo;Cargo;TRC,RGD;2003;2022;Ecotorq 7.3,Ecotorq 9.0,Ecotorq 12.7;1
+FORD.FLINE;range;Ford / Ford Trucks;F-LINE;F-LINE;TRC,RGD;2023;;Ecotorq 9.0,Ecotorq 12.7;1
+FORD.TRANSIT;range;Ford / Ford Trucks;Transit;Transit;LCV;2000;;Duratorq,EcoBlue;1

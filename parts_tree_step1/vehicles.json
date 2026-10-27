@@ -1,0 +1,1562 @@
+{
+ "types": {
+  "TRC": "Тягач сідельний",
+  "RGD": "Вантажівка з жорсткою рамою",
+  "LCV": "Легкий вантажний до 3,5 т"
+ },
+ "rows": [
+  {
+   "id": "MAN",
+   "code": "MAN",
+   "name": "MAN",
+   "kind": "manufacturer",
+   "parent": null,
+   "types": [],
+   "year_from": null,
+   "year_to": null,
+   "engines": [],
+   "is_model": false
+  },
+  {
+   "id": "MAN.F2000",
+   "code": "F2000",
+   "name": "F2000",
+   "kind": "range",
+   "parent": "MAN",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 1994,
+   "year_to": 2001,
+   "engines": [
+    "D2865",
+    "D2866",
+    "D2876",
+    "D2840"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "MAN.L2000",
+   "code": "L2000",
+   "name": "L2000 / M2000",
+   "kind": "range",
+   "parent": "MAN",
+   "types": [
+    "RGD"
+   ],
+   "year_from": 1993,
+   "year_to": 2005,
+   "engines": [
+    "D0824",
+    "D0826"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "MAN.TGA",
+   "code": "TGA",
+   "name": "TGA",
+   "kind": "range",
+   "parent": "MAN",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2000,
+   "year_to": 2008,
+   "engines": [
+    "D2066",
+    "D2676",
+    "D2866",
+    "D2876"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "MAN.TGX",
+   "code": "TGX",
+   "name": "TGX",
+   "kind": "range",
+   "parent": "MAN",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": null,
+   "year_to": null,
+   "engines": [],
+   "is_model": false
+  },
+  {
+   "id": "MAN.TGX.G1",
+   "code": "G1",
+   "name": "TGX 1-ше покоління",
+   "kind": "generation",
+   "parent": "MAN.TGX",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2007,
+   "year_to": 2020,
+   "engines": [
+    "D2066",
+    "D2676",
+    "D3876"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "MAN.TGX.G2",
+   "code": "G2",
+   "name": "TGX нове покоління",
+   "kind": "generation",
+   "parent": "MAN.TGX",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2020,
+   "year_to": null,
+   "engines": [
+    "D1556",
+    "D2676",
+    "D3876"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "MAN.TGS",
+   "code": "TGS",
+   "name": "TGS",
+   "kind": "range",
+   "parent": "MAN",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": null,
+   "year_to": null,
+   "engines": [],
+   "is_model": false
+  },
+  {
+   "id": "MAN.TGS.G1",
+   "code": "G1",
+   "name": "TGS 1-ше покоління",
+   "kind": "generation",
+   "parent": "MAN.TGS",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2007,
+   "year_to": 2020,
+   "engines": [
+    "D2066",
+    "D2676"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "MAN.TGS.G2",
+   "code": "G2",
+   "name": "TGS нове покоління",
+   "kind": "generation",
+   "parent": "MAN.TGS",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2020,
+   "year_to": null,
+   "engines": [
+    "D1556",
+    "D2676"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "MAN.TGM",
+   "code": "TGM",
+   "name": "TGM",
+   "kind": "range",
+   "parent": "MAN",
+   "types": [
+    "RGD"
+   ],
+   "year_from": 2005,
+   "year_to": null,
+   "engines": [
+    "D0836"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "MAN.TGL",
+   "code": "TGL",
+   "name": "TGL",
+   "kind": "range",
+   "parent": "MAN",
+   "types": [
+    "RGD"
+   ],
+   "year_from": 2005,
+   "year_to": null,
+   "engines": [
+    "D0834"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "MAN.TGE",
+   "code": "TGE",
+   "name": "TGE",
+   "kind": "range",
+   "parent": "MAN",
+   "types": [
+    "LCV"
+   ],
+   "year_from": 2017,
+   "year_to": null,
+   "engines": [
+    "EA288"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "DAF",
+   "code": "DAF",
+   "name": "DAF",
+   "kind": "manufacturer",
+   "parent": null,
+   "types": [],
+   "year_from": null,
+   "year_to": null,
+   "engines": [],
+   "is_model": false
+  },
+  {
+   "id": "DAF.XF",
+   "code": "XF",
+   "name": "XF",
+   "kind": "range",
+   "parent": "DAF",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": null,
+   "year_to": null,
+   "engines": [],
+   "is_model": false
+  },
+  {
+   "id": "DAF.XF.XF95",
+   "code": "XF95",
+   "name": "95XF / XF95",
+   "kind": "generation",
+   "parent": "DAF.XF",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 1997,
+   "year_to": 2006,
+   "engines": [
+    "XF280M",
+    "XF315M",
+    "XE"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "DAF.XF.XF105",
+   "code": "XF105",
+   "name": "XF105",
+   "kind": "generation",
+   "parent": "DAF.XF",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2005,
+   "year_to": 2013,
+   "engines": [
+    "MX-300",
+    "MX-340",
+    "MX-375"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "DAF.XF.XF106",
+   "code": "XF106",
+   "name": "XF Euro 6 (XF106)",
+   "kind": "generation",
+   "parent": "DAF.XF",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2013,
+   "year_to": 2021,
+   "engines": [
+    "MX-11",
+    "MX-13"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "DAF.XF.XFN",
+   "code": "XFN",
+   "name": "XF нове покоління",
+   "kind": "generation",
+   "parent": "DAF.XF",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2021,
+   "year_to": null,
+   "engines": [
+    "MX-11",
+    "MX-13"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "DAF.XG",
+   "code": "XG",
+   "name": "XG / XG+",
+   "kind": "range",
+   "parent": "DAF",
+   "types": [
+    "TRC"
+   ],
+   "year_from": 2021,
+   "year_to": null,
+   "engines": [
+    "MX-13"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "DAF.CF",
+   "code": "CF",
+   "name": "CF",
+   "kind": "range",
+   "parent": "DAF",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": null,
+   "year_to": null,
+   "engines": [],
+   "is_model": false
+  },
+  {
+   "id": "DAF.CF.CF1",
+   "code": "CF1",
+   "name": "CF65 / CF75 / CF85",
+   "kind": "generation",
+   "parent": "DAF.CF",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2001,
+   "year_to": 2013,
+   "engines": [
+    "PE",
+    "PR",
+    "MX"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "DAF.CF.CF2",
+   "code": "CF2",
+   "name": "CF Euro 6",
+   "kind": "generation",
+   "parent": "DAF.CF",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2013,
+   "year_to": 2021,
+   "engines": [
+    "PX-7",
+    "MX-11",
+    "MX-13"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "DAF.CF.CFN",
+   "code": "CFN",
+   "name": "CF нове покоління",
+   "kind": "generation",
+   "parent": "DAF.CF",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2022,
+   "year_to": null,
+   "engines": [
+    "PX-7",
+    "MX-11",
+    "MX-13"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "DAF.XD",
+   "code": "XD",
+   "name": "XD",
+   "kind": "range",
+   "parent": "DAF",
+   "types": [
+    "RGD"
+   ],
+   "year_from": 2022,
+   "year_to": null,
+   "engines": [
+    "PX-7",
+    "MX-11"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "DAF.LF",
+   "code": "LF",
+   "name": "LF",
+   "kind": "range",
+   "parent": "DAF",
+   "types": [
+    "RGD"
+   ],
+   "year_from": null,
+   "year_to": null,
+   "engines": [],
+   "is_model": false
+  },
+  {
+   "id": "DAF.LF.LF1",
+   "code": "LF1",
+   "name": "LF45 / LF55",
+   "kind": "generation",
+   "parent": "DAF.LF",
+   "types": [
+    "RGD"
+   ],
+   "year_from": 2001,
+   "year_to": 2013,
+   "engines": [
+    "FR",
+    "GR"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "DAF.LF.LF2",
+   "code": "LF2",
+   "name": "LF Euro 6",
+   "kind": "generation",
+   "parent": "DAF.LF",
+   "types": [
+    "RGD"
+   ],
+   "year_from": 2013,
+   "year_to": null,
+   "engines": [
+    "PX-5",
+    "PX-7"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "VOLVO",
+   "code": "VOLVO",
+   "name": "Volvo",
+   "kind": "manufacturer",
+   "parent": null,
+   "types": [],
+   "year_from": null,
+   "year_to": null,
+   "engines": [],
+   "is_model": false
+  },
+  {
+   "id": "VOLVO.FH",
+   "code": "FH",
+   "name": "FH / FH16",
+   "kind": "range",
+   "parent": "VOLVO",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": null,
+   "year_to": null,
+   "engines": [],
+   "is_model": false
+  },
+  {
+   "id": "VOLVO.FH.FH1",
+   "code": "FH1",
+   "name": "FH12 / FH16 1-ше покоління",
+   "kind": "generation",
+   "parent": "VOLVO.FH",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 1993,
+   "year_to": 2002,
+   "engines": [
+    "D12A",
+    "D12C",
+    "D16A"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "VOLVO.FH.FH2",
+   "code": "FH2",
+   "name": "FH (версія 2)",
+   "kind": "generation",
+   "parent": "VOLVO.FH",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2002,
+   "year_to": 2012,
+   "engines": [
+    "D12D",
+    "D13A",
+    "D13C",
+    "D16C"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "VOLVO.FH.FH4",
+   "code": "FH4",
+   "name": "FH4",
+   "kind": "generation",
+   "parent": "VOLVO.FH",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2012,
+   "year_to": 2020,
+   "engines": [
+    "D13K",
+    "D16K"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "VOLVO.FH.FH5",
+   "code": "FH5",
+   "name": "FH5",
+   "kind": "generation",
+   "parent": "VOLVO.FH",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2020,
+   "year_to": null,
+   "engines": [
+    "D13K",
+    "D16K"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "VOLVO.FH.AERO",
+   "code": "AERO",
+   "name": "FH Aero",
+   "kind": "generation",
+   "parent": "VOLVO.FH",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2024,
+   "year_to": null,
+   "engines": [
+    "D13K"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "VOLVO.FM",
+   "code": "FM",
+   "name": "FM",
+   "kind": "range",
+   "parent": "VOLVO",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": null,
+   "year_to": null,
+   "engines": [],
+   "is_model": false
+  },
+  {
+   "id": "VOLVO.FM.FM1",
+   "code": "FM1",
+   "name": "FM 1-ше покоління",
+   "kind": "generation",
+   "parent": "VOLVO.FM",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 1998,
+   "year_to": 2013,
+   "engines": [
+    "D9",
+    "D12",
+    "D13A"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "VOLVO.FM.FM4",
+   "code": "FM4",
+   "name": "FM4",
+   "kind": "generation",
+   "parent": "VOLVO.FM",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2013,
+   "year_to": 2020,
+   "engines": [
+    "D11K",
+    "D13K"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "VOLVO.FM.FM5",
+   "code": "FM5",
+   "name": "FM нове покоління",
+   "kind": "generation",
+   "parent": "VOLVO.FM",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2020,
+   "year_to": null,
+   "engines": [
+    "D11K",
+    "D13K"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "VOLVO.FMX",
+   "code": "FMX",
+   "name": "FMX",
+   "kind": "range",
+   "parent": "VOLVO",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2010,
+   "year_to": null,
+   "engines": [
+    "D11K",
+    "D13K"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "VOLVO.FL",
+   "code": "FL",
+   "name": "FL",
+   "kind": "range",
+   "parent": "VOLVO",
+   "types": [
+    "RGD"
+   ],
+   "year_from": 2006,
+   "year_to": null,
+   "engines": [
+    "D7",
+    "D8K"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "VOLVO.FE",
+   "code": "FE",
+   "name": "FE",
+   "kind": "range",
+   "parent": "VOLVO",
+   "types": [
+    "RGD"
+   ],
+   "year_from": 2006,
+   "year_to": null,
+   "engines": [
+    "D7",
+    "D8K"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "IVECO",
+   "code": "IVECO",
+   "name": "IVECO",
+   "kind": "manufacturer",
+   "parent": null,
+   "types": [],
+   "year_from": null,
+   "year_to": null,
+   "engines": [],
+   "is_model": false
+  },
+  {
+   "id": "IVECO.EURO",
+   "code": "EURO",
+   "name": "EuroStar / EuroTech",
+   "kind": "range",
+   "parent": "IVECO",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 1992,
+   "year_to": 2002,
+   "engines": [
+    "8460",
+    "Cursor 10"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "IVECO.STRALIS",
+   "code": "STRALIS",
+   "name": "Stralis",
+   "kind": "range",
+   "parent": "IVECO",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": null,
+   "year_to": null,
+   "engines": [],
+   "is_model": false
+  },
+  {
+   "id": "IVECO.STRALIS.AS",
+   "code": "AS",
+   "name": "Stralis AS / AT / AD",
+   "kind": "generation",
+   "parent": "IVECO.STRALIS",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2002,
+   "year_to": 2012,
+   "engines": [
+    "Cursor 8",
+    "Cursor 10",
+    "Cursor 13"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "IVECO.STRALIS.HIWAY",
+   "code": "HIWAY",
+   "name": "Stralis Hi-Way",
+   "kind": "generation",
+   "parent": "IVECO.STRALIS",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2012,
+   "year_to": 2019,
+   "engines": [
+    "Cursor 11",
+    "Cursor 13"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "IVECO.SWAY",
+   "code": "SWAY",
+   "name": "S-Way",
+   "kind": "range",
+   "parent": "IVECO",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2019,
+   "year_to": null,
+   "engines": [
+    "Cursor 9",
+    "Cursor 11",
+    "Cursor 13"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "IVECO.TRAKKER",
+   "code": "TRAKKER",
+   "name": "Trakker",
+   "kind": "range",
+   "parent": "IVECO",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2004,
+   "year_to": 2021,
+   "engines": [
+    "Cursor 8",
+    "Cursor 10",
+    "Cursor 13"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "IVECO.TWAY",
+   "code": "TWAY",
+   "name": "T-Way",
+   "kind": "range",
+   "parent": "IVECO",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2021,
+   "year_to": null,
+   "engines": [
+    "Cursor 9",
+    "Cursor 13"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "IVECO.EUROCARGO",
+   "code": "EUROCARGO",
+   "name": "Eurocargo",
+   "kind": "range",
+   "parent": "IVECO",
+   "types": [
+    "RGD"
+   ],
+   "year_from": 1991,
+   "year_to": null,
+   "engines": [
+    "Tector"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "IVECO.DAILY",
+   "code": "DAILY",
+   "name": "Daily",
+   "kind": "range",
+   "parent": "IVECO",
+   "types": [
+    "LCV"
+   ],
+   "year_from": 1978,
+   "year_to": null,
+   "engines": [
+    "F1A",
+    "F1C"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "SCANIA",
+   "code": "SCANIA",
+   "name": "Scania",
+   "kind": "manufacturer",
+   "parent": null,
+   "types": [],
+   "year_from": null,
+   "year_to": null,
+   "engines": [],
+   "is_model": false
+  },
+  {
+   "id": "SCANIA.S4",
+   "code": "S4",
+   "name": "4-series (P / R / T)",
+   "kind": "range",
+   "parent": "SCANIA",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 1995,
+   "year_to": 2004,
+   "engines": [
+    "DC9",
+    "DC11",
+    "DC12",
+    "DC16"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "SCANIA.PGRT",
+   "code": "PGRT",
+   "name": "PGR-series (P / G / R / T)",
+   "kind": "range",
+   "parent": "SCANIA",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2004,
+   "year_to": 2016,
+   "engines": [
+    "DC9",
+    "DC12",
+    "DC13",
+    "DC16"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "SCANIA.NTG",
+   "code": "NTG",
+   "name": "Нове покоління NTG (P / G / R / S / L / XT)",
+   "kind": "range",
+   "parent": "SCANIA",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2016,
+   "year_to": null,
+   "engines": [
+    "DC09",
+    "DC13",
+    "DC16"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "RENAULT",
+   "code": "RENAULT",
+   "name": "Renault Trucks",
+   "kind": "manufacturer",
+   "parent": null,
+   "types": [],
+   "year_from": null,
+   "year_to": null,
+   "engines": [],
+   "is_model": false
+  },
+  {
+   "id": "RENAULT.MAGNUM",
+   "code": "MAGNUM",
+   "name": "Magnum",
+   "kind": "range",
+   "parent": "RENAULT",
+   "types": [
+    "TRC"
+   ],
+   "year_from": 1990,
+   "year_to": 2013,
+   "engines": [
+    "MIDR 06.35",
+    "Mack E-Tech",
+    "DXi12",
+    "DXi13"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "RENAULT.PREMIUM",
+   "code": "PREMIUM",
+   "name": "Premium / Premium Lander",
+   "kind": "range",
+   "parent": "RENAULT",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 1996,
+   "year_to": 2013,
+   "engines": [
+    "MIDR 06.20",
+    "DCi11",
+    "DXi11"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "RENAULT.KERAX",
+   "code": "KERAX",
+   "name": "Kerax",
+   "kind": "range",
+   "parent": "RENAULT",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 1997,
+   "year_to": 2013,
+   "engines": [
+    "DCi11",
+    "DXi11",
+    "DXi13"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "RENAULT.MIDLUM",
+   "code": "MIDLUM",
+   "name": "Midlum",
+   "kind": "range",
+   "parent": "RENAULT",
+   "types": [
+    "RGD"
+   ],
+   "year_from": 2000,
+   "year_to": 2013,
+   "engines": [
+    "DCi6",
+    "DXi5",
+    "DXi7"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "RENAULT.T",
+   "code": "T",
+   "name": "T / T High",
+   "kind": "range",
+   "parent": "RENAULT",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": null,
+   "year_to": null,
+   "engines": [],
+   "is_model": false
+  },
+  {
+   "id": "RENAULT.T.T1",
+   "code": "T1",
+   "name": "T",
+   "kind": "generation",
+   "parent": "RENAULT.T",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2013,
+   "year_to": 2021,
+   "engines": [
+    "DTI 11",
+    "DTI 13"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "RENAULT.T.EVO",
+   "code": "EVO",
+   "name": "T Evo",
+   "kind": "generation",
+   "parent": "RENAULT.T",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2021,
+   "year_to": null,
+   "engines": [
+    "DTI 13"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "RENAULT.C",
+   "code": "C",
+   "name": "C",
+   "kind": "range",
+   "parent": "RENAULT",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2013,
+   "year_to": null,
+   "engines": [
+    "DTI 11",
+    "DTI 13"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "RENAULT.K",
+   "code": "K",
+   "name": "K",
+   "kind": "range",
+   "parent": "RENAULT",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2013,
+   "year_to": null,
+   "engines": [
+    "DTI 11",
+    "DTI 13"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "RENAULT.D",
+   "code": "D",
+   "name": "D / D Wide",
+   "kind": "range",
+   "parent": "RENAULT",
+   "types": [
+    "RGD"
+   ],
+   "year_from": 2013,
+   "year_to": null,
+   "engines": [
+    "DTI 5",
+    "DTI 8"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "RENAULT.MASTER",
+   "code": "MASTER",
+   "name": "Master",
+   "kind": "range",
+   "parent": "RENAULT",
+   "types": [
+    "LCV"
+   ],
+   "year_from": 1980,
+   "year_to": null,
+   "engines": [
+    "M9T",
+    "M9R"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "MB",
+   "code": "MB",
+   "name": "Mercedes-Benz",
+   "kind": "manufacturer",
+   "parent": null,
+   "types": [],
+   "year_from": null,
+   "year_to": null,
+   "engines": [],
+   "is_model": false
+  },
+  {
+   "id": "MB.ACTROS",
+   "code": "ACTROS",
+   "name": "Actros",
+   "kind": "range",
+   "parent": "MB",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": null,
+   "year_to": null,
+   "engines": [],
+   "is_model": false
+  },
+  {
+   "id": "MB.ACTROS.MP1",
+   "code": "MP1",
+   "name": "Actros MP1",
+   "kind": "generation",
+   "parent": "MB.ACTROS",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 1996,
+   "year_to": 2002,
+   "engines": [
+    "OM501LA",
+    "OM502LA"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "MB.ACTROS.MP2",
+   "code": "MP2",
+   "name": "Actros MP2",
+   "kind": "generation",
+   "parent": "MB.ACTROS",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2002,
+   "year_to": 2008,
+   "engines": [
+    "OM501LA",
+    "OM502LA"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "MB.ACTROS.MP3",
+   "code": "MP3",
+   "name": "Actros MP3",
+   "kind": "generation",
+   "parent": "MB.ACTROS",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2008,
+   "year_to": 2011,
+   "engines": [
+    "OM501LA",
+    "OM502LA"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "MB.ACTROS.MP4",
+   "code": "MP4",
+   "name": "Actros MP4",
+   "kind": "generation",
+   "parent": "MB.ACTROS",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2011,
+   "year_to": 2018,
+   "engines": [
+    "OM470",
+    "OM471",
+    "OM473"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "MB.ACTROS.MP5",
+   "code": "MP5",
+   "name": "Actros MP5",
+   "kind": "generation",
+   "parent": "MB.ACTROS",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2018,
+   "year_to": null,
+   "engines": [
+    "OM470",
+    "OM471"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "MB.ACTROS.L",
+   "code": "L",
+   "name": "Actros L",
+   "kind": "generation",
+   "parent": "MB.ACTROS",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2021,
+   "year_to": null,
+   "engines": [
+    "OM471"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "MB.AXOR",
+   "code": "AXOR",
+   "name": "Axor",
+   "kind": "range",
+   "parent": "MB",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2001,
+   "year_to": 2013,
+   "engines": [
+    "OM457LA",
+    "OM906LA",
+    "OM926LA"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "MB.ANTOS",
+   "code": "ANTOS",
+   "name": "Antos",
+   "kind": "range",
+   "parent": "MB",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2012,
+   "year_to": null,
+   "engines": [
+    "OM470",
+    "OM471",
+    "OM936"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "MB.AROCS",
+   "code": "AROCS",
+   "name": "Arocs",
+   "kind": "range",
+   "parent": "MB",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2013,
+   "year_to": null,
+   "engines": [
+    "OM470",
+    "OM471",
+    "OM473",
+    "OM936"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "MB.ATEGO",
+   "code": "ATEGO",
+   "name": "Atego",
+   "kind": "range",
+   "parent": "MB",
+   "types": [
+    "RGD"
+   ],
+   "year_from": null,
+   "year_to": null,
+   "engines": [],
+   "is_model": false
+  },
+  {
+   "id": "MB.ATEGO.A1",
+   "code": "A1",
+   "name": "Atego 1-ше покоління",
+   "kind": "generation",
+   "parent": "MB.ATEGO",
+   "types": [
+    "RGD"
+   ],
+   "year_from": 1998,
+   "year_to": 2013,
+   "engines": [
+    "OM904LA",
+    "OM906LA"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "MB.ATEGO.A2",
+   "code": "A2",
+   "name": "Atego Euro 6",
+   "kind": "generation",
+   "parent": "MB.ATEGO",
+   "types": [
+    "RGD"
+   ],
+   "year_from": 2013,
+   "year_to": null,
+   "engines": [
+    "OM934",
+    "OM936"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "MB.ECONIC",
+   "code": "ECONIC",
+   "name": "Econic",
+   "kind": "range",
+   "parent": "MB",
+   "types": [
+    "RGD"
+   ],
+   "year_from": 1998,
+   "year_to": null,
+   "engines": [
+    "OM936",
+    "OM470"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "MB.SPRINTER",
+   "code": "SPRINTER",
+   "name": "Sprinter",
+   "kind": "range",
+   "parent": "MB",
+   "types": [
+    "LCV"
+   ],
+   "year_from": 1995,
+   "year_to": null,
+   "engines": [
+    "OM646",
+    "OM651",
+    "OM654"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "FORD",
+   "code": "FORD",
+   "name": "Ford / Ford Trucks",
+   "kind": "manufacturer",
+   "parent": null,
+   "types": [],
+   "year_from": null,
+   "year_to": null,
+   "engines": [],
+   "is_model": false
+  },
+  {
+   "id": "FORD.FMAX",
+   "code": "FMAX",
+   "name": "F-MAX",
+   "kind": "range",
+   "parent": "FORD",
+   "types": [
+    "TRC"
+   ],
+   "year_from": null,
+   "year_to": null,
+   "engines": [],
+   "is_model": false
+  },
+  {
+   "id": "FORD.FMAX.F1",
+   "code": "F1",
+   "name": "F-MAX",
+   "kind": "generation",
+   "parent": "FORD.FMAX",
+   "types": [
+    "TRC"
+   ],
+   "year_from": 2018,
+   "year_to": 2025,
+   "engines": [
+    "Ecotorq 12.7"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "FORD.FMAX.F2",
+   "code": "F2",
+   "name": "F-MAX оновлений",
+   "kind": "generation",
+   "parent": "FORD.FMAX",
+   "types": [
+    "TRC"
+   ],
+   "year_from": 2026,
+   "year_to": null,
+   "engines": [
+    "Ecotorq 12.7"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "FORD.CARGO",
+   "code": "CARGO",
+   "name": "Cargo",
+   "kind": "range",
+   "parent": "FORD",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2003,
+   "year_to": 2022,
+   "engines": [
+    "Ecotorq 7.3",
+    "Ecotorq 9.0",
+    "Ecotorq 12.7"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "FORD.FLINE",
+   "code": "FLINE",
+   "name": "F-LINE",
+   "kind": "range",
+   "parent": "FORD",
+   "types": [
+    "TRC",
+    "RGD"
+   ],
+   "year_from": 2023,
+   "year_to": null,
+   "engines": [
+    "Ecotorq 9.0",
+    "Ecotorq 12.7"
+   ],
+   "is_model": true
+  },
+  {
+   "id": "FORD.TRANSIT",
+   "code": "TRANSIT",
+   "name": "Transit",
+   "kind": "range",
+   "parent": "FORD",
+   "types": [
+    "LCV"
+   ],
+   "year_from": 2000,
+   "year_to": null,
+   "engines": [
+    "Duratorq",
+    "EcoBlue"
+   ],
+   "is_model": true
+  }
+ ]
+}

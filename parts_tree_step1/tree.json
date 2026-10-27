@@ -1,0 +1,7263 @@
+{
+ "vehicle_types": {
+  "TRC": "Тягач сідельний",
+  "RGD": "Вантажівка з жорсткою рамою",
+  "TRL": "Причіп дишловий",
+  "SMT": "Напівпричіп"
+ },
+ "roots": [
+  "ENG",
+  "TRN",
+  "CHS",
+  "STR",
+  "PNE",
+  "BRK",
+  "CPL",
+  "FRM",
+  "CAB",
+  "ELE",
+  "BOD"
+ ],
+ "nodes": [
+  {
+   "id": "ENG",
+   "code": "ENG",
+   "kind": "part",
+   "name_ua": "Двигун",
+   "name_en": "Engine",
+   "level": 1,
+   "parent": null,
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.BLK",
+    "ENG.HEAD",
+    "ENG.LUB",
+    "ENG.COOL",
+    "ENG.FUEL",
+    "ENG.AIR",
+    "ENG.EXH",
+    "ENG.ACC",
+    "ENG.ECU"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.BLK",
+   "code": "BLK",
+   "kind": "part",
+   "name_ua": "Блок циліндрів і КШМ",
+   "name_en": "Cylinder block & crank train",
+   "level": 2,
+   "parent": "ENG",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.BLK.BLOCK",
+    "ENG.BLK.LINER",
+    "ENG.BLK.PISTON",
+    "ENG.BLK.CONROD",
+    "ENG.BLK.CRANK",
+    "ENG.BLK.BEAR",
+    "ENG.BLK.FLYWH",
+    "ENG.BLK.DAMP",
+    "ENG.BLK.OILPAN",
+    "ENG.BLK.MOUNT",
+    "ENG.BLK.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.BLK.BLOCK",
+   "code": "BLOCK",
+   "kind": "part",
+   "name_ua": "Блок циліндрів",
+   "name_en": "Cylinder block",
+   "level": 3,
+   "parent": "ENG.BLK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.BLK.LINER",
+   "code": "LINER",
+   "kind": "part",
+   "name_ua": "Гільза циліндра",
+   "name_en": "Cylinder liner",
+   "level": 3,
+   "parent": "ENG.BLK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.BLK.PISTON",
+   "code": "PISTON",
+   "kind": "part",
+   "name_ua": "Поршень з кільцями",
+   "name_en": "Piston with rings",
+   "level": 3,
+   "parent": "ENG.BLK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.BLK.CONROD",
+   "code": "CONROD",
+   "kind": "part",
+   "name_ua": "Шатун",
+   "name_en": "Connecting rod",
+   "level": 3,
+   "parent": "ENG.BLK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.BLK.CRANK",
+   "code": "CRANK",
+   "kind": "part",
+   "name_ua": "Колінчастий вал",
+   "name_en": "Crankshaft",
+   "level": 3,
+   "parent": "ENG.BLK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.BLK.BEAR",
+   "code": "BEAR",
+   "kind": "part",
+   "name_ua": "Вкладиші корінні / шатунні",
+   "name_en": "Main / con-rod bearings",
+   "level": 3,
+   "parent": "ENG.BLK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.BLK.FLYWH",
+   "code": "FLYWH",
+   "kind": "part",
+   "name_ua": "Маховик",
+   "name_en": "Flywheel",
+   "level": 3,
+   "parent": "ENG.BLK",
+   "extra_parents": [
+    "TRN.CLU"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.BLK.DAMP",
+   "code": "DAMP",
+   "kind": "part",
+   "name_ua": "Гаситель крутильних коливань",
+   "name_en": "Vibration damper",
+   "level": 3,
+   "parent": "ENG.BLK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.BLK.OILPAN",
+   "code": "OILPAN",
+   "kind": "part",
+   "name_ua": "Піддон картера",
+   "name_en": "Oil pan",
+   "level": 3,
+   "parent": "ENG.BLK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.BLK.MOUNT",
+   "code": "MOUNT",
+   "kind": "part",
+   "name_ua": "Опора двигуна",
+   "name_en": "Engine mount",
+   "level": 3,
+   "parent": "ENG.BLK",
+   "extra_parents": [
+    "FRM"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.BLK.MOUNT.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.BLK.MOUNT.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект опор двигуна",
+   "name_en": "Engine mount kit",
+   "level": 4,
+   "parent": "ENG.BLK.MOUNT",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.BLK.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект двигуна (ЦПГ, прокладки)",
+   "name_en": "Engine overhaul kit",
+   "level": 3,
+   "parent": "ENG.BLK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.HEAD",
+   "code": "HEAD",
+   "kind": "part",
+   "name_ua": "Головка блоку і ГРМ",
+   "name_en": "Cylinder head & valvetrain",
+   "level": 2,
+   "parent": "ENG",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.HEAD.HEAD",
+    "ENG.HEAD.GASKET",
+    "ENG.HEAD.VALVE",
+    "ENG.HEAD.CAM",
+    "ENG.HEAD.ROCK",
+    "ENG.HEAD.TIMING",
+    "ENG.HEAD.VCOV"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.HEAD.HEAD",
+   "code": "HEAD",
+   "kind": "part",
+   "name_ua": "ГБЦ",
+   "name_en": "Cylinder head",
+   "level": 3,
+   "parent": "ENG.HEAD",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.HEAD.HEAD.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.HEAD.HEAD.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект ГБЦ (прокладки)",
+   "name_en": "Cylinder head gasket set",
+   "level": 4,
+   "parent": "ENG.HEAD.HEAD",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.HEAD.GASKET",
+   "code": "GASKET",
+   "kind": "part",
+   "name_ua": "Прокладка ГБЦ",
+   "name_en": "Head gasket",
+   "level": 3,
+   "parent": "ENG.HEAD",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.HEAD.VALVE",
+   "code": "VALVE",
+   "kind": "part",
+   "name_ua": "Клапани, сідла, напрямні",
+   "name_en": "Valves, seats, guides",
+   "level": 3,
+   "parent": "ENG.HEAD",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.HEAD.CAM",
+   "code": "CAM",
+   "kind": "part",
+   "name_ua": "Розподільний вал",
+   "name_en": "Camshaft",
+   "level": 3,
+   "parent": "ENG.HEAD",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.HEAD.ROCK",
+   "code": "ROCK",
+   "kind": "part",
+   "name_ua": "Коромисла, штовхачі",
+   "name_en": "Rocker arms, pushrods",
+   "level": 3,
+   "parent": "ENG.HEAD",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.HEAD.TIMING",
+   "code": "TIMING",
+   "kind": "part",
+   "name_ua": "Шестерні / ланцюг ГРМ",
+   "name_en": "Timing gears / chain",
+   "level": 3,
+   "parent": "ENG.HEAD",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.HEAD.VCOV",
+   "code": "VCOV",
+   "kind": "part",
+   "name_ua": "Кришка клапанів",
+   "name_en": "Valve cover",
+   "level": 3,
+   "parent": "ENG.HEAD",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.LUB",
+   "code": "LUB",
+   "kind": "part",
+   "name_ua": "Система змащення",
+   "name_en": "Lubrication",
+   "level": 2,
+   "parent": "ENG",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.LUB.OILPUMP",
+    "ENG.LUB.OILFLT",
+    "ENG.LUB.OILCOOL",
+    "ENG.LUB.SEP"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.LUB.OILPUMP",
+   "code": "OILPUMP",
+   "kind": "part",
+   "name_ua": "Масляний насос",
+   "name_en": "Oil pump",
+   "level": 3,
+   "parent": "ENG.LUB",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.LUB.OILPUMP.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.LUB.OILPUMP.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект масляного насоса",
+   "name_en": "Oil pump repair kit",
+   "level": 4,
+   "parent": "ENG.LUB.OILPUMP",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.LUB.OILFLT",
+   "code": "OILFLT",
+   "kind": "part",
+   "name_ua": "Масляний фільтр",
+   "name_en": "Oil filter",
+   "level": 3,
+   "parent": "ENG.LUB",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.LUB.OILCOOL",
+   "code": "OILCOOL",
+   "kind": "part",
+   "name_ua": "Масляний теплообмінник",
+   "name_en": "Oil cooler",
+   "level": 3,
+   "parent": "ENG.LUB",
+   "extra_parents": [
+    "ENG.COOL"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.LUB.SEP",
+   "code": "SEP",
+   "kind": "part",
+   "name_ua": "Сепаратор картерних газів",
+   "name_en": "Crankcase breather",
+   "level": 3,
+   "parent": "ENG.LUB",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.COOL",
+   "code": "COOL",
+   "kind": "part",
+   "name_ua": "Система охолодження",
+   "name_en": "Cooling system",
+   "level": 2,
+   "parent": "ENG",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.COOL.RAD",
+    "ENG.COOL.WPUMP",
+    "ENG.COOL.THERM",
+    "ENG.COOL.FAN",
+    "ENG.COOL.EXPT",
+    "ENG.COOL.HOSE",
+    "ENG.COOL.INTCL"
+   ],
+   "linked_children": [
+    "ENG.LUB.OILCOOL",
+    "ENG.EXH.EGR",
+    "CAB.HVAC.HEAT"
+   ]
+  },
+  {
+   "id": "ENG.COOL.RAD",
+   "code": "RAD",
+   "kind": "part",
+   "name_ua": "Радіатор",
+   "name_en": "Radiator",
+   "level": 3,
+   "parent": "ENG.COOL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.COOL.WPUMP",
+   "code": "WPUMP",
+   "kind": "part",
+   "name_ua": "Помпа",
+   "name_en": "Water pump",
+   "level": 3,
+   "parent": "ENG.COOL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.COOL.WPUMP.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.COOL.WPUMP.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект помпи",
+   "name_en": "Water pump repair kit",
+   "level": 4,
+   "parent": "ENG.COOL.WPUMP",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.COOL.THERM",
+   "code": "THERM",
+   "kind": "part",
+   "name_ua": "Термостат",
+   "name_en": "Thermostat",
+   "level": 3,
+   "parent": "ENG.COOL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.COOL.FAN",
+   "code": "FAN",
+   "kind": "part",
+   "name_ua": "Вентилятор / віскомуфта",
+   "name_en": "Fan / viscous coupling",
+   "level": 3,
+   "parent": "ENG.COOL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.COOL.FAN.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.COOL.FAN.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект віскомуфти",
+   "name_en": "Viscous fan clutch repair kit",
+   "level": 4,
+   "parent": "ENG.COOL.FAN",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.COOL.EXPT",
+   "code": "EXPT",
+   "kind": "part",
+   "name_ua": "Розширювальний бачок",
+   "name_en": "Expansion tank",
+   "level": 3,
+   "parent": "ENG.COOL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.COOL.HOSE",
+   "code": "HOSE",
+   "kind": "part",
+   "name_ua": "Патрубки охолодження",
+   "name_en": "Coolant hoses",
+   "level": 3,
+   "parent": "ENG.COOL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.COOL.INTCL",
+   "code": "INTCL",
+   "kind": "part",
+   "name_ua": "Інтеркулер",
+   "name_en": "Intercooler",
+   "level": 3,
+   "parent": "ENG.COOL",
+   "extra_parents": [
+    "ENG.AIR"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.FUEL",
+   "code": "FUEL",
+   "kind": "part",
+   "name_ua": "Паливна система",
+   "name_en": "Fuel system",
+   "level": 2,
+   "parent": "ENG",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.FUEL.TANK",
+    "ENG.FUEL.LIFT",
+    "ENG.FUEL.FFLT",
+    "ENG.FUEL.HPP",
+    "ENG.FUEL.RAIL",
+    "ENG.FUEL.INJ",
+    "ENG.FUEL.LINES"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.FUEL.TANK",
+   "code": "TANK",
+   "kind": "part",
+   "name_ua": "Паливний бак",
+   "name_en": "Fuel tank",
+   "level": 3,
+   "parent": "ENG.FUEL",
+   "extra_parents": [
+    "FRM"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.FUEL.LIFT",
+   "code": "LIFT",
+   "kind": "part",
+   "name_ua": "Підкачувальний насос",
+   "name_en": "Lift pump",
+   "level": 3,
+   "parent": "ENG.FUEL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.FUEL.LIFT.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.FUEL.LIFT.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект підкачувального насоса",
+   "name_en": "Lift pump repair kit",
+   "level": 4,
+   "parent": "ENG.FUEL.LIFT",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.FUEL.FFLT",
+   "code": "FFLT",
+   "kind": "part",
+   "name_ua": "Паливні фільтри / сепаратор",
+   "name_en": "Fuel filters / separator",
+   "level": 3,
+   "parent": "ENG.FUEL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.FUEL.HPP",
+   "code": "HPP",
+   "kind": "part",
+   "name_ua": "ПНВТ (ТНВД)",
+   "name_en": "High-pressure pump",
+   "level": 3,
+   "parent": "ENG.FUEL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.FUEL.HPP.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.FUEL.HPP.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект ПНВТ",
+   "name_en": "Injection pump repair kit",
+   "level": 4,
+   "parent": "ENG.FUEL.HPP",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.FUEL.RAIL",
+   "code": "RAIL",
+   "kind": "part",
+   "name_ua": "Рампа Common Rail",
+   "name_en": "Common rail",
+   "level": 3,
+   "parent": "ENG.FUEL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.FUEL.INJ",
+   "code": "INJ",
+   "kind": "part",
+   "name_ua": "Форсунки",
+   "name_en": "Injectors",
+   "level": 3,
+   "parent": "ENG.FUEL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.FUEL.INJ.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.FUEL.INJ.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект форсунки",
+   "name_en": "Injector repair kit",
+   "level": 4,
+   "parent": "ENG.FUEL.INJ",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.FUEL.LINES",
+   "code": "LINES",
+   "kind": "part",
+   "name_ua": "Паливопроводи",
+   "name_en": "Fuel lines",
+   "level": 3,
+   "parent": "ENG.FUEL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.AIR",
+   "code": "AIR",
+   "kind": "part",
+   "name_ua": "Впуск і наддув",
+   "name_en": "Intake & boost",
+   "level": 2,
+   "parent": "ENG",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.AIR.AFLT",
+    "ENG.AIR.AFH",
+    "ENG.AIR.TURBO",
+    "ENG.AIR.IMAN"
+   ],
+   "linked_children": [
+    "ENG.COOL.INTCL"
+   ]
+  },
+  {
+   "id": "ENG.AIR.AFLT",
+   "code": "AFLT",
+   "kind": "part",
+   "name_ua": "Повітряний фільтр",
+   "name_en": "Air filter",
+   "level": 3,
+   "parent": "ENG.AIR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.AIR.AFH",
+   "code": "AFH",
+   "kind": "part",
+   "name_ua": "Корпус фільтра, патрубки",
+   "name_en": "Filter housing, ducts",
+   "level": 3,
+   "parent": "ENG.AIR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.AIR.TURBO",
+   "code": "TURBO",
+   "kind": "part",
+   "name_ua": "Турбокомпресор",
+   "name_en": "Turbocharger",
+   "level": 3,
+   "parent": "ENG.AIR",
+   "extra_parents": [
+    "ENG.EXH"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.AIR.TURBO.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.AIR.TURBO.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект турбіни",
+   "name_en": "Turbocharger repair kit",
+   "level": 4,
+   "parent": "ENG.AIR.TURBO",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.AIR.IMAN",
+   "code": "IMAN",
+   "kind": "part",
+   "name_ua": "Впускний колектор",
+   "name_en": "Intake manifold",
+   "level": 3,
+   "parent": "ENG.AIR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.EXH",
+   "code": "EXH",
+   "kind": "part",
+   "name_ua": "Випуск і доочистка",
+   "name_en": "Exhaust & aftertreatment",
+   "level": 2,
+   "parent": "ENG",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.EXH.EMAN",
+    "ENG.EXH.EBRAKE",
+    "ENG.EXH.EGR",
+    "ENG.EXH.MUFF",
+    "ENG.EXH.ADBLUE",
+    "ENG.EXH.NOX",
+    "ENG.EXH.PIPE"
+   ],
+   "linked_children": [
+    "ENG.AIR.TURBO"
+   ]
+  },
+  {
+   "id": "ENG.EXH.EMAN",
+   "code": "EMAN",
+   "kind": "part",
+   "name_ua": "Випускний колектор",
+   "name_en": "Exhaust manifold",
+   "level": 3,
+   "parent": "ENG.EXH",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.EXH.EBRAKE",
+   "code": "EBRAKE",
+   "kind": "part",
+   "name_ua": "Моторне гальмо (заслінка)",
+   "name_en": "Exhaust brake",
+   "level": 3,
+   "parent": "ENG.EXH",
+   "extra_parents": [
+    "BRK.AUX"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.EXH.EBRAKE.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.EXH.EBRAKE.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект моторного гальма (циліндра заслінки)",
+   "name_en": "Exhaust brake repair kit",
+   "level": 4,
+   "parent": "ENG.EXH.EBRAKE",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.EXH.EGR",
+   "code": "EGR",
+   "kind": "part",
+   "name_ua": "Клапан і охолоджувач EGR",
+   "name_en": "EGR valve & cooler",
+   "level": 3,
+   "parent": "ENG.EXH",
+   "extra_parents": [
+    "ENG.COOL"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.EXH.EGR.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.EXH.EGR.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект клапана EGR",
+   "name_en": "EGR valve repair kit",
+   "level": 4,
+   "parent": "ENG.EXH.EGR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.EXH.MUFF",
+   "code": "MUFF",
+   "kind": "part",
+   "name_ua": "Глушник / DPF / SCR",
+   "name_en": "Muffler / DPF / SCR",
+   "level": 3,
+   "parent": "ENG.EXH",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.EXH.ADBLUE",
+   "code": "ADBLUE",
+   "kind": "part",
+   "name_ua": "Система AdBlue (бак, насос, дозатор)",
+   "name_en": "AdBlue system",
+   "level": 3,
+   "parent": "ENG.EXH",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.EXH.ADBLUE.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.EXH.ADBLUE.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект насоса / дозатора AdBlue",
+   "name_en": "AdBlue pump repair kit",
+   "level": 4,
+   "parent": "ENG.EXH.ADBLUE",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.EXH.NOX",
+   "code": "NOX",
+   "kind": "part",
+   "name_ua": "Датчики NOx / температури",
+   "name_en": "NOx / temp sensors",
+   "level": 3,
+   "parent": "ENG.EXH",
+   "extra_parents": [
+    "ELE.SENS"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.EXH.PIPE",
+   "code": "PIPE",
+   "kind": "part",
+   "name_ua": "Труби, гофри, хомути",
+   "name_en": "Pipes, flex, clamps",
+   "level": 3,
+   "parent": "ENG.EXH",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.ACC",
+   "code": "ACC",
+   "kind": "part",
+   "name_ua": "Навісне обладнання",
+   "name_en": "Engine accessories",
+   "level": 2,
+   "parent": "ENG",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.ACC.ALT",
+    "ENG.ACC.START",
+    "ENG.ACC.COMPR",
+    "ENG.ACC.PSPUMP",
+    "ENG.ACC.ACCOMP",
+    "ENG.ACC.BELT"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.ACC.ALT",
+   "code": "ALT",
+   "kind": "part",
+   "name_ua": "Генератор",
+   "name_en": "Alternator",
+   "level": 3,
+   "parent": "ENG.ACC",
+   "extra_parents": [
+    "ELE.PWR"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.ACC.ALT.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.ACC.ALT.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект генератора",
+   "name_en": "Alternator repair kit",
+   "level": 4,
+   "parent": "ENG.ACC.ALT",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.ACC.START",
+   "code": "START",
+   "kind": "part",
+   "name_ua": "Стартер",
+   "name_en": "Starter",
+   "level": 3,
+   "parent": "ENG.ACC",
+   "extra_parents": [
+    "ELE.PWR"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.ACC.START.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.ACC.START.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект стартера",
+   "name_en": "Starter repair kit",
+   "level": 4,
+   "parent": "ENG.ACC.START",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.ACC.COMPR",
+   "code": "COMPR",
+   "kind": "part",
+   "name_ua": "Пневмокомпресор",
+   "name_en": "Air compressor",
+   "level": 3,
+   "parent": "ENG.ACC",
+   "extra_parents": [
+    "PNE"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.ACC.COMPR.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.ACC.COMPR.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект пневмокомпресора",
+   "name_en": "Air compressor repair kit",
+   "level": 4,
+   "parent": "ENG.ACC.COMPR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.ACC.PSPUMP",
+   "code": "PSPUMP",
+   "kind": "part",
+   "name_ua": "Насос ГПК (ГУР)",
+   "name_en": "Power steering pump",
+   "level": 3,
+   "parent": "ENG.ACC",
+   "extra_parents": [
+    "STR"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.ACC.PSPUMP.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.ACC.PSPUMP.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект насоса ГПК",
+   "name_en": "PS pump repair kit",
+   "level": 4,
+   "parent": "ENG.ACC.PSPUMP",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.ACC.ACCOMP",
+   "code": "ACCOMP",
+   "kind": "part",
+   "name_ua": "Компресор кондиціонера",
+   "name_en": "A/C compressor",
+   "level": 3,
+   "parent": "ENG.ACC",
+   "extra_parents": [
+    "CAB.HVAC"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.ACC.ACCOMP.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.ACC.ACCOMP.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект компресора кондиціонера",
+   "name_en": "A/C compressor repair kit",
+   "level": 4,
+   "parent": "ENG.ACC.ACCOMP",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.ACC.BELT",
+   "code": "BELT",
+   "kind": "part",
+   "name_ua": "Ремені, натягувачі, ролики",
+   "name_en": "Belts, tensioners, idlers",
+   "level": 3,
+   "parent": "ENG.ACC",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ENG.ACC.BELT.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.ACC.BELT.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект приводу ременя (натягувач, ролики)",
+   "name_en": "Belt drive kit",
+   "level": 4,
+   "parent": "ENG.ACC.BELT",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ENG.ECU",
+   "code": "ECU",
+   "kind": "part",
+   "name_ua": "ЕБУ двигуна",
+   "name_en": "Engine ECU",
+   "level": 2,
+   "parent": "ENG",
+   "extra_parents": [
+    "ELE.CTRL"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "TRN",
+   "code": "TRN",
+   "kind": "part",
+   "name_ua": "Трансмісія",
+   "name_en": "Drivetrain",
+   "level": 1,
+   "parent": null,
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "TRN.CLU",
+    "TRN.GBX",
+    "TRN.PROP",
+    "TRN.AXL"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.CLU",
+   "code": "CLU",
+   "kind": "part",
+   "name_ua": "Зчеплення",
+   "name_en": "Clutch",
+   "level": 2,
+   "parent": "TRN",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "TRN.CLU.DISC",
+    "TRN.CLU.PP",
+    "TRN.CLU.REL",
+    "TRN.CLU.CSERVO",
+    "TRN.CLU.CMC"
+   ],
+   "linked_children": [
+    "ENG.BLK.FLYWH"
+   ]
+  },
+  {
+   "id": "TRN.CLU.DISC",
+   "code": "DISC",
+   "kind": "part",
+   "name_ua": "Диск зчеплення",
+   "name_en": "Clutch disc",
+   "level": 3,
+   "parent": "TRN.CLU",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.CLU.PP",
+   "code": "PP",
+   "kind": "part",
+   "name_ua": "Кошик (натискний диск)",
+   "name_en": "Pressure plate",
+   "level": 3,
+   "parent": "TRN.CLU",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.CLU.REL",
+   "code": "REL",
+   "kind": "part",
+   "name_ua": "Вижимний підшипник",
+   "name_en": "Release bearing",
+   "level": 3,
+   "parent": "TRN.CLU",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.CLU.CSERVO",
+   "code": "CSERVO",
+   "kind": "part",
+   "name_ua": "ПГП (пневмопідсилювач)",
+   "name_en": "Clutch servo",
+   "level": 3,
+   "parent": "TRN.CLU",
+   "extra_parents": [
+    "PNE"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "TRN.CLU.CSERVO.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.CLU.CSERVO.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект ПГП",
+   "name_en": "Clutch servo repair kit",
+   "level": 4,
+   "parent": "TRN.CLU.CSERVO",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.CLU.CMC",
+   "code": "CMC",
+   "kind": "part",
+   "name_ua": "Головний циліндр, педаль",
+   "name_en": "Master cylinder, pedal",
+   "level": 3,
+   "parent": "TRN.CLU",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "TRN.CLU.CMC.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.CLU.CMC.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект головного циліндра зчеплення",
+   "name_en": "Clutch master cylinder repair kit",
+   "level": 4,
+   "parent": "TRN.CLU.CMC",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.GBX",
+   "code": "GBX",
+   "kind": "part",
+   "name_ua": "Коробка передач",
+   "name_en": "Gearbox",
+   "level": 2,
+   "parent": "TRN",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "TRN.GBX.HOUS",
+    "TRN.GBX.GEAR",
+    "TRN.GBX.SHIFT",
+    "TRN.GBX.RANGE",
+    "TRN.GBX.ACTUAT",
+    "TRN.GBX.RET",
+    "TRN.GBX.PTO"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.GBX.HOUS",
+   "code": "HOUS",
+   "kind": "part",
+   "name_ua": "Картер КПП",
+   "name_en": "Gearbox housing",
+   "level": 3,
+   "parent": "TRN.GBX",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.GBX.GEAR",
+   "code": "GEAR",
+   "kind": "part",
+   "name_ua": "Шестерні, вали, синхронізатори",
+   "name_en": "Gears, shafts, synchros",
+   "level": 3,
+   "parent": "TRN.GBX",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "TRN.GBX.GEAR.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.GBX.GEAR.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект КПП (синхронізатори, підшипники)",
+   "name_en": "Gearbox overhaul kit",
+   "level": 4,
+   "parent": "TRN.GBX.GEAR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.GBX.SHIFT",
+   "code": "SHIFT",
+   "kind": "part",
+   "name_ua": "Механізм перемикання / куліса",
+   "name_en": "Shift mechanism",
+   "level": 3,
+   "parent": "TRN.GBX",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "TRN.GBX.SHIFT.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.GBX.SHIFT.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект куліси",
+   "name_en": "Gear shift repair kit",
+   "level": 4,
+   "parent": "TRN.GBX.SHIFT",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.GBX.RANGE",
+   "code": "RANGE",
+   "kind": "part",
+   "name_ua": "Дільник / демультиплікатор, пневмоклапани",
+   "name_en": "Splitter / range valves",
+   "level": 3,
+   "parent": "TRN.GBX",
+   "extra_parents": [
+    "PNE"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "TRN.GBX.RANGE.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.GBX.RANGE.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект циліндра дільника / демультиплікатора",
+   "name_en": "Range / splitter cylinder repair kit",
+   "level": 4,
+   "parent": "TRN.GBX.RANGE",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.GBX.ACTUAT",
+   "code": "ACTUAT",
+   "kind": "part",
+   "name_ua": "Актуатор АКПП (AMT)",
+   "name_en": "AMT actuator",
+   "level": 3,
+   "parent": "TRN.GBX",
+   "extra_parents": [
+    "ELE.CTRL"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "TRN.GBX.ACTUAT.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.GBX.ACTUAT.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект актуатора КПП",
+   "name_en": "AMT actuator repair kit",
+   "level": 4,
+   "parent": "TRN.GBX.ACTUAT",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.GBX.RET",
+   "code": "RET",
+   "kind": "part",
+   "name_ua": "Ретардер / інтардер",
+   "name_en": "Retarder",
+   "level": 3,
+   "parent": "TRN.GBX",
+   "extra_parents": [
+    "BRK.AUX"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "TRN.GBX.RET.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.GBX.RET.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект ретардера",
+   "name_en": "Retarder repair kit",
+   "level": 4,
+   "parent": "TRN.GBX.RET",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.GBX.PTO",
+   "code": "PTO",
+   "kind": "part",
+   "name_ua": "Коробка відбору потужності",
+   "name_en": "PTO",
+   "level": 3,
+   "parent": "TRN.GBX",
+   "extra_parents": [
+    "BOD.HYD"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "TRN.GBX.PTO.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.GBX.PTO.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект КВП",
+   "name_en": "PTO repair kit",
+   "level": 4,
+   "parent": "TRN.GBX.PTO",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.PROP",
+   "code": "PROP",
+   "kind": "part",
+   "name_ua": "Карданна передача",
+   "name_en": "Propshaft",
+   "level": 2,
+   "parent": "TRN",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "TRN.PROP.SHAFT",
+    "TRN.PROP.UJ",
+    "TRN.PROP.CBR",
+    "TRN.PROP.FLNG"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.PROP.SHAFT",
+   "code": "SHAFT",
+   "kind": "part",
+   "name_ua": "Карданний вал",
+   "name_en": "Propeller shaft",
+   "level": 3,
+   "parent": "TRN.PROP",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "TRN.PROP.SHAFT.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.PROP.SHAFT.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект карданного вала (шліци)",
+   "name_en": "Propshaft repair kit",
+   "level": 4,
+   "parent": "TRN.PROP.SHAFT",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.PROP.UJ",
+   "code": "UJ",
+   "kind": "part",
+   "name_ua": "Хрестовина",
+   "name_en": "Universal joint",
+   "level": 3,
+   "parent": "TRN.PROP",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "TRN.PROP.UJ.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.PROP.UJ.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект хрестовини",
+   "name_en": "Universal joint repair kit",
+   "level": 4,
+   "parent": "TRN.PROP.UJ",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.PROP.CBR",
+   "code": "CBR",
+   "kind": "part",
+   "name_ua": "Підвісний підшипник",
+   "name_en": "Centre bearing",
+   "level": 3,
+   "parent": "TRN.PROP",
+   "extra_parents": [
+    "FRM"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "TRN.PROP.CBR.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.PROP.CBR.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект підвісного підшипника",
+   "name_en": "Centre bearing repair kit",
+   "level": 4,
+   "parent": "TRN.PROP.CBR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.PROP.FLNG",
+   "code": "FLNG",
+   "kind": "part",
+   "name_ua": "Фланці",
+   "name_en": "Flanges",
+   "level": 3,
+   "parent": "TRN.PROP",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.AXL",
+   "code": "AXL",
+   "kind": "part",
+   "name_ua": "Ведучий міст",
+   "name_en": "Drive axle",
+   "level": 2,
+   "parent": "TRN",
+   "extra_parents": [
+    "CHS.AXL"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "TRN.AXL.HSG",
+    "TRN.AXL.DIFF",
+    "TRN.AXL.MDIFF",
+    "TRN.AXL.SHAFT",
+    "TRN.AXL.HUBRED",
+    "TRN.AXL.SEAL"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.AXL.HSG",
+   "code": "HSG",
+   "kind": "part",
+   "name_ua": "Балка / картер моста",
+   "name_en": "Axle housing",
+   "level": 3,
+   "parent": "TRN.AXL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.AXL.DIFF",
+   "code": "DIFF",
+   "kind": "part",
+   "name_ua": "Редуктор / диференціал",
+   "name_en": "Final drive / differential",
+   "level": 3,
+   "parent": "TRN.AXL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "TRN.AXL.DIFF.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.AXL.DIFF.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект диференціала",
+   "name_en": "Differential repair kit",
+   "level": 4,
+   "parent": "TRN.AXL.DIFF",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.AXL.MDIFF",
+   "code": "MDIFF",
+   "kind": "part",
+   "name_ua": "Міжосьовий диференціал",
+   "name_en": "Inter-axle differential",
+   "level": 3,
+   "parent": "TRN.AXL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "TRN.AXL.MDIFF.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.AXL.MDIFF.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект міжосьового диференціала",
+   "name_en": "Inter-axle differential repair kit",
+   "level": 4,
+   "parent": "TRN.AXL.MDIFF",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.AXL.SHAFT",
+   "code": "SHAFT",
+   "kind": "part",
+   "name_ua": "Піввісь",
+   "name_en": "Half shaft",
+   "level": 3,
+   "parent": "TRN.AXL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.AXL.HUBRED",
+   "code": "HUBRED",
+   "kind": "part",
+   "name_ua": "Колісний редуктор",
+   "name_en": "Hub reduction",
+   "level": 3,
+   "parent": "TRN.AXL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "TRN.AXL.HUBRED.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.AXL.HUBRED.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект колісного редуктора",
+   "name_en": "Hub reduction repair kit",
+   "level": 4,
+   "parent": "TRN.AXL.HUBRED",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "TRN.AXL.SEAL",
+   "code": "SEAL",
+   "kind": "part",
+   "name_ua": "Сальники, прокладки",
+   "name_en": "Seals, gaskets",
+   "level": 3,
+   "parent": "TRN.AXL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS",
+   "code": "CHS",
+   "kind": "part",
+   "name_ua": "Ходова частина",
+   "name_en": "Running gear",
+   "level": 1,
+   "parent": null,
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.AXL",
+    "CHS.HUB",
+    "CHS.WHL",
+    "CHS.SUS"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.AXL",
+   "code": "AXL",
+   "kind": "part",
+   "name_ua": "Осі",
+   "name_en": "Axles",
+   "level": 2,
+   "parent": "CHS",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.AXL.FRONT",
+    "CHS.AXL.TRAIL",
+    "CHS.AXL.LIFT",
+    "CHS.AXL.SELF",
+    "CHS.AXL.KING"
+   ],
+   "linked_children": [
+    "TRN.AXL"
+   ]
+  },
+  {
+   "id": "CHS.AXL.FRONT",
+   "code": "FRONT",
+   "kind": "part",
+   "name_ua": "Передня керована вісь",
+   "name_en": "Front steer axle",
+   "level": 3,
+   "parent": "CHS.AXL",
+   "extra_parents": [
+    "STR"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.AXL.TRAIL",
+   "code": "TRAIL",
+   "kind": "part",
+   "name_ua": "Вісь причепа / напівпричепа",
+   "name_en": "Trailer axle",
+   "level": 3,
+   "parent": "CHS.AXL",
+   "extra_parents": [],
+   "applies": [
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.AXL.LIFT",
+   "code": "LIFT",
+   "kind": "part",
+   "name_ua": "Механізм підйому осі",
+   "name_en": "Axle lift",
+   "level": 3,
+   "parent": "CHS.AXL",
+   "extra_parents": [
+    "PNE"
+   ],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.AXL.LIFT.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.AXL.LIFT.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект механізму підйому осі",
+   "name_en": "Axle lift repair kit",
+   "level": 4,
+   "parent": "CHS.AXL.LIFT",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.AXL.SELF",
+   "code": "SELF",
+   "kind": "part",
+   "name_ua": "Самоустановлювана вісь",
+   "name_en": "Self-steering axle",
+   "level": 3,
+   "parent": "CHS.AXL",
+   "extra_parents": [],
+   "applies": [
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.AXL.SELF.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.AXL.SELF.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект самоустановлюваної осі",
+   "name_en": "Self-steering axle repair kit",
+   "level": 4,
+   "parent": "CHS.AXL.SELF",
+   "extra_parents": [],
+   "applies": [
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.AXL.KING",
+   "code": "KING",
+   "kind": "part",
+   "name_ua": "Шкворень поворотного кулака",
+   "name_en": "Steering king pin",
+   "level": 3,
+   "parent": "CHS.AXL",
+   "extra_parents": [
+    "STR"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "CHS.AXL.KING.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.AXL.KING.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект шкворня (втулки, шайби, підшипник)",
+   "name_en": "King pin repair kit",
+   "level": 4,
+   "parent": "CHS.AXL.KING",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.HUB",
+   "code": "HUB",
+   "kind": "part",
+   "name_ua": "Маточина (ступиця)",
+   "name_en": "Wheel hub",
+   "level": 2,
+   "parent": "CHS",
+   "extra_parents": [
+    "BRK.WHB"
+   ],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.HUB.HUBB",
+    "CHS.HUB.BRG",
+    "CHS.HUB.SEAL",
+    "CHS.HUB.CAP",
+    "CHS.HUB.NUT",
+    "CHS.HUB.STUD"
+   ],
+   "linked_children": [
+    "BRK.ABS.SENS",
+    "BRK.ABS.RING"
+   ]
+  },
+  {
+   "id": "CHS.HUB.HUBB",
+   "code": "HUBB",
+   "kind": "part",
+   "name_ua": "Маточина",
+   "name_en": "Hub",
+   "level": 3,
+   "parent": "CHS.HUB",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.HUB.HUBB.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.HUB.HUBB.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект маточини (підшипники, сальник)",
+   "name_en": "Wheel hub repair kit",
+   "level": 4,
+   "parent": "CHS.HUB.HUBB",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.HUB.BRG",
+   "code": "BRG",
+   "kind": "part",
+   "name_ua": "Підшипники маточини",
+   "name_en": "Hub bearings",
+   "level": 3,
+   "parent": "CHS.HUB",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.HUB.SEAL",
+   "code": "SEAL",
+   "kind": "part",
+   "name_ua": "Сальник маточини",
+   "name_en": "Hub seal",
+   "level": 3,
+   "parent": "CHS.HUB",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.HUB.CAP",
+   "code": "CAP",
+   "kind": "part",
+   "name_ua": "Ковпак маточини",
+   "name_en": "Hub cap",
+   "level": 3,
+   "parent": "CHS.HUB",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.HUB.NUT",
+   "code": "NUT",
+   "kind": "part",
+   "name_ua": "Гайка осі",
+   "name_en": "Axle nut",
+   "level": 3,
+   "parent": "CHS.HUB",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.HUB.STUD",
+   "code": "STUD",
+   "kind": "part",
+   "name_ua": "Шпильки й гайки коліс",
+   "name_en": "Wheel studs & nuts",
+   "level": 3,
+   "parent": "CHS.HUB",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.WHL",
+   "code": "WHL",
+   "kind": "part",
+   "name_ua": "Колеса і шини",
+   "name_en": "Wheels & tyres",
+   "level": 2,
+   "parent": "CHS",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.WHL.RIM",
+    "CHS.WHL.TYRE",
+    "CHS.WHL.VALVE",
+    "CHS.WHL.SPARE"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.WHL.RIM",
+   "code": "RIM",
+   "kind": "part",
+   "name_ua": "Диск колеса",
+   "name_en": "Wheel rim",
+   "level": 3,
+   "parent": "CHS.WHL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.WHL.TYRE",
+   "code": "TYRE",
+   "kind": "part",
+   "name_ua": "Шина",
+   "name_en": "Tyre",
+   "level": 3,
+   "parent": "CHS.WHL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.WHL.VALVE",
+   "code": "VALVE",
+   "kind": "part",
+   "name_ua": "Вентиль, подовжувач",
+   "name_en": "Valve, extension",
+   "level": 3,
+   "parent": "CHS.WHL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.WHL.SPARE",
+   "code": "SPARE",
+   "kind": "part",
+   "name_ua": "Тримач запасного колеса",
+   "name_en": "Spare wheel carrier",
+   "level": 3,
+   "parent": "CHS.WHL",
+   "extra_parents": [
+    "FRM"
+   ],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS",
+   "code": "SUS",
+   "kind": "part",
+   "name_ua": "Підвіска",
+   "name_en": "Suspension",
+   "level": 2,
+   "parent": "CHS",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.SUS.LEAF",
+    "CHS.SUS.AIR",
+    "CHS.SUS.ROD",
+    "CHS.SUS.STAB",
+    "CHS.SUS.SHOCK",
+    "CHS.SUS.BUMP"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.LEAF",
+   "code": "LEAF",
+   "kind": "part",
+   "name_ua": "Ресорна",
+   "name_en": "Leaf spring suspension",
+   "level": 3,
+   "parent": "CHS.SUS",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.SUS.LEAF.SPRING",
+    "CHS.SUS.LEAF.PIN",
+    "CHS.SUS.LEAF.SHACK",
+    "CHS.SUS.LEAF.BRKT",
+    "CHS.SUS.LEAF.UBOLT",
+    "CHS.SUS.LEAF.BAL"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.LEAF.SPRING",
+   "code": "SPRING",
+   "kind": "part",
+   "name_ua": "Ресора / лист ресори",
+   "name_en": "Leaf spring",
+   "level": 4,
+   "parent": "CHS.SUS.LEAF",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.SUS.LEAF.SPRING.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.LEAF.SPRING.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект ресори (палець, втулки)",
+   "name_en": "Spring pin & bush kit",
+   "level": 5,
+   "parent": "CHS.SUS.LEAF.SPRING",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.LEAF.PIN",
+   "code": "PIN",
+   "kind": "part",
+   "name_ua": "Палець, втулка ресори",
+   "name_en": "Spring pin, bush",
+   "level": 4,
+   "parent": "CHS.SUS.LEAF",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.LEAF.SHACK",
+   "code": "SHACK",
+   "kind": "part",
+   "name_ua": "Сережка ресори",
+   "name_en": "Spring shackle",
+   "level": 4,
+   "parent": "CHS.SUS.LEAF",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.SUS.LEAF.SHACK.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.LEAF.SHACK.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект сережки ресори",
+   "name_en": "Spring shackle repair kit",
+   "level": 5,
+   "parent": "CHS.SUS.LEAF.SHACK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.LEAF.BRKT",
+   "code": "BRKT",
+   "kind": "part",
+   "name_ua": "Кронштейн ресори",
+   "name_en": "Spring bracket",
+   "level": 4,
+   "parent": "CHS.SUS.LEAF",
+   "extra_parents": [
+    "FRM"
+   ],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.LEAF.UBOLT",
+   "code": "UBOLT",
+   "kind": "part",
+   "name_ua": "Стрем'янка",
+   "name_en": "U-bolt",
+   "level": 4,
+   "parent": "CHS.SUS.LEAF",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.LEAF.BAL",
+   "code": "BAL",
+   "kind": "part",
+   "name_ua": "Балансир",
+   "name_en": "Bogie / equaliser",
+   "level": 4,
+   "parent": "CHS.SUS.LEAF",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.SUS.LEAF.BAL.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.LEAF.BAL.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект балансира",
+   "name_en": "Bogie repair kit",
+   "level": 5,
+   "parent": "CHS.SUS.LEAF.BAL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.AIR",
+   "code": "AIR",
+   "kind": "part",
+   "name_ua": "Пневматична",
+   "name_en": "Air suspension",
+   "level": 3,
+   "parent": "CHS.SUS",
+   "extra_parents": [
+    "PNE"
+   ],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.SUS.AIR.BAG",
+    "CHS.SUS.AIR.ARM",
+    "CHS.SUS.AIR.HANGER",
+    "CHS.SUS.AIR.LVL",
+    "CHS.SUS.AIR.ECAS"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.AIR.BAG",
+   "code": "BAG",
+   "kind": "part",
+   "name_ua": "Пневмоподушка",
+   "name_en": "Air spring",
+   "level": 4,
+   "parent": "CHS.SUS.AIR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.AIR.ARM",
+   "code": "ARM",
+   "kind": "part",
+   "name_ua": "Несуча балка (трейлінг-арм)",
+   "name_en": "Trailing arm",
+   "level": 4,
+   "parent": "CHS.SUS.AIR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.SUS.AIR.ARM.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.AIR.ARM.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект кріплення балки (втулка, болт)",
+   "name_en": "Trailing arm bush kit",
+   "level": 5,
+   "parent": "CHS.SUS.AIR.ARM",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.AIR.HANGER",
+   "code": "HANGER",
+   "kind": "part",
+   "name_ua": "Опорний кронштейн підвіски",
+   "name_en": "Suspension hanger",
+   "level": 4,
+   "parent": "CHS.SUS.AIR",
+   "extra_parents": [
+    "FRM"
+   ],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.AIR.LVL",
+   "code": "LVL",
+   "kind": "part",
+   "name_ua": "Кран рівня підлоги",
+   "name_en": "Levelling valve",
+   "level": 4,
+   "parent": "CHS.SUS.AIR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.SUS.AIR.LVL.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.AIR.LVL.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект крана рівня підлоги",
+   "name_en": "Levelling valve repair kit",
+   "level": 5,
+   "parent": "CHS.SUS.AIR.LVL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.AIR.ECAS",
+   "code": "ECAS",
+   "kind": "part",
+   "name_ua": "Блок ECAS",
+   "name_en": "ECAS unit",
+   "level": 4,
+   "parent": "CHS.SUS.AIR",
+   "extra_parents": [
+    "ELE.CTRL"
+   ],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.ROD",
+   "code": "ROD",
+   "kind": "part",
+   "name_ua": "Реактивні тяги",
+   "name_en": "Torque rods",
+   "level": 3,
+   "parent": "CHS.SUS",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.SUS.ROD.VROD",
+    "CHS.SUS.ROD.TROD",
+    "CHS.SUS.ROD.BUSH"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.ROD.VROD",
+   "code": "VROD",
+   "kind": "part",
+   "name_ua": "V-подібна тяга",
+   "name_en": "V-rod",
+   "level": 4,
+   "parent": "CHS.SUS.ROD",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.SUS.ROD.VROD.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.ROD.VROD.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект V-подібної тяги",
+   "name_en": "V-rod repair kit",
+   "level": 5,
+   "parent": "CHS.SUS.ROD.VROD",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.ROD.TROD",
+   "code": "TROD",
+   "kind": "part",
+   "name_ua": "Пряма реактивна тяга",
+   "name_en": "Straight torque rod",
+   "level": 4,
+   "parent": "CHS.SUS.ROD",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.SUS.ROD.TROD.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.ROD.TROD.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект реактивної тяги",
+   "name_en": "Torque rod repair kit",
+   "level": 5,
+   "parent": "CHS.SUS.ROD.TROD",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.ROD.BUSH",
+   "code": "BUSH",
+   "kind": "part",
+   "name_ua": "Сайлентблоки, шарніри",
+   "name_en": "Bushes, ball joints",
+   "level": 4,
+   "parent": "CHS.SUS.ROD",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.SUS.ROD.BUSH.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.ROD.BUSH.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект сайлентблоків тяг",
+   "name_en": "Torque rod bush kit",
+   "level": 5,
+   "parent": "CHS.SUS.ROD.BUSH",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.STAB",
+   "code": "STAB",
+   "kind": "part",
+   "name_ua": "Стабілізатор поперечної стійкості",
+   "name_en": "Anti-roll bar",
+   "level": 3,
+   "parent": "CHS.SUS",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.SUS.STAB.BAR",
+    "CHS.SUS.STAB.LINK",
+    "CHS.SUS.STAB.BUSH"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.STAB.BAR",
+   "code": "BAR",
+   "kind": "part",
+   "name_ua": "Штанга стабілізатора",
+   "name_en": "Stabiliser bar",
+   "level": 4,
+   "parent": "CHS.SUS.STAB",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.SUS.STAB.BAR.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.STAB.BAR.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект стабілізатора",
+   "name_en": "Stabiliser repair kit",
+   "level": 5,
+   "parent": "CHS.SUS.STAB.BAR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.STAB.LINK",
+   "code": "LINK",
+   "kind": "part",
+   "name_ua": "Тяга стабілізатора",
+   "name_en": "Stabiliser link",
+   "level": 4,
+   "parent": "CHS.SUS.STAB",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.SUS.STAB.LINK.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.STAB.LINK.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект тяги стабілізатора",
+   "name_en": "Stabiliser link repair kit",
+   "level": 5,
+   "parent": "CHS.SUS.STAB.LINK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.STAB.BUSH",
+   "code": "BUSH",
+   "kind": "part",
+   "name_ua": "Втулки стабілізатора",
+   "name_en": "Stabiliser bushes",
+   "level": 4,
+   "parent": "CHS.SUS.STAB",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.SUS.STAB.BUSH.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.STAB.BUSH.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект втулок стабілізатора",
+   "name_en": "Stabiliser bush kit",
+   "level": 5,
+   "parent": "CHS.SUS.STAB.BUSH",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.SHOCK",
+   "code": "SHOCK",
+   "kind": "part",
+   "name_ua": "Амортизатор",
+   "name_en": "Shock absorber",
+   "level": 3,
+   "parent": "CHS.SUS",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CHS.SUS.SHOCK.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.SHOCK.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект кріплення амортизатора (втулки)",
+   "name_en": "Shock absorber bush kit",
+   "level": 4,
+   "parent": "CHS.SUS.SHOCK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CHS.SUS.BUMP",
+   "code": "BUMP",
+   "kind": "part",
+   "name_ua": "Відбійник",
+   "name_en": "Bump stop",
+   "level": 3,
+   "parent": "CHS.SUS",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "STR",
+   "code": "STR",
+   "kind": "part",
+   "name_ua": "Рульове керування",
+   "name_en": "Steering",
+   "level": 1,
+   "parent": null,
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "STR.GEAR",
+    "STR.RES",
+    "STR.COL",
+    "STR.WHEEL",
+    "STR.DLINK",
+    "STR.TLINK",
+    "STR.BALL",
+    "STR.ARM",
+    "STR.KNUCK"
+   ],
+   "linked_children": [
+    "ENG.ACC.PSPUMP",
+    "CHS.AXL.FRONT",
+    "CHS.AXL.KING"
+   ]
+  },
+  {
+   "id": "STR.GEAR",
+   "code": "GEAR",
+   "kind": "part",
+   "name_ua": "Рульовий механізм (ГПК)",
+   "name_en": "Steering gear",
+   "level": 2,
+   "parent": "STR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "STR.GEAR.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "STR.GEAR.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект рульового механізму",
+   "name_en": "Steering gear repair kit",
+   "level": 3,
+   "parent": "STR.GEAR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "STR.RES",
+   "code": "RES",
+   "kind": "part",
+   "name_ua": "Бачок ГПК, шланги",
+   "name_en": "PS reservoir, hoses",
+   "level": 2,
+   "parent": "STR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "STR.COL",
+   "code": "COL",
+   "kind": "part",
+   "name_ua": "Рульова колонка, кардан",
+   "name_en": "Steering column, joint",
+   "level": 2,
+   "parent": "STR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "STR.COL.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "STR.COL.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект кардана рульової колонки",
+   "name_en": "Steering column joint repair kit",
+   "level": 3,
+   "parent": "STR.COL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "STR.WHEEL",
+   "code": "WHEEL",
+   "kind": "part",
+   "name_ua": "Кермо",
+   "name_en": "Steering wheel",
+   "level": 2,
+   "parent": "STR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "STR.DLINK",
+   "code": "DLINK",
+   "kind": "part",
+   "name_ua": "Поздовжня тяга",
+   "name_en": "Drag link",
+   "level": 2,
+   "parent": "STR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "STR.DLINK.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "STR.DLINK.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект поздовжньої тяги",
+   "name_en": "Drag link repair kit",
+   "level": 3,
+   "parent": "STR.DLINK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "STR.TLINK",
+   "code": "TLINK",
+   "kind": "part",
+   "name_ua": "Поперечна тяга",
+   "name_en": "Tie rod",
+   "level": 2,
+   "parent": "STR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "STR.TLINK.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "STR.TLINK.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект поперечної тяги",
+   "name_en": "Tie rod repair kit",
+   "level": 3,
+   "parent": "STR.TLINK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "STR.BALL",
+   "code": "BALL",
+   "kind": "part",
+   "name_ua": "Наконечник тяги",
+   "name_en": "Tie rod end",
+   "level": 2,
+   "parent": "STR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "STR.BALL.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "STR.BALL.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект наконечника тяги",
+   "name_en": "Tie rod end repair kit",
+   "level": 3,
+   "parent": "STR.BALL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "STR.ARM",
+   "code": "ARM",
+   "kind": "part",
+   "name_ua": "Сошка, важелі кулака",
+   "name_en": "Pitman / steering arms",
+   "level": 2,
+   "parent": "STR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "STR.KNUCK",
+   "code": "KNUCK",
+   "kind": "part",
+   "name_ua": "Поворотний кулак",
+   "name_en": "Steering knuckle",
+   "level": 2,
+   "parent": "STR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "PNE",
+   "code": "PNE",
+   "kind": "part",
+   "name_ua": "Пневмосистема (живлення)",
+   "name_en": "Air supply",
+   "level": 1,
+   "parent": null,
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "PNE.DRY",
+    "PNE.CART",
+    "PNE.PROT",
+    "PNE.TANK",
+    "PNE.DRAIN",
+    "PNE.PIPE",
+    "PNE.FIT",
+    "PNE.COIL",
+    "PNE.HEAD"
+   ],
+   "linked_children": [
+    "ENG.ACC.COMPR",
+    "TRN.CLU.CSERVO",
+    "TRN.GBX.RANGE",
+    "CHS.AXL.LIFT",
+    "CHS.SUS.AIR",
+    "CAB.SUSP.BAG",
+    "CAB.INT.SEAT"
+   ]
+  },
+  {
+   "id": "PNE.DRY",
+   "code": "DRY",
+   "kind": "part",
+   "name_ua": "Осушувач / APU",
+   "name_en": "Air dryer / APU",
+   "level": 2,
+   "parent": "PNE",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "PNE.DRY.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "PNE.DRY.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект осушувача",
+   "name_en": "Air dryer repair kit",
+   "level": 3,
+   "parent": "PNE.DRY",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "PNE.CART",
+   "code": "CART",
+   "kind": "part",
+   "name_ua": "Картридж осушувача",
+   "name_en": "Dryer cartridge",
+   "level": 2,
+   "parent": "PNE",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "PNE.PROT",
+   "code": "PROT",
+   "kind": "part",
+   "name_ua": "4-контурний захисний клапан",
+   "name_en": "Four-circuit protection valve",
+   "level": 2,
+   "parent": "PNE",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "PNE.PROT.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "PNE.PROT.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект 4-контурного клапана",
+   "name_en": "Protection valve repair kit",
+   "level": 3,
+   "parent": "PNE.PROT",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "PNE.TANK",
+   "code": "TANK",
+   "kind": "part",
+   "name_ua": "Ресивер",
+   "name_en": "Air tank",
+   "level": 2,
+   "parent": "PNE",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "PNE.DRAIN",
+   "code": "DRAIN",
+   "kind": "part",
+   "name_ua": "Кран зливу конденсату",
+   "name_en": "Drain valve",
+   "level": 2,
+   "parent": "PNE",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "PNE.PIPE",
+   "code": "PIPE",
+   "kind": "part",
+   "name_ua": "Пневмотрубки, шланги",
+   "name_en": "Air lines, hoses",
+   "level": 2,
+   "parent": "PNE",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "PNE.FIT",
+   "code": "FIT",
+   "kind": "part",
+   "name_ua": "Фітинги, перехідники",
+   "name_en": "Fittings, connectors",
+   "level": 2,
+   "parent": "PNE",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "PNE.COIL",
+   "code": "COIL",
+   "kind": "part",
+   "name_ua": "Спіральні пневмошланги",
+   "name_en": "Air coils",
+   "level": 2,
+   "parent": "PNE",
+   "extra_parents": [
+    "CPL.CON"
+   ],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "PNE.HEAD",
+   "code": "HEAD",
+   "kind": "part",
+   "name_ua": "Пневмоголовки (Palm)",
+   "name_en": "Coupling heads",
+   "level": 2,
+   "parent": "PNE",
+   "extra_parents": [
+    "CPL.CON"
+   ],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "PNE.HEAD.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "PNE.HEAD.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект пневмоголовки (ущільнювачі)",
+   "name_en": "Coupling head seal kit",
+   "level": 3,
+   "parent": "PNE.HEAD",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK",
+   "code": "BRK",
+   "kind": "part",
+   "name_ua": "Гальмівна система",
+   "name_en": "Brakes",
+   "level": 1,
+   "parent": null,
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BRK.CTRL",
+    "BRK.ABS",
+    "BRK.ACT",
+    "BRK.WHB",
+    "BRK.AUX"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.CTRL",
+   "code": "CTRL",
+   "kind": "part",
+   "name_ua": "Апарати керування",
+   "name_en": "Control valves",
+   "level": 2,
+   "parent": "BRK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BRK.CTRL.FOOT",
+    "BRK.CTRL.HAND",
+    "BRK.CTRL.RELAY",
+    "BRK.CTRL.TCV",
+    "BRK.CTRL.TBV",
+    "BRK.CTRL.LSV",
+    "BRK.CTRL.QRV",
+    "BRK.CTRL.PARK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.CTRL.FOOT",
+   "code": "FOOT",
+   "kind": "part",
+   "name_ua": "Головний гальмівний кран",
+   "name_en": "Foot brake valve",
+   "level": 3,
+   "parent": "BRK.CTRL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "BRK.CTRL.FOOT.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.CTRL.FOOT.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект головного гальмівного крана",
+   "name_en": "Foot brake valve repair kit",
+   "level": 4,
+   "parent": "BRK.CTRL.FOOT",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.CTRL.HAND",
+   "code": "HAND",
+   "kind": "part",
+   "name_ua": "Кран стоянкового гальма",
+   "name_en": "Hand brake valve",
+   "level": 3,
+   "parent": "BRK.CTRL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "BRK.CTRL.HAND.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.CTRL.HAND.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект крана стоянкового гальма",
+   "name_en": "Hand brake valve repair kit",
+   "level": 4,
+   "parent": "BRK.CTRL.HAND",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.CTRL.RELAY",
+   "code": "RELAY",
+   "kind": "part",
+   "name_ua": "Прискорювальний клапан",
+   "name_en": "Relay valve",
+   "level": 3,
+   "parent": "BRK.CTRL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BRK.CTRL.RELAY.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.CTRL.RELAY.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект прискорювального клапана",
+   "name_en": "Relay valve repair kit",
+   "level": 4,
+   "parent": "BRK.CTRL.RELAY",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.CTRL.TCV",
+   "code": "TCV",
+   "kind": "part",
+   "name_ua": "Клапан керування причепом",
+   "name_en": "Trailer control valve",
+   "level": 3,
+   "parent": "BRK.CTRL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "BRK.CTRL.TCV.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.CTRL.TCV.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект клапана керування причепом",
+   "name_en": "Trailer control valve repair kit",
+   "level": 4,
+   "parent": "BRK.CTRL.TCV",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.CTRL.TBV",
+   "code": "TBV",
+   "kind": "part",
+   "name_ua": "Клапан гальмування причепа",
+   "name_en": "Trailer emergency / relay-emergency valve",
+   "level": 3,
+   "parent": "BRK.CTRL",
+   "extra_parents": [],
+   "applies": [
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BRK.CTRL.TBV.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.CTRL.TBV.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект клапана гальмування причепа",
+   "name_en": "Trailer emergency valve repair kit",
+   "level": 4,
+   "parent": "BRK.CTRL.TBV",
+   "extra_parents": [],
+   "applies": [
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.CTRL.LSV",
+   "code": "LSV",
+   "kind": "part",
+   "name_ua": "Регулятор гальмівних сил",
+   "name_en": "Load-sensing valve",
+   "level": 3,
+   "parent": "BRK.CTRL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BRK.CTRL.LSV.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.CTRL.LSV.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект регулятора гальмівних сил",
+   "name_en": "Load-sensing valve repair kit",
+   "level": 4,
+   "parent": "BRK.CTRL.LSV",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.CTRL.QRV",
+   "code": "QRV",
+   "kind": "part",
+   "name_ua": "Клапан швидкого розгальмування",
+   "name_en": "Quick release valve",
+   "level": 3,
+   "parent": "BRK.CTRL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BRK.CTRL.QRV.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.CTRL.QRV.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект клапана швидкого розгальмування",
+   "name_en": "Quick release valve repair kit",
+   "level": 4,
+   "parent": "BRK.CTRL.QRV",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.CTRL.PARK",
+   "code": "PARK",
+   "kind": "part",
+   "name_ua": "Клапан розгальмування / паркувальний",
+   "name_en": "Park / shunt valve",
+   "level": 3,
+   "parent": "BRK.CTRL",
+   "extra_parents": [],
+   "applies": [
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BRK.CTRL.PARK.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.CTRL.PARK.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект паркувального клапана",
+   "name_en": "Park valve repair kit",
+   "level": 4,
+   "parent": "BRK.CTRL.PARK",
+   "extra_parents": [],
+   "applies": [
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.ABS",
+   "code": "ABS",
+   "kind": "part",
+   "name_ua": "ABS / EBS",
+   "name_en": "ABS / EBS",
+   "level": 2,
+   "parent": "BRK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BRK.ABS.MOD",
+    "BRK.ABS.ECU",
+    "BRK.ABS.SENS",
+    "BRK.ABS.RING",
+    "BRK.ABS.TEBS"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.ABS.MOD",
+   "code": "MOD",
+   "kind": "part",
+   "name_ua": "Модулятор ABS / EBS",
+   "name_en": "ABS / EBS modulator",
+   "level": 3,
+   "parent": "BRK.ABS",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BRK.ABS.MOD.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.ABS.MOD.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект модулятора",
+   "name_en": "Modulator repair kit",
+   "level": 4,
+   "parent": "BRK.ABS.MOD",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.ABS.ECU",
+   "code": "ECU",
+   "kind": "part",
+   "name_ua": "ЕБУ ABS / EBS",
+   "name_en": "ABS / EBS ECU",
+   "level": 3,
+   "parent": "BRK.ABS",
+   "extra_parents": [
+    "ELE.CTRL"
+   ],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.ABS.SENS",
+   "code": "SENS",
+   "kind": "part",
+   "name_ua": "Датчик ABS",
+   "name_en": "ABS wheel speed sensor",
+   "level": 3,
+   "parent": "BRK.ABS",
+   "extra_parents": [
+    "ELE.SENS",
+    "CHS.HUB"
+   ],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BRK.ABS.SENS.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.ABS.SENS.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект датчика ABS (втулка, мастило)",
+   "name_en": "ABS sensor bush kit",
+   "level": 4,
+   "parent": "BRK.ABS.SENS",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.ABS.RING",
+   "code": "RING",
+   "kind": "part",
+   "name_ua": "Зубчастий ротор ABS",
+   "name_en": "ABS tone ring",
+   "level": 3,
+   "parent": "BRK.ABS",
+   "extra_parents": [
+    "CHS.HUB"
+   ],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.ABS.TEBS",
+   "code": "TEBS",
+   "kind": "part",
+   "name_ua": "Модуль TEBS",
+   "name_en": "Trailer EBS module",
+   "level": 3,
+   "parent": "BRK.ABS",
+   "extra_parents": [],
+   "applies": [
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.ACT",
+   "code": "ACT",
+   "kind": "part",
+   "name_ua": "Виконавчі пристрої",
+   "name_en": "Actuators",
+   "level": 2,
+   "parent": "BRK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BRK.ACT.CHAM",
+    "BRK.ACT.SPCH"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.ACT.CHAM",
+   "code": "CHAM",
+   "kind": "part",
+   "name_ua": "Гальмівна камера",
+   "name_en": "Service brake chamber",
+   "level": 3,
+   "parent": "BRK.ACT",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BRK.ACT.CHAM.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.ACT.CHAM.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект гальмівної камери (мембрана)",
+   "name_en": "Brake chamber repair kit",
+   "level": 4,
+   "parent": "BRK.ACT.CHAM",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.ACT.SPCH",
+   "code": "SPCH",
+   "kind": "part",
+   "name_ua": "Енергоакумулятор",
+   "name_en": "Spring brake chamber",
+   "level": 3,
+   "parent": "BRK.ACT",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BRK.ACT.SPCH.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.ACT.SPCH.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект енергоакумулятора",
+   "name_en": "Spring brake repair kit",
+   "level": 4,
+   "parent": "BRK.ACT.SPCH",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.WHB",
+   "code": "WHB",
+   "kind": "part",
+   "name_ua": "Колісні гальма",
+   "name_en": "Wheel brakes",
+   "level": 2,
+   "parent": "BRK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BRK.WHB.DRUM",
+    "BRK.WHB.DISC"
+   ],
+   "linked_children": [
+    "CHS.HUB"
+   ]
+  },
+  {
+   "id": "BRK.WHB.DRUM",
+   "code": "DRUM",
+   "kind": "part",
+   "name_ua": "Барабанні",
+   "name_en": "Drum brakes",
+   "level": 3,
+   "parent": "BRK.WHB",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BRK.WHB.DRUM.DRUM",
+    "BRK.WHB.DRUM.SHOE",
+    "BRK.WHB.DRUM.CAM",
+    "BRK.WHB.DRUM.SLACK",
+    "BRK.WHB.DRUM.BUSH"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.WHB.DRUM.DRUM",
+   "code": "DRUM",
+   "kind": "part",
+   "name_ua": "Гальмівний барабан",
+   "name_en": "Brake drum",
+   "level": 4,
+   "parent": "BRK.WHB.DRUM",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.WHB.DRUM.SHOE",
+   "code": "SHOE",
+   "kind": "part",
+   "name_ua": "Колодка / накладки",
+   "name_en": "Brake shoe / linings",
+   "level": 4,
+   "parent": "BRK.WHB.DRUM",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BRK.WHB.DRUM.SHOE.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.WHB.DRUM.SHOE.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект колодок (пружини, ролики, осі)",
+   "name_en": "Brake shoe repair kit",
+   "level": 5,
+   "parent": "BRK.WHB.DRUM.SHOE",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.WHB.DRUM.CAM",
+   "code": "CAM",
+   "kind": "part",
+   "name_ua": "Розтискний S-кулак",
+   "name_en": "S-cam",
+   "level": 4,
+   "parent": "BRK.WHB.DRUM",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BRK.WHB.DRUM.CAM.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.WHB.DRUM.CAM.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект розтискного кулака",
+   "name_en": "S-cam repair kit",
+   "level": 5,
+   "parent": "BRK.WHB.DRUM.CAM",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.WHB.DRUM.SLACK",
+   "code": "SLACK",
+   "kind": "part",
+   "name_ua": "Регулювальний важіль",
+   "name_en": "Slack adjuster",
+   "level": 4,
+   "parent": "BRK.WHB.DRUM",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BRK.WHB.DRUM.SLACK.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.WHB.DRUM.SLACK.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект регулювального важеля",
+   "name_en": "Slack adjuster repair kit",
+   "level": 5,
+   "parent": "BRK.WHB.DRUM.SLACK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.WHB.DRUM.BUSH",
+   "code": "BUSH",
+   "kind": "part",
+   "name_ua": "Втулки кулака",
+   "name_en": "Cam bushes",
+   "level": 4,
+   "parent": "BRK.WHB.DRUM",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.WHB.DISC",
+   "code": "DISC",
+   "kind": "part",
+   "name_ua": "Дискові",
+   "name_en": "Disc brakes",
+   "level": 3,
+   "parent": "BRK.WHB",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BRK.WHB.DISC.DISC",
+    "BRK.WHB.DISC.PAD",
+    "BRK.WHB.DISC.CAL",
+    "BRK.WHB.DISC.WEAR"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.WHB.DISC.DISC",
+   "code": "DISC",
+   "kind": "part",
+   "name_ua": "Гальмівний диск",
+   "name_en": "Brake disc",
+   "level": 4,
+   "parent": "BRK.WHB.DISC",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.WHB.DISC.PAD",
+   "code": "PAD",
+   "kind": "part",
+   "name_ua": "Гальмівні колодки",
+   "name_en": "Brake pads",
+   "level": 4,
+   "parent": "BRK.WHB.DISC",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BRK.WHB.DISC.PAD.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.WHB.DISC.PAD.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект колодок (пружини, планка-фіксатор)",
+   "name_en": "Pad retainer kit",
+   "level": 5,
+   "parent": "BRK.WHB.DISC.PAD",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.WHB.DISC.CAL",
+   "code": "CAL",
+   "kind": "part",
+   "name_ua": "Супорт",
+   "name_en": "Caliper",
+   "level": 4,
+   "parent": "BRK.WHB.DISC",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BRK.WHB.DISC.CAL.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.WHB.DISC.CAL.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплекти супорта",
+   "name_en": "Caliper repair kits",
+   "level": 5,
+   "parent": "BRK.WHB.DISC.CAL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BRK.WHB.DISC.CAL.RK.GUIDE",
+    "BRK.WHB.DISC.CAL.RK.PISTON",
+    "BRK.WHB.DISC.CAL.RK.ADJ",
+    "BRK.WHB.DISC.CAL.RK.SHAFT",
+    "BRK.WHB.DISC.CAL.RK.CAP"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.WHB.DISC.CAL.RK.GUIDE",
+   "code": "GUIDE",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект направляючих",
+   "name_en": "Guide pin kit",
+   "level": 6,
+   "parent": "BRK.WHB.DISC.CAL.RK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.WHB.DISC.CAL.RK.PISTON",
+   "code": "PISTON",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект поршнів (пильовики)",
+   "name_en": "Piston & boot kit",
+   "level": 6,
+   "parent": "BRK.WHB.DISC.CAL.RK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.WHB.DISC.CAL.RK.ADJ",
+   "code": "ADJ",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект механізму регулювання",
+   "name_en": "Adjuster mechanism kit",
+   "level": 6,
+   "parent": "BRK.WHB.DISC.CAL.RK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.WHB.DISC.CAL.RK.SHAFT",
+   "code": "SHAFT",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект вала / важеля супорта",
+   "name_en": "Caliper shaft / lever kit",
+   "level": 6,
+   "parent": "BRK.WHB.DISC.CAL.RK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.WHB.DISC.CAL.RK.CAP",
+   "code": "CAP",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект заглушок і кришок супорта",
+   "name_en": "Sealing cap kit",
+   "level": 6,
+   "parent": "BRK.WHB.DISC.CAL.RK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.WHB.DISC.WEAR",
+   "code": "WEAR",
+   "kind": "part",
+   "name_ua": "Датчик зносу колодок",
+   "name_en": "Pad wear sensor",
+   "level": 4,
+   "parent": "BRK.WHB.DISC",
+   "extra_parents": [
+    "ELE.SENS"
+   ],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BRK.AUX",
+   "code": "AUX",
+   "kind": "part",
+   "name_ua": "Допоміжні гальма",
+   "name_en": "Auxiliary brakes",
+   "level": 2,
+   "parent": "BRK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": [
+    "ENG.EXH.EBRAKE",
+    "TRN.GBX.RET"
+   ]
+  },
+  {
+   "id": "CPL",
+   "code": "CPL",
+   "kind": "part",
+   "name_ua": "Зчіпні пристрої",
+   "name_en": "Coupling devices",
+   "level": 1,
+   "parent": null,
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CPL.5W",
+    "CPL.KPIN",
+    "CPL.HITCH",
+    "CPL.DRAW",
+    "CPL.CON",
+    "CPL.LEG"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.5W",
+   "code": "5W",
+   "kind": "part",
+   "name_ua": "Сідельно-зчіпний пристрій",
+   "name_en": "Fifth wheel",
+   "level": 2,
+   "parent": "CPL",
+   "extra_parents": [],
+   "applies": [
+    "TRC"
+   ],
+   "children": [
+    "CPL.5W.PLATE",
+    "CPL.5W.LOCK",
+    "CPL.5W.LINER",
+    "CPL.5W.MOUNT"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.5W.PLATE",
+   "code": "PLATE",
+   "kind": "part",
+   "name_ua": "Плита сідла",
+   "name_en": "Fifth wheel plate",
+   "level": 3,
+   "parent": "CPL.5W",
+   "extra_parents": [],
+   "applies": [
+    "TRC"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.5W.LOCK",
+   "code": "LOCK",
+   "kind": "part",
+   "name_ua": "Замковий механізм",
+   "name_en": "Locking mechanism",
+   "level": 3,
+   "parent": "CPL.5W",
+   "extra_parents": [],
+   "applies": [
+    "TRC"
+   ],
+   "children": [
+    "CPL.5W.LOCK.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.5W.LOCK.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект сідла (замковий механізм)",
+   "name_en": "Fifth wheel repair kit",
+   "level": 4,
+   "parent": "CPL.5W.LOCK",
+   "extra_parents": [],
+   "applies": [
+    "TRC"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.5W.LINER",
+   "code": "LINER",
+   "kind": "part",
+   "name_ua": "Вкладиш (накладка) сідла",
+   "name_en": "Fifth wheel liner",
+   "level": 3,
+   "parent": "CPL.5W",
+   "extra_parents": [],
+   "applies": [
+    "TRC"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.5W.MOUNT",
+   "code": "MOUNT",
+   "kind": "part",
+   "name_ua": "Монтажна плита",
+   "name_en": "Mounting plate",
+   "level": 3,
+   "parent": "CPL.5W",
+   "extra_parents": [
+    "FRM"
+   ],
+   "applies": [
+    "TRC"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.KPIN",
+   "code": "KPIN",
+   "kind": "part",
+   "name_ua": "Шкворень напівпричепа",
+   "name_en": "King pin",
+   "level": 2,
+   "parent": "CPL",
+   "extra_parents": [],
+   "applies": [
+    "SMT"
+   ],
+   "children": [
+    "CPL.KPIN.PIN",
+    "CPL.KPIN.PLATE"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.KPIN.PIN",
+   "code": "PIN",
+   "kind": "part",
+   "name_ua": "Шкворень 2\" / 3.5\"",
+   "name_en": "King pin 2\" / 3.5\"",
+   "level": 3,
+   "parent": "CPL.KPIN",
+   "extra_parents": [],
+   "applies": [
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.KPIN.PLATE",
+   "code": "PLATE",
+   "kind": "part",
+   "name_ua": "Опорний лист шкворня",
+   "name_en": "King pin plate",
+   "level": 3,
+   "parent": "CPL.KPIN",
+   "extra_parents": [
+    "FRM"
+   ],
+   "applies": [
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.HITCH",
+   "code": "HITCH",
+   "kind": "part",
+   "name_ua": "Тягово-зчіпний пристрій",
+   "name_en": "Towing hitch",
+   "level": 2,
+   "parent": "CPL",
+   "extra_parents": [],
+   "applies": [
+    "RGD"
+   ],
+   "children": [
+    "CPL.HITCH.JAW",
+    "CPL.HITCH.SPRING",
+    "CPL.HITCH.MOUNT"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.HITCH.JAW",
+   "code": "JAW",
+   "kind": "part",
+   "name_ua": "Зів, палець ТСУ",
+   "name_en": "Jaw, coupling pin",
+   "level": 3,
+   "parent": "CPL.HITCH",
+   "extra_parents": [],
+   "applies": [
+    "RGD"
+   ],
+   "children": [
+    "CPL.HITCH.JAW.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.HITCH.JAW.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект ТСУ",
+   "name_en": "Towing hitch repair kit",
+   "level": 4,
+   "parent": "CPL.HITCH.JAW",
+   "extra_parents": [],
+   "applies": [
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.HITCH.SPRING",
+   "code": "SPRING",
+   "kind": "part",
+   "name_ua": "Демпфери ТСУ",
+   "name_en": "Hitch dampers",
+   "level": 3,
+   "parent": "CPL.HITCH",
+   "extra_parents": [],
+   "applies": [
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.HITCH.MOUNT",
+   "code": "MOUNT",
+   "kind": "part",
+   "name_ua": "Поперечина / кріплення ТСУ",
+   "name_en": "Hitch crossmember",
+   "level": 3,
+   "parent": "CPL.HITCH",
+   "extra_parents": [
+    "FRM"
+   ],
+   "applies": [
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.DRAW",
+   "code": "DRAW",
+   "kind": "part",
+   "name_ua": "Дишло і поворотний круг",
+   "name_en": "Drawbar & turntable",
+   "level": 2,
+   "parent": "CPL",
+   "extra_parents": [],
+   "applies": [
+    "TRL"
+   ],
+   "children": [
+    "CPL.DRAW.BAR",
+    "CPL.DRAW.EYE",
+    "CPL.DRAW.TURN",
+    "CPL.DRAW.SUPP"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.DRAW.BAR",
+   "code": "BAR",
+   "kind": "part",
+   "name_ua": "Дишло",
+   "name_en": "Drawbar",
+   "level": 3,
+   "parent": "CPL.DRAW",
+   "extra_parents": [],
+   "applies": [
+    "TRL"
+   ],
+   "children": [
+    "CPL.DRAW.BAR.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.DRAW.BAR.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект кріплення дишла (втулки, пальці)",
+   "name_en": "Drawbar bush kit",
+   "level": 4,
+   "parent": "CPL.DRAW.BAR",
+   "extra_parents": [],
+   "applies": [
+    "TRL"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.DRAW.EYE",
+   "code": "EYE",
+   "kind": "part",
+   "name_ua": "Зчіпна петля",
+   "name_en": "Drawbar eye",
+   "level": 3,
+   "parent": "CPL.DRAW",
+   "extra_parents": [],
+   "applies": [
+    "TRL"
+   ],
+   "children": [
+    "CPL.DRAW.EYE.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.DRAW.EYE.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект зчіпної петлі (втулка)",
+   "name_en": "Drawbar eye bush kit",
+   "level": 4,
+   "parent": "CPL.DRAW.EYE",
+   "extra_parents": [],
+   "applies": [
+    "TRL"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.DRAW.TURN",
+   "code": "TURN",
+   "kind": "part",
+   "name_ua": "Поворотний круг",
+   "name_en": "Turntable",
+   "level": 3,
+   "parent": "CPL.DRAW",
+   "extra_parents": [],
+   "applies": [
+    "TRL"
+   ],
+   "children": [
+    "CPL.DRAW.TURN.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.DRAW.TURN.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект поворотного круга",
+   "name_en": "Turntable repair kit",
+   "level": 4,
+   "parent": "CPL.DRAW.TURN",
+   "extra_parents": [],
+   "applies": [
+    "TRL"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.DRAW.SUPP",
+   "code": "SUPP",
+   "kind": "part",
+   "name_ua": "Підтримка дишла",
+   "name_en": "Drawbar support spring",
+   "level": 3,
+   "parent": "CPL.DRAW",
+   "extra_parents": [],
+   "applies": [
+    "TRL"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.CON",
+   "code": "CON",
+   "kind": "part",
+   "name_ua": "З'єднання тягач–причіп",
+   "name_en": "Tractor–trailer connections",
+   "level": 2,
+   "parent": "CPL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "CPL.CON.ELC",
+    "CPL.CON.SPIR"
+   ],
+   "linked_children": [
+    "PNE.COIL",
+    "PNE.HEAD"
+   ]
+  },
+  {
+   "id": "CPL.CON.ELC",
+   "code": "ELC",
+   "kind": "part",
+   "name_ua": "Електророз'єми 7 / 15-pin, ISO 7638",
+   "name_en": "Electrical connectors",
+   "level": 3,
+   "parent": "CPL.CON",
+   "extra_parents": [
+    "ELE.HARN"
+   ],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.CON.SPIR",
+   "code": "SPIR",
+   "kind": "part",
+   "name_ua": "Електричні спіралі",
+   "name_en": "Electrical coils",
+   "level": 3,
+   "parent": "CPL.CON",
+   "extra_parents": [
+    "ELE.HARN"
+   ],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.LEG",
+   "code": "LEG",
+   "kind": "part",
+   "name_ua": "Опорні пристрої",
+   "name_en": "Landing gear",
+   "level": 2,
+   "parent": "CPL",
+   "extra_parents": [],
+   "applies": [
+    "SMT"
+   ],
+   "children": [
+    "CPL.LEG.LEG",
+    "CPL.LEG.GBX",
+    "CPL.LEG.CRANK",
+    "CPL.LEG.FOOT"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.LEG.LEG",
+   "code": "LEG",
+   "kind": "part",
+   "name_ua": "Опорна стійка",
+   "name_en": "Landing leg",
+   "level": 3,
+   "parent": "CPL.LEG",
+   "extra_parents": [],
+   "applies": [
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.LEG.GBX",
+   "code": "GBX",
+   "kind": "part",
+   "name_ua": "Редуктор опори",
+   "name_en": "Landing gear gearbox",
+   "level": 3,
+   "parent": "CPL.LEG",
+   "extra_parents": [],
+   "applies": [
+    "SMT"
+   ],
+   "children": [
+    "CPL.LEG.GBX.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.LEG.GBX.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект редуктора опори",
+   "name_en": "Landing gear repair kit",
+   "level": 4,
+   "parent": "CPL.LEG.GBX",
+   "extra_parents": [],
+   "applies": [
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.LEG.CRANK",
+   "code": "CRANK",
+   "kind": "part",
+   "name_ua": "Рукоятка",
+   "name_en": "Crank handle",
+   "level": 3,
+   "parent": "CPL.LEG",
+   "extra_parents": [],
+   "applies": [
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CPL.LEG.FOOT",
+   "code": "FOOT",
+   "kind": "part",
+   "name_ua": "Опорна лапа / башмак",
+   "name_en": "Foot / sand shoe",
+   "level": 3,
+   "parent": "CPL.LEG",
+   "extra_parents": [],
+   "applies": [
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "FRM",
+   "code": "FRM",
+   "kind": "part",
+   "name_ua": "Рама",
+   "name_en": "Frame",
+   "level": 1,
+   "parent": null,
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "FRM.RAIL",
+    "FRM.CROSS",
+    "FRM.BRKT",
+    "FRM.BUMP",
+    "FRM.SIDE",
+    "FRM.UND",
+    "FRM.MUD",
+    "FRM.FEND",
+    "FRM.TBOX",
+    "FRM.PALL"
+   ],
+   "linked_children": [
+    "ENG.BLK.MOUNT",
+    "ENG.FUEL.TANK",
+    "TRN.PROP.CBR",
+    "CHS.WHL.SPARE",
+    "CHS.SUS.LEAF.BRKT",
+    "CHS.SUS.AIR.HANGER",
+    "CPL.5W.MOUNT",
+    "CPL.KPIN.PLATE",
+    "CPL.HITCH.MOUNT",
+    "CAB.SHELL.BUMP"
+   ]
+  },
+  {
+   "id": "FRM.RAIL",
+   "code": "RAIL",
+   "kind": "part",
+   "name_ua": "Лонжерони",
+   "name_en": "Side members",
+   "level": 2,
+   "parent": "FRM",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "FRM.CROSS",
+   "code": "CROSS",
+   "kind": "part",
+   "name_ua": "Поперечини",
+   "name_en": "Cross members",
+   "level": 2,
+   "parent": "FRM",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "FRM.BRKT",
+   "code": "BRKT",
+   "kind": "part",
+   "name_ua": "Кронштейни",
+   "name_en": "Brackets",
+   "level": 2,
+   "parent": "FRM",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "FRM.BUMP",
+   "code": "BUMP",
+   "kind": "part",
+   "name_ua": "Задній бампер / брус",
+   "name_en": "Rear bumper / bar",
+   "level": 2,
+   "parent": "FRM",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "FRM.SIDE",
+   "code": "SIDE",
+   "kind": "part",
+   "name_ua": "Бічний захист",
+   "name_en": "Side guard",
+   "level": 2,
+   "parent": "FRM",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "FRM.UND",
+   "code": "UND",
+   "kind": "part",
+   "name_ua": "Протипідкатний захист",
+   "name_en": "Underrun protection",
+   "level": 2,
+   "parent": "FRM",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "FRM.MUD",
+   "code": "MUD",
+   "kind": "part",
+   "name_ua": "Бризковики, кронштейни крил",
+   "name_en": "Mudflaps, wing brackets",
+   "level": 2,
+   "parent": "FRM",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "FRM.FEND",
+   "code": "FEND",
+   "kind": "part",
+   "name_ua": "Крила / підкрилки",
+   "name_en": "Mudguards / fenders",
+   "level": 2,
+   "parent": "FRM",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "FRM.TBOX",
+   "code": "TBOX",
+   "kind": "part",
+   "name_ua": "Інструментальний ящик",
+   "name_en": "Tool box",
+   "level": 2,
+   "parent": "FRM",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "FRM.PALL",
+   "code": "PALL",
+   "kind": "part",
+   "name_ua": "Ящик для піддонів",
+   "name_en": "Pallet box",
+   "level": 2,
+   "parent": "FRM",
+   "extra_parents": [],
+   "applies": [
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CAB",
+   "code": "CAB",
+   "kind": "part",
+   "name_ua": "Кабіна",
+   "name_en": "Cab",
+   "level": 1,
+   "parent": null,
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "CAB.SHELL",
+    "CAB.SUSP",
+    "CAB.INT",
+    "CAB.HVAC"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.SHELL",
+   "code": "SHELL",
+   "kind": "part",
+   "name_ua": "Кузов кабіни",
+   "name_en": "Cab body",
+   "level": 2,
+   "parent": "CAB",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "CAB.SHELL.DOOR",
+    "CAB.SHELL.PANEL",
+    "CAB.SHELL.BUMP",
+    "CAB.SHELL.STEP",
+    "CAB.SHELL.MIRR",
+    "CAB.SHELL.GLASS",
+    "CAB.SHELL.WIPER",
+    "CAB.SHELL.DEFL",
+    "CAB.SHELL.SUN"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.SHELL.DOOR",
+   "code": "DOOR",
+   "kind": "part",
+   "name_ua": "Двері, замки, склопідйомники",
+   "name_en": "Doors, locks, window lifters",
+   "level": 3,
+   "parent": "CAB.SHELL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "CAB.SHELL.DOOR.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.SHELL.DOOR.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект замка дверей",
+   "name_en": "Door lock repair kit",
+   "level": 4,
+   "parent": "CAB.SHELL.DOOR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.SHELL.PANEL",
+   "code": "PANEL",
+   "kind": "part",
+   "name_ua": "Облицювання, решітка",
+   "name_en": "Panels, grille",
+   "level": 3,
+   "parent": "CAB.SHELL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.SHELL.BUMP",
+   "code": "BUMP",
+   "kind": "part",
+   "name_ua": "Передній бампер",
+   "name_en": "Front bumper",
+   "level": 3,
+   "parent": "CAB.SHELL",
+   "extra_parents": [
+    "FRM"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.SHELL.STEP",
+   "code": "STEP",
+   "kind": "part",
+   "name_ua": "Підніжки",
+   "name_en": "Steps",
+   "level": 3,
+   "parent": "CAB.SHELL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.SHELL.MIRR",
+   "code": "MIRR",
+   "kind": "part",
+   "name_ua": "Дзеркала",
+   "name_en": "Mirrors",
+   "level": 3,
+   "parent": "CAB.SHELL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "CAB.SHELL.MIRR.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.SHELL.MIRR.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект дзеркала",
+   "name_en": "Mirror repair kit",
+   "level": 4,
+   "parent": "CAB.SHELL.MIRR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.SHELL.GLASS",
+   "code": "GLASS",
+   "kind": "part",
+   "name_ua": "Скло, ущільнювачі",
+   "name_en": "Glass, seals",
+   "level": 3,
+   "parent": "CAB.SHELL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.SHELL.WIPER",
+   "code": "WIPER",
+   "kind": "part",
+   "name_ua": "Склоочисник, омивач",
+   "name_en": "Wipers, washer",
+   "level": 3,
+   "parent": "CAB.SHELL",
+   "extra_parents": [
+    "ELE"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "CAB.SHELL.WIPER.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.SHELL.WIPER.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект трапеції склоочисника",
+   "name_en": "Wiper linkage repair kit",
+   "level": 4,
+   "parent": "CAB.SHELL.WIPER",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.SHELL.DEFL",
+   "code": "DEFL",
+   "kind": "part",
+   "name_ua": "Обтікач / спойлер",
+   "name_en": "Deflector / spoiler",
+   "level": 3,
+   "parent": "CAB.SHELL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.SHELL.SUN",
+   "code": "SUN",
+   "kind": "part",
+   "name_ua": "Сонцезахисний козирок",
+   "name_en": "Sun visor",
+   "level": 3,
+   "parent": "CAB.SHELL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.SUSP",
+   "code": "SUSP",
+   "kind": "part",
+   "name_ua": "Підвіска кабіни",
+   "name_en": "Cab suspension",
+   "level": 2,
+   "parent": "CAB",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "CAB.SUSP.SHOCK",
+    "CAB.SUSP.BAG",
+    "CAB.SUSP.TILT",
+    "CAB.SUSP.LOCK",
+    "CAB.SUSP.BUSH"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.SUSP.SHOCK",
+   "code": "SHOCK",
+   "kind": "part",
+   "name_ua": "Амортизатор кабіни",
+   "name_en": "Cab shock absorber",
+   "level": 3,
+   "parent": "CAB.SUSP",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.SUSP.BAG",
+   "code": "BAG",
+   "kind": "part",
+   "name_ua": "Пневмоподушка кабіни",
+   "name_en": "Cab air spring",
+   "level": 3,
+   "parent": "CAB.SUSP",
+   "extra_parents": [
+    "PNE"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.SUSP.TILT",
+   "code": "TILT",
+   "kind": "part",
+   "name_ua": "Механізм перекидання",
+   "name_en": "Cab tilt pump / cylinder",
+   "level": 3,
+   "parent": "CAB.SUSP",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "CAB.SUSP.TILT.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.SUSP.TILT.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект насоса / циліндра перекидання",
+   "name_en": "Cab tilt repair kit",
+   "level": 4,
+   "parent": "CAB.SUSP.TILT",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.SUSP.LOCK",
+   "code": "LOCK",
+   "kind": "part",
+   "name_ua": "Замок кабіни",
+   "name_en": "Cab lock",
+   "level": 3,
+   "parent": "CAB.SUSP",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "CAB.SUSP.LOCK.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.SUSP.LOCK.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект замка кабіни",
+   "name_en": "Cab lock repair kit",
+   "level": 4,
+   "parent": "CAB.SUSP.LOCK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.SUSP.BUSH",
+   "code": "BUSH",
+   "kind": "part",
+   "name_ua": "Сайлентблоки кабіни",
+   "name_en": "Cab mount bushes",
+   "level": 3,
+   "parent": "CAB.SUSP",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "CAB.SUSP.BUSH.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.SUSP.BUSH.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект сайлентблоків кабіни",
+   "name_en": "Cab mount bush kit",
+   "level": 4,
+   "parent": "CAB.SUSP.BUSH",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.INT",
+   "code": "INT",
+   "kind": "part",
+   "name_ua": "Інтер'єр",
+   "name_en": "Interior",
+   "level": 2,
+   "parent": "CAB",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "CAB.INT.SEAT",
+    "CAB.INT.DASH",
+    "CAB.INT.PEDAL",
+    "CAB.INT.BUNK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.INT.SEAT",
+   "code": "SEAT",
+   "kind": "part",
+   "name_ua": "Сидіння",
+   "name_en": "Seat",
+   "level": 3,
+   "parent": "CAB.INT",
+   "extra_parents": [
+    "PNE"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "CAB.INT.SEAT.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.INT.SEAT.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект сидіння",
+   "name_en": "Seat repair kit",
+   "level": 4,
+   "parent": "CAB.INT.SEAT",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.INT.DASH",
+   "code": "DASH",
+   "kind": "part",
+   "name_ua": "Панель приладів",
+   "name_en": "Dashboard",
+   "level": 3,
+   "parent": "CAB.INT",
+   "extra_parents": [
+    "ELE"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.INT.PEDAL",
+   "code": "PEDAL",
+   "kind": "part",
+   "name_ua": "Педальний вузол",
+   "name_en": "Pedal box",
+   "level": 3,
+   "parent": "CAB.INT",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "CAB.INT.PEDAL.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.INT.PEDAL.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект педального вузла",
+   "name_en": "Pedal box repair kit",
+   "level": 4,
+   "parent": "CAB.INT.PEDAL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.INT.BUNK",
+   "code": "BUNK",
+   "kind": "part",
+   "name_ua": "Спальник",
+   "name_en": "Bunk",
+   "level": 3,
+   "parent": "CAB.INT",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.HVAC",
+   "code": "HVAC",
+   "kind": "part",
+   "name_ua": "Опалення і кондиціювання",
+   "name_en": "Heating & A/C",
+   "level": 2,
+   "parent": "CAB",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "CAB.HVAC.HEAT",
+    "CAB.HVAC.PARK",
+    "CAB.HVAC.COND",
+    "CAB.HVAC.BLOW"
+   ],
+   "linked_children": [
+    "ENG.ACC.ACCOMP"
+   ]
+  },
+  {
+   "id": "CAB.HVAC.HEAT",
+   "code": "HEAT",
+   "kind": "part",
+   "name_ua": "Пічка, радіатор пічки",
+   "name_en": "Heater core",
+   "level": 3,
+   "parent": "CAB.HVAC",
+   "extra_parents": [
+    "ENG.COOL"
+   ],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.HVAC.PARK",
+   "code": "PARK",
+   "kind": "part",
+   "name_ua": "Автономний обігрівач",
+   "name_en": "Parking heater",
+   "level": 3,
+   "parent": "CAB.HVAC",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "CAB.HVAC.PARK.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.HVAC.PARK.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект автономного обігрівача",
+   "name_en": "Parking heater repair kit",
+   "level": 4,
+   "parent": "CAB.HVAC.PARK",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.HVAC.COND",
+   "code": "COND",
+   "kind": "part",
+   "name_ua": "Конденсер, осушувач A/C",
+   "name_en": "Condenser, receiver-drier",
+   "level": 3,
+   "parent": "CAB.HVAC",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "CAB.HVAC.BLOW",
+   "code": "BLOW",
+   "kind": "part",
+   "name_ua": "Вентилятор салону",
+   "name_en": "Blower motor",
+   "level": 3,
+   "parent": "CAB.HVAC",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ELE",
+   "code": "ELE",
+   "kind": "part",
+   "name_ua": "Електрообладнання",
+   "name_en": "Electrical system",
+   "level": 1,
+   "parent": null,
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "ELE.PWR",
+    "ELE.LGT",
+    "ELE.HARN",
+    "ELE.SENS",
+    "ELE.CTRL",
+    "ELE.INFO",
+    "ELE.HORN"
+   ],
+   "linked_children": [
+    "CAB.SHELL.WIPER",
+    "CAB.INT.DASH"
+   ]
+  },
+  {
+   "id": "ELE.PWR",
+   "code": "PWR",
+   "kind": "part",
+   "name_ua": "Живлення",
+   "name_en": "Power supply",
+   "level": 2,
+   "parent": "ELE",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [
+    "ELE.PWR.BAT",
+    "ELE.PWR.MSW"
+   ],
+   "linked_children": [
+    "ENG.ACC.ALT",
+    "ENG.ACC.START"
+   ]
+  },
+  {
+   "id": "ELE.PWR.BAT",
+   "code": "BAT",
+   "kind": "part",
+   "name_ua": "АКБ",
+   "name_en": "Battery",
+   "level": 3,
+   "parent": "ELE.PWR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ELE.PWR.MSW",
+   "code": "MSW",
+   "kind": "part",
+   "name_ua": "Вимикач маси",
+   "name_en": "Battery master switch",
+   "level": 3,
+   "parent": "ELE.PWR",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ELE.LGT",
+   "code": "LGT",
+   "kind": "part",
+   "name_ua": "Освітлення і сигналізація",
+   "name_en": "Lighting & signalling",
+   "level": 2,
+   "parent": "ELE",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "ELE.LGT.HEAD",
+    "ELE.LGT.FOG",
+    "ELE.LGT.REAR",
+    "ELE.LGT.SIDE",
+    "ELE.LGT.PLATE",
+    "ELE.LGT.BEACON",
+    "ELE.LGT.BULB"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "ELE.LGT.HEAD",
+   "code": "HEAD",
+   "kind": "part",
+   "name_ua": "Фари",
+   "name_en": "Headlamps",
+   "level": 3,
+   "parent": "ELE.LGT",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ELE.LGT.FOG",
+   "code": "FOG",
+   "kind": "part",
+   "name_ua": "Протитуманні фари",
+   "name_en": "Fog lamps",
+   "level": 3,
+   "parent": "ELE.LGT",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ELE.LGT.REAR",
+   "code": "REAR",
+   "kind": "part",
+   "name_ua": "Задні ліхтарі",
+   "name_en": "Rear lamps",
+   "level": 3,
+   "parent": "ELE.LGT",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ELE.LGT.SIDE",
+   "code": "SIDE",
+   "kind": "part",
+   "name_ua": "Габаритні / бокові ліхтарі",
+   "name_en": "Side marker lamps",
+   "level": 3,
+   "parent": "ELE.LGT",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ELE.LGT.PLATE",
+   "code": "PLATE",
+   "kind": "part",
+   "name_ua": "Підсвічування номера",
+   "name_en": "Licence plate lamp",
+   "level": 3,
+   "parent": "ELE.LGT",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ELE.LGT.BEACON",
+   "code": "BEACON",
+   "kind": "part",
+   "name_ua": "Маячки",
+   "name_en": "Beacons",
+   "level": 3,
+   "parent": "ELE.LGT",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ELE.LGT.BULB",
+   "code": "BULB",
+   "kind": "part",
+   "name_ua": "Лампи",
+   "name_en": "Bulbs",
+   "level": 3,
+   "parent": "ELE.LGT",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ELE.HARN",
+   "code": "HARN",
+   "kind": "part",
+   "name_ua": "Проводка, роз'єми",
+   "name_en": "Wiring harness, connectors",
+   "level": 2,
+   "parent": "ELE",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": [
+    "CPL.CON.ELC",
+    "CPL.CON.SPIR"
+   ]
+  },
+  {
+   "id": "ELE.SENS",
+   "code": "SENS",
+   "kind": "part",
+   "name_ua": "Датчики",
+   "name_en": "Sensors",
+   "level": 2,
+   "parent": "ELE",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": [
+    "ENG.EXH.NOX",
+    "BRK.ABS.SENS",
+    "BRK.WHB.DISC.WEAR"
+   ]
+  },
+  {
+   "id": "ELE.CTRL",
+   "code": "CTRL",
+   "kind": "part",
+   "name_ua": "Блоки керування, реле",
+   "name_en": "Control units, relays",
+   "level": 2,
+   "parent": "ELE",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "ELE.CTRL.RELAY",
+    "ELE.CTRL.CU"
+   ],
+   "linked_children": [
+    "ENG.ECU",
+    "TRN.GBX.ACTUAT",
+    "CHS.SUS.AIR.ECAS",
+    "BRK.ABS.ECU"
+   ]
+  },
+  {
+   "id": "ELE.CTRL.RELAY",
+   "code": "RELAY",
+   "kind": "part",
+   "name_ua": "Реле, запобіжники",
+   "name_en": "Relays, fuses",
+   "level": 3,
+   "parent": "ELE.CTRL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ELE.CTRL.CU",
+   "code": "CU",
+   "kind": "part",
+   "name_ua": "Блоки керування кузовом / CAN",
+   "name_en": "Body / CAN control units",
+   "level": 3,
+   "parent": "ELE.CTRL",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ELE.INFO",
+   "code": "INFO",
+   "kind": "part",
+   "name_ua": "Тахограф, спідометр",
+   "name_en": "Tachograph, speedometer",
+   "level": 2,
+   "parent": "ELE",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "ELE.HORN",
+   "code": "HORN",
+   "kind": "part",
+   "name_ua": "Звуковий сигнал",
+   "name_en": "Horn",
+   "level": 2,
+   "parent": "ELE",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BOD",
+   "code": "BOD",
+   "kind": "part",
+   "name_ua": "Надбудова / кузов",
+   "name_en": "Body / superstructure",
+   "level": 1,
+   "parent": null,
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BOD.CURT",
+    "BOD.BOX",
+    "BOD.REF",
+    "BOD.TIP",
+    "BOD.HYD",
+    "BOD.TANKR"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.CURT",
+   "code": "CURT",
+   "kind": "part",
+   "name_ua": "Тентований / шторний",
+   "name_en": "Curtainsider",
+   "level": 2,
+   "parent": "BOD",
+   "extra_parents": [],
+   "applies": [
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BOD.CURT.TARP",
+    "BOD.CURT.FRAME",
+    "BOD.CURT.BUCK",
+    "BOD.CURT.ROOF"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.CURT.TARP",
+   "code": "TARP",
+   "kind": "part",
+   "name_ua": "Тент",
+   "name_en": "Tarpaulin",
+   "level": 3,
+   "parent": "BOD.CURT",
+   "extra_parents": [],
+   "applies": [
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.CURT.FRAME",
+   "code": "FRAME",
+   "kind": "part",
+   "name_ua": "Каркас, дуги, стійки",
+   "name_en": "Frame, bows, stakes",
+   "level": 3,
+   "parent": "BOD.CURT",
+   "extra_parents": [],
+   "applies": [
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.CURT.BUCK",
+   "code": "BUCK",
+   "kind": "part",
+   "name_ua": "Натяжники, ремені",
+   "name_en": "Tensioners, straps",
+   "level": 3,
+   "parent": "BOD.CURT",
+   "extra_parents": [],
+   "applies": [
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.CURT.ROOF",
+   "code": "ROOF",
+   "kind": "part",
+   "name_ua": "Зсувний дах",
+   "name_en": "Sliding roof",
+   "level": 3,
+   "parent": "BOD.CURT",
+   "extra_parents": [],
+   "applies": [
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BOD.CURT.ROOF.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.CURT.ROOF.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект зсувного даху",
+   "name_en": "Sliding roof repair kit",
+   "level": 4,
+   "parent": "BOD.CURT.ROOF",
+   "extra_parents": [],
+   "applies": [
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.BOX",
+   "code": "BOX",
+   "kind": "part",
+   "name_ua": "Борти і підлога",
+   "name_en": "Sides & floor",
+   "level": 2,
+   "parent": "BOD",
+   "extra_parents": [],
+   "applies": [
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BOD.BOX.SIDE",
+    "BOD.BOX.FLOOR",
+    "BOD.BOX.DOOR",
+    "BOD.BOX.LASH"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.BOX.SIDE",
+   "code": "SIDE",
+   "kind": "part",
+   "name_ua": "Борти, завіси, замки",
+   "name_en": "Side boards, hinges, locks",
+   "level": 3,
+   "parent": "BOD.BOX",
+   "extra_parents": [],
+   "applies": [
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.BOX.FLOOR",
+   "code": "FLOOR",
+   "kind": "part",
+   "name_ua": "Підлога",
+   "name_en": "Floor",
+   "level": 3,
+   "parent": "BOD.BOX",
+   "extra_parents": [],
+   "applies": [
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.BOX.DOOR",
+   "code": "DOOR",
+   "kind": "part",
+   "name_ua": "Задні ворота",
+   "name_en": "Rear doors",
+   "level": 3,
+   "parent": "BOD.BOX",
+   "extra_parents": [],
+   "applies": [
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BOD.BOX.DOOR.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.BOX.DOOR.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект завіс / замків воріт",
+   "name_en": "Rear door hinge & lock kit",
+   "level": 4,
+   "parent": "BOD.BOX.DOOR",
+   "extra_parents": [],
+   "applies": [
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.BOX.LASH",
+   "code": "LASH",
+   "kind": "part",
+   "name_ua": "Кріплення вантажу",
+   "name_en": "Load securing",
+   "level": 3,
+   "parent": "BOD.BOX",
+   "extra_parents": [],
+   "applies": [
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.REF",
+   "code": "REF",
+   "kind": "part",
+   "name_ua": "Рефрижератор / ізотерм",
+   "name_en": "Reefer / insulated",
+   "level": 2,
+   "parent": "BOD",
+   "extra_parents": [],
+   "applies": [
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BOD.REF.UNIT",
+    "BOD.REF.PANEL"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.REF.UNIT",
+   "code": "UNIT",
+   "kind": "part",
+   "name_ua": "Холодильна установка",
+   "name_en": "Refrigeration unit",
+   "level": 3,
+   "parent": "BOD.REF",
+   "extra_parents": [],
+   "applies": [
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.REF.PANEL",
+   "code": "PANEL",
+   "kind": "part",
+   "name_ua": "Сендвіч-панелі",
+   "name_en": "Sandwich panels",
+   "level": 3,
+   "parent": "BOD.REF",
+   "extra_parents": [],
+   "applies": [
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.TIP",
+   "code": "TIP",
+   "kind": "part",
+   "name_ua": "Самоскид",
+   "name_en": "Tipper",
+   "level": 2,
+   "parent": "BOD",
+   "extra_parents": [],
+   "applies": [
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BOD.TIP.CYL",
+    "BOD.TIP.TAILG"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.TIP.CYL",
+   "code": "CYL",
+   "kind": "part",
+   "name_ua": "Гідроциліндр перекидання",
+   "name_en": "Tipping cylinder",
+   "level": 3,
+   "parent": "BOD.TIP",
+   "extra_parents": [],
+   "applies": [
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BOD.TIP.CYL.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.TIP.CYL.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект гідроциліндра",
+   "name_en": "Tipping cylinder seal kit",
+   "level": 4,
+   "parent": "BOD.TIP.CYL",
+   "extra_parents": [],
+   "applies": [
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.TIP.TAILG",
+   "code": "TAILG",
+   "kind": "part",
+   "name_ua": "Задній борт самоскида",
+   "name_en": "Tipper tailgate",
+   "level": 3,
+   "parent": "BOD.TIP",
+   "extra_parents": [],
+   "applies": [
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.HYD",
+   "code": "HYD",
+   "kind": "part",
+   "name_ua": "Гідравліка надбудови (у т.ч. гідрофікація тягача)",
+   "name_en": "Body hydraulics / wet kit",
+   "level": 2,
+   "parent": "BOD",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BOD.HYD.PUMP",
+    "BOD.HYD.TANK",
+    "BOD.HYD.VALVE",
+    "BOD.HYD.HOSE"
+   ],
+   "linked_children": [
+    "TRN.GBX.PTO"
+   ]
+  },
+  {
+   "id": "BOD.HYD.PUMP",
+   "code": "PUMP",
+   "kind": "part",
+   "name_ua": "Гідронасос",
+   "name_en": "Hydraulic pump",
+   "level": 3,
+   "parent": "BOD.HYD",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BOD.HYD.PUMP.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.HYD.PUMP.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект гідронасоса",
+   "name_en": "Hydraulic pump seal kit",
+   "level": 4,
+   "parent": "BOD.HYD.PUMP",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.HYD.TANK",
+   "code": "TANK",
+   "kind": "part",
+   "name_ua": "Гідробак",
+   "name_en": "Hydraulic tank",
+   "level": 3,
+   "parent": "BOD.HYD",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.HYD.VALVE",
+   "code": "VALVE",
+   "kind": "part",
+   "name_ua": "Гідророзподільник",
+   "name_en": "Control valve",
+   "level": 3,
+   "parent": "BOD.HYD",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BOD.HYD.VALVE.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.HYD.VALVE.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект гідророзподільника",
+   "name_en": "Control valve seal kit",
+   "level": 4,
+   "parent": "BOD.HYD.VALVE",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.HYD.HOSE",
+   "code": "HOSE",
+   "kind": "part",
+   "name_ua": "РВД",
+   "name_en": "Hydraulic hoses",
+   "level": 3,
+   "parent": "BOD.HYD",
+   "extra_parents": [],
+   "applies": [
+    "TRC",
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.TANKR",
+   "code": "TANKR",
+   "kind": "part",
+   "name_ua": "Цистерна",
+   "name_en": "Tanker",
+   "level": 2,
+   "parent": "BOD",
+   "extra_parents": [],
+   "applies": [
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BOD.TANKR.VALVE",
+    "BOD.TANKR.HATCH"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.TANKR.VALVE",
+   "code": "VALVE",
+   "kind": "part",
+   "name_ua": "Донні / дихальні клапани",
+   "name_en": "Bottom / vent valves",
+   "level": 3,
+   "parent": "BOD.TANKR",
+   "extra_parents": [],
+   "applies": [
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [
+    "BOD.TANKR.VALVE.RK"
+   ],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.TANKR.VALVE.RK",
+   "code": "RK",
+   "kind": "repkit",
+   "name_ua": "Ремкомплект клапанів цистерни",
+   "name_en": "Tanker valve repair kit",
+   "level": 4,
+   "parent": "BOD.TANKR.VALVE",
+   "extra_parents": [],
+   "applies": [
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  },
+  {
+   "id": "BOD.TANKR.HATCH",
+   "code": "HATCH",
+   "kind": "part",
+   "name_ua": "Горловини люків",
+   "name_en": "Manlids",
+   "level": 3,
+   "parent": "BOD.TANKR",
+   "extra_parents": [],
+   "applies": [
+    "RGD",
+    "TRL",
+    "SMT"
+   ],
+   "children": [],
+   "linked_children": []
+  }
+ ]
+}

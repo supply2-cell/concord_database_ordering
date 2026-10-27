@@ -1,0 +1,62 @@
+manufacturer;oem;name_ua;node;applies_note;source
+BPW;09.362.72.21.0;Супорт ECO Disc TS2 3709 без колодок (10/2019–04/2021);BRK.WHB.DISC.CAL;TS2 3709;bpw_ecodisc
+BPW;09.362.72.31.0;Супорт ECO Disc TS2 3709 без колодок (з 05/2021);BRK.WHB.DISC.CAL;TS2 3709;bpw_ecodisc
+BPW;09.362.72.21.3;Супорт ECO Disc TS2 3709 з колодками;BRK.WHB.DISC.CAL;TS2 3709;bpw_ecodisc
+BPW;09.362.72.23.0;Супорт ECO Disc TS2 4309 без колодок;BRK.WHB.DISC.CAL;TS2 4309;bpw_ecodisc
+BPW;09.362.72.33.0;Супорт ECO Disc TS2 4309 без колодок (з 05/2021);BRK.WHB.DISC.CAL;TS2 4309;bpw_ecodisc
+BPW;09.362.72.13.0;Супорт ECO Disc TSB 3709 без колодок;BRK.WHB.DISC.CAL;TSB 3709;bpw_ecodisc
+BPW;09.362.72.11.0;Супорт ECO Disc TSB 4309 без колодок;BRK.WHB.DISC.CAL;TSB 4309;bpw_ecodisc
+BPW;09.362.72.15.0;Супорт ECO Disc TSB 4312 без колодок;BRK.WHB.DISC.CAL;TSB 4312;bpw_ecodisc
+BPW;03.088.34.23.7;Гальмівний диск TS2/TSB 3709 (9–10 т, ECO Plus 3);BRK.WHB.DISC.DISC;TS2/TSB 3709;bpw_ecodisc
+BPW;03.088.34.24.7;Гальмівний диск TS2/TSB 3709 (9–10 т, ECO Plus 3);BRK.WHB.DISC.DISC;TS2/TSB 3709;bpw_ecodisc
+BPW;03.088.34.21.7;Гальмівний диск TS2/TSB 3709 (10 т);BRK.WHB.DISC.DISC;TS2/TSB 3709;bpw_ecodisc
+BPW;03.088.35.12.7;Гальмівний диск TS2/TSB 4309, TSB 4312 (заміна 03.088.35.05.7);BRK.WHB.DISC.DISC;TS2/TSB 4309;bpw_ecodisc
+BPW;05.092.90.29.0;Колодки TS2 (BPW 8201);BRK.WHB.DISC.PAD;TS2;bpw_ecodisc
+BPW;05.092.90.13.1;Колодки TSB (BPW 8200);BRK.WHB.DISC.PAD;TSB;bpw_ecodisc
+BPW;05.092.90.20.1;Колодки TSB (BPW 8301);BRK.WHB.DISC.PAD;TSB;bpw_ecodisc
+BPW;09.801.08.72.0;Комплект колодок TS2;BRK.WHB.DISC.PAD;TS2;bpw_ecodisc
+BPW;09.801.07.96.0;Комплект колодок TSB (BPW 8200);BRK.WHB.DISC.PAD;TSB;bpw_ecodisc
+BPW;09.801.08.70.0;Ремкомплект фіксатора колодок TS2;BRK.WHB.DISC.PAD.RK;TS2;bpw_ecodisc
+BPW;09.801.07.68.1;Ремкомплект фіксатора колодок TSB;BRK.WHB.DISC.PAD.RK;TSB;bpw_ecodisc
+BPW;09.801.08.69.0;Ремкомплект направляючих супорта TS2;BRK.WHB.DISC.CAL.RK.GUIDE;TS2;bpw_ecodisc
+BPW;09.801.07.61.1;Ремкомплект направляючих супорта TSB;BRK.WHB.DISC.CAL.RK.GUIDE;TSB;bpw_ecodisc
+BPW;09.801.07.62.0;Ремкомплект ущільнень направляючих TSB;BRK.WHB.DISC.CAL.RK.GUIDE;TSB;bpw_ecodisc
+BPW;09.801.08.81.0;Ремкомплект пильовиків супорта TS2;BRK.WHB.DISC.CAL.RK.PISTON;TS2;bpw_ecodisc
+BPW;09.801.07.63.1;Ремкомплект штовхачів супорта TSB;BRK.WHB.DISC.CAL.RK.PISTON;TSB;bpw_ecodisc
+BPW;09.801.08.71.2;Ремкомплект гвинтів і заглушок кришки TS2;BRK.WHB.DISC.CAL.RK.CAP;TS2;bpw_ecodisc
+BPW;09.801.08.47.1;Ремкомплект гвинтів і заглушок кришки TSB;BRK.WHB.DISC.CAL.RK.CAP;TSB;bpw_ecodisc
+BPW;09.801.07.87.0;Ремкомплект заглушок TSB;BRK.WHB.DISC.CAL.RK.CAP;TSB;bpw_ecodisc
+BPW;05.001.00.70.0;Направляючий палець довгий (фіксована опора) TS2/TSB;BRK.WHB.DISC.CAL;TS2/TSB;bpw_ecodisc
+BPW;03.112.33.13.0;Втулка направляючої (фіксована опора) TS2;BRK.WHB.DISC.CAL;TS2;bpw_ecodisc
+BPW;05.130.08.30.0;Пильовик TS2;BRK.WHB.DISC.CAL;TS2;bpw_ecodisc
+BPW;05.801.48.92.0;Датчик зносу колодок, комплект на вісь TS2;BRK.WHB.DISC.WEAR;TS2;bpw_ecodisc
+BPW;05.801.49.50.0;Датчик зносу колодок, комплект на вісь TSB;BRK.WHB.DISC.WEAR;TSB;bpw_ecodisc
+BPW;09.801.08.40.0;Ремкомплект маточини ECO Plus 3 (8–9 т) з гайкою і ковпаком;CHS.HUB.HUBB.RK;ECO Plus 3;bpw_ecodisc
+BPW;09.801.08.41.0;Ремкомплект маточини ECO Plus 3 (8–9 т) без гайки і ковпака;CHS.HUB.HUBB.RK;ECO Plus 3;bpw_ecodisc
+BPW;09.801.09.65.0;Ремкомплект маточини ECO Plus 3 (10–12 т) з гайкою і ковпаком;CHS.HUB.HUBB.RK;ECO Plus 3;bpw_ecodisc
+BPW;09.801.07.33.0;Ремкомплект маточини ECO Plus 2 з болтом і ковпаком;CHS.HUB.HUBB.RK;ECO Plus 2;bpw_ecodisc
+BPW;09.801.07.04.1;Ремкомплект маточини ECOPlus;CHS.HUB.HUBB.RK;ECOPlus;bpw_ecodisc
+BPW;02.5664.77.00;Сальник маточини ECO Plus 3;CHS.HUB.SEAL;ECO Plus 3;bpw_ecodisc
+BPW;02.5664.74.00;Сальник маточини ECO Plus 2;CHS.HUB.SEAL;ECO Plus 2;bpw_ecodisc
+BPW;02.6410.23.00;Підшипник маточини 33118;CHS.HUB.BRG;;bpw_ecodisc
+BPW;02.6410.22.00;Підшипник маточини 33213;CHS.HUB.BRG;;bpw_ecodisc
+BPW;09.266.47.11.0;Гайка осі в зборі ECO Plus 3;CHS.HUB.NUT;ECO Plus 3;bpw_ecodisc
+BPW;05.212.25.98.0;Ковпак маточини ECO Plus 3 (8–9 т);CHS.HUB.CAP;ECO Plus 3;bpw_ecodisc
+BPW;05.212.29.20.0;Ковпак маточини ECO Plus 3 (10–12 т);CHS.HUB.CAP;ECO Plus 3;bpw_ecodisc
+BPW;05.212.25.78.0;Ковпак маточини ECO Plus 2;CHS.HUB.CAP;ECO Plus 2;bpw_ecodisc
+BPW;05.444.44.01.0;Енергоакумулятор мембрана-мембрана 20/24", тип B;BRK.ACT.SPCH;;bpw_ecodisc
+BPW;05.444.44.02.0;Енергоакумулятор мембрана-мембрана 20/24", тип A;BRK.ACT.SPCH;;bpw_ecodisc
+BPW;05.444.43.01.0;Енергоакумулятор мембрана-поршень 20/24", тип B;BRK.ACT.SPCH;;bpw_ecodisc
+BPW;09.801.02.35.0;Ремкомплект шкворня самоустановлюваної осі (кут < 24°);CHS.AXL.SELF.RK;;bpw_ecodisc
+BPW;09.801.09.39.0;Ремкомплект шкворня самоустановлюваної осі (кут > 25°);CHS.AXL.SELF.RK;;bpw_ecodisc
+BPW;03.240.08.04.0;Шкворень самоустановлюваної осі;CHS.AXL.SELF;;bpw_ecodisc
+BPW;05.246.46.55.0;Поперечна тяга самоустановлюваної осі 1180 мм;CHS.AXL.SELF;;bpw_ecodisc
+WABCO;4410309172;Датчик ABS;BRK.ABS.SENS;;wofford
+WABCO;4801020330;Модулятор TEBS-E;BRK.ABS.TEBS;;ebay_tebs
+WABCO;9730110040;Прискорювальний клапан;BRK.CTRL.RELAY;;finditparts_relay
+WABCO;925 397 005 0;Енергоакумулятор 24/30;BRK.ACT.SPCH;;duallane
+KNORR;K105599K55;Ремкомплект направляючих супорта SB6/SB7/SN6/SN7/SK7;BRK.WHB.DISC.CAL.RK.GUIDE;SB6, SB7, SN6, SN7, SK7;vaden
+KNORR;K003809;Супорт SN7 (Scania 4-series, передній);BRK.WHB.DISC.CAL;SN7;ebay_knorr
+SAF;03057000600;Комплект гальмівних колодок;BRK.WHB.DISC.PAD;;finditparts_saf
+JOST;SK75013-00;Ремкомплект сідла (капітальний);CPL.5W.LOCK.RK;JSK37;finditparts_jost
+HOLLAND;XB-60144;Вкладиш сідла Holland FW3410;CPL.5W.LINER;FW3410;user_data
